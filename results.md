@@ -1,3 +1,5 @@
+# Results
+
 **Tab. 2.1:Transmitter parameters of different ground stations.**
 
 | System | Stationary station | Mobile station |
@@ -53,5 +55,5 @@
 
 \(see [pdf-file](https://yadi.sk/i/SuZLOYhV3Qoy6o)\)
 
-![](/assets/8.png)_Fig. 2.6: Screenshot from the Masterthesis final presentation._
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)_Fig. 2.6: Screenshot from the Masterthesis final presentation._
 

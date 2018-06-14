@@ -30,21 +30,21 @@ These parameters can be used for calculation of up-link link budget.
 
 For down-link estimation real example of CubeSat transceivers such as NanoCom AX100 \[26\] may be used. Additionally, as an example of CubeSat UHF/VHF antenna omnidirectional NanoCom ANT430 can be considered \[26\].
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/transceiver.png)
+![](.gitbook/assets/antenna1.png)
 
 _Fig. 2.1: NanoCom AX100 by GomSpace company._
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/antenna1.png)
+![](.gitbook/assets/transceiver.png)
 
 _Fig. 2.2: NanoCom ANT430 by GomSpace company._
 
 For lager possible bandwidth 2.4GHz range also should be considered. For this range patch-antenna NanoCom ANT2000 and S-band transceiver NanoCom SR2000 are available \[26\].
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/transceiver2.png)
+![](.gitbook/assets/transceiver2.png)
 
 _Fig. 2.3: NanoCom SR2000 by GomSpace company._
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/antenna2.png)
+![](.gitbook/assets/antenna2.png)
 
 _Fig. 2.4: ANT2000 by GomSpace company._
 
@@ -54,7 +54,11 @@ To sum up, main parameters for link budget calculation are maintained in table 2
 
 Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenuations due to hydrometeors and other additional loses can be evaluated by \[11\]. Fortunately, for ranges smaller than 10 GHz the losses are smaller than 1 dB.
 
+![](.gitbook/assets/atten1.png)
+
 ![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten1.png)_Fig. 2.5:_  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].
+
+![](.gitbook/assets/atten2.png)
 
 ![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten2.png)_Fig. 2.5:_  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].
 

@@ -1,4 +1,4 @@
-# FEC
+# Modulation and coding \(FEC\)
 
 
 

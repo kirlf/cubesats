@@ -44,6 +44,11 @@ Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenu
 
 ![Fig.  2.6:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].](.gitbook/assets/atten2.png)
 
+
+
+  
+
+
 ## 2.4 Results
 
 \(see [pdf-file](https://yadi.sk/i/SuZLOYhV3Qoy6o)\)
@@ -142,9 +147,22 @@ Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenu
 
 ![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)
 
+![Fig. 2.7. Distance between CubeSat and ground station in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/distance.png)
+
+
+
+![Fig. 2.8: Distances between CubeSat and ground station in dependance of elevation angles.](.gitbook/assets/distance2.png)
+
+  
+
+
+![Fig. 2.9: Pathloss in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/pathloss.png)
+
 ## 2.5 Possible doppler shifts 
 
-![Figure 2.6. Possible Doppler shifts in dependance of the elevation angle.](.gitbook/assets/doppler.png)
-
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
+
+![Figure 2.10. Possible Doppler shifts in dependance of the elevation angle.](.gitbook/assets/doppler.png)
+
+
 

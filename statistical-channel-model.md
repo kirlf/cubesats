@@ -1,60 +1,99 @@
 # Statistical channel model
 
-## 5.1. Multiplicative distortions
+## 3.1. Model
 
-It makes scense to model Rician flat fading channel to estimate primaraly BER performance. Rician process  can be estimated based on described in \[34\] channel model with simplification to **SISO** \(single input single output\) case:
+It makes scense to model Rician flat fading channel to estimate primaraly BER performance. Rician process  can be estimated based on described in \[34\] channel model with simplification to **SISO.**
 
-where  is the channel matrix,  is the Rician factor, Line-of-Sight component  \( is the antenna spacing,  is the Direction of Departure,  is the Direction of Arrival\) and Non-Line-of-Sight component , actually, is the Rayleigh fading process.
+For modeling of an additive noise Additive White Gaussian Noise \(AWGN\) model was selected.
 
-**Note 1:** See "Scripts" for another approach of modeling \(verified for QPSK and 4-QAM\).
+Results and description were presented in
 
-**Note 2:** Described in \[30\] approach also works with equalization \(verified for QPSK and 4-QAM\).
+\(link\)
 
-## 5.2. Additive noise
+## 3.2. Script
 
-For modeling of additive noise Additive White Gaussian Noise \(AWGN\) model was selected.
+```text
+clear all
+close all
+clc
 
-To model AWGN channel first of all actual power of modeled signal should be measured \[29\]:
+EbNo = 0:40;
+K = [4.0; 0.6];
+M = [4; 8; 16; 64; 256]; %Positions of modulation (M-PSK or M-QAM)
 
-where  is complex symbol and  is the length of signal \(block or frame\).
+for k = 1:length(K)
+    for m = 1:length(M)
 
-Noise spectral density for different modulation schemes with modulation order  can be computed by following formula:
+        if M(m) >= 16    
+            hModulator = comm.RectangularQAMModulator('ModulationOrder',M(m),'BitInput',false);
+            hDemod = comm.RectangularQAMDemodulator('ModulationOrder',M(m),'BitOutput',false);
+            ric_ber(:,m,k) = berfading(EbNo,'qam',M(m),1,K(k));
 
-where  is the **energy per bit to noise power spectral density ratio** in linear scale.
+        else 
+            hModulator = comm.PSKModulator('ModulationOrder',M(m),'BitInput',false); 
+            hDemod = comm.PSKDemodulator('ModulationOrder',M(m),'BitOutput',false);
+            ric_ber(:,m,k) = berfading(EbNo,'psk',M(m),1,K(k));
+        end
+    
 
-AWGN can be modeled via following formula:
+        message = randi([0,M(m)-1],100000,1);
+        mod_msg = step(hModulator,message);
+        Es = mean(abs(mod_msg).^2);
+        No = Es./((10.^(EbNo./10))*log2(M(m)));
 
-where  and  are the independent Gaussian processes.
+        r = sqrt( K(k)/(K(k)+1)) + sqrt( 1/(K(k)+1))*(1/sqrt(2))*(randn(size(mod_msg)) + 1j*randn(size(mod_msg)));
+        ric_msg = mod_msg.*r; % Rician flat fading
 
-## 5.3. Model verification
+        for c = 1:100
+            for jj = 1:length(EbNo)
+                noisy_mod = ric_msg + sqrt(No(jj)/2)*(randn(size(mod_msg)) + 1j*randn(size(mod_msg))); %AWGN
+                noisy_mod = noisy_mod ./ r; % zero-forcing equalization
+                demod_msg = step(hDemod,noisy_mod);
+                %BER(c,jj) = just_ber(demod_msg,message);
+                [number,BER(c,jj)] = biterr(message,demod_msg);
+            end
+        end
+        sum_BER(:,m, k) = sum(BER)./c;
+        reset(hModulator);
+        reset(hDemod);
+    end
+end
 
-For verification of the proposal model we model random binary message \(length of the message equals to 100000 bits\), modulate it by pi/4-QPSK Gray mapping rule, multiply elementwise with fading process, add white gaussian noise, equalize by Zero-Forcing method, demodulate and calculate BER. The number of trials is equal to 10000.
+figure(1) 
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/proof_complex.png)
+semilogy(EbNo,sum_BER(:,1,1),'o',EbNo,sum_BER(:,2,1),'o',EbNo,sum_BER(:,3,1),'o',EbNo,sum_BER(:,4,1),'o',EbNo,sum_BER(:,5,1),'o',...
+         EbNo,ric_ber(:,1,1),'-',EbNo,ric_ber(:,2,1),'-',EbNo,ric_ber(:,3,1),'-',EbNo,ric_ber(:,4,1),'-',EbNo,ric_ber(:,5,1),'-','LineWidth', 1.5) 
+title('Rician model (K = 4.0)') 
+legend('QPSK(simulated)', '8-PSK(simulated)', '16-QAM(simulated)', '64-QAM(simulated)' ,'256-QAM(simulated)',...
+    'QPSK(theory)','8-PSK(theory)', '16-QAM(theory)', '64-QAM(theory)' ,'256-QAM(theory)') 
+xlabel('EbNo (dB)') 
+ylabel('BER')
+grid on
 
-Figure 5.1. Bit error ratio performance of described ways of the modeling.
+
+figure(2) 
+
+semilogy(EbNo,sum_BER(:,1,2),'o',EbNo,sum_BER(:,2,2),'o',EbNo,sum_BER(:,3,2),'o',EbNo,sum_BER(:,4,2),'o',EbNo,sum_BER(:,5,2),'o',...
+         EbNo,ric_ber(:,1,2),'-',EbNo,ric_ber(:,2,2),'-',EbNo,ric_ber(:,3,2),'-',EbNo,ric_ber(:,4,2),'-',EbNo,ric_ber(:,5,2),'-','LineWidth', 1.5) 
+title('Rician model (K = 0.6)') 
+legend('QPSK(simulated)', '8-PSK(simulated)', '16-QAM(simulated)', '64-QAM(simulated)' ,'256-QAM(simulated)',...
+    'QPSK(theory)','8-PSK(theory)', '16-QAM(theory)', '64-QAM(theory)' ,'256-QAM(theory)') 
+xlabel('EbNo (dB)') 
+ylabel('BER')
+grid on
+```
+
+## 3.3. Model verification
+
+For verification of the proposal model we model random binary message \(length of the message equals to 100000 bits\), modulate it by pi/4-QPSK Gray mapping rule, multiply elementwise with fading process, add white gaussian noise, equalize by Zero-Forcing method, demodulate and calculate BER. The number of trials is equal to 100.
+
+![Figure 3.1. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/4.png)
+
+![Figure 3.2. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/06.png)
 
 As we can see in figure 5.1 BER performance of the proposal approaches completely matched with theoretical \(**berfading\(\) function in MatLab**\) results.
 
 ## 5.3. Ergodic capacity limits
 
-Ergodic capacity for our simplified channel model can be estimated cause of flat nature of considered fading process. For this we use following formula:
 
-where  is the Signal to Noise Ration in linear scale.
-
-Avereged ergodic capacity is provided just for illustration:
-
-For AWGN channel capasity can be described via the Shannon theorem:
-
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/capacity.png)
-
-Figure 5.2. Ergodic capacity in dependance of some set of SNRs.
-
-To estimate capasity in bits per channel use we can use following formula \[31\]:
-
-where  is the channel bandwidth.
-
-To estimate capasity in bits second \(more common\)  in \(5.8\) should be multiplied by symbol rate  \(by Kotelnikov / Nyquist\):
-
-Final values depend on channel bandwidth selection.
 

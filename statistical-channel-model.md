@@ -10,7 +10,7 @@ Results and description were presented in
 
 \(link\)
 
-## 3.2. Script
+## 3.2. MATLAB script
 
 ```text
 clear all

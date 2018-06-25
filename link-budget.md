@@ -2,19 +2,9 @@
 
 ## 2.1. Main formulas
 
-Before we start considering even different types of modulation it is extremely valuable to know what SNR values can be expected on the receiver side. In fact, we can calculate the SNR as:
+Main formulas are performed in 
 
-Where **S** is the received power, **N** is the total termal noise power \(relates to noise spectral density  and double-sided white noise variance \), _Pt_ is the transmitted power, **Gt** and **Gr** are antenna gains on transmitter and receiver sides respectively, ****_**L**_ is path losses, **Ladd** _is additional losses \(margin\),_ **k** _is Boltzmann constant,_ **Tnoise** is equivalent noise temperature and **Bnoise** is noise bandwidth. Assume that all of losses in RF \(fiders, cabels etc.\) part are annihilated by related gains.
-
-Path losses can be estimated by Friis formula:
-
-where **λ \(**relates to the carrier frequency ****\) is wave length and **d** is distance between satellite and ground station. According to \[12\] noise bandwidth **Bnoise** can be estimated roughly as _1.1B_ where **B** is receiver bandwidth.
-
-Equivalent noise temperature is not the physical temperature of an antenna. It is equal to the temperature of a resistor, which would have the same thermal noise power in the given frequency band. This parameter can be represented as:
-
-where _**Ta**_ is sum of antenna losses and sky noise and _**Te**_ is the receiver noise temperature. Additionally, receiver noise temperature can be calculated by following formula:
-
-where **T0** is equal to 290K and **Fsys** is noise factor which can be estimated by noise figure \(**NF**\) of receive antenna:
+\(link\)
 
 Let us provide some parameters summary:
 
@@ -61,4 +51,110 @@ Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenu
 ![](.gitbook/assets/atten2.png)
 
 ![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten2.png)_Fig. 2.5:_  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].
+
+## 2.4 Results
+
+\(see [pdf-file](https://yadi.sk/i/SuZLOYhV3Qoy6o)\)
+
+#### **Tab. 2.1:Transmitter parameters of different ground stations.**
+
+| System | Stationary station | Mobile station |
+| :--- | :--- | :--- |
+|  | Transmit power\(in Watts\) | Transmit power\(in Watts\) |
+| IC-910H | 5 - 100 | - |
+| ISIS Ground Station | 5 - 100 |  |
+| Iridium | - | 0.6 |
+| Globalstar | 3 | 0.6 |
+| Messenger | 8 - 12 | - |
+|  |  |  |
+|  | Antenna gains \(in dBi\) | Antenna gains \(in dBi\) |
+| IC-910H \(connected to Uda-Yagi\) | 12.8 - 15 | - |
+| ISIS Ground Station \(connected to dish antenna\) | up to 35 | - |
+| Iridium | - | 0 - 7 |
+| Globalstar | up to 17 | 0 - 7 |
+| Messenger | up to 17 | - |
+
+#### **Tab. 2.2: Equivalent Isotropically Radiated Power for different ranges \(total additional losses are 5 dB\).**
+
+| Power\(in Watts\) | Range\(in MHz\) | Type of Antenna | Antenna gains          \(in dBi\) | EIRP                           \(in dBm\) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Uplink** |  |  |  |  |
+| 5 |  |  |  | 49.49 |
+| 10 | 144 | Uda-Yagi | 12.5 | 52.5 |
+| 15 |  |  |  | 54.3 |
+| 5 |  |  |  | 54.99 |
+| 10 | 2400 | Uda-Yagi | 18 | 58 |
+| 15 |  |  |  | 59.76 |
+| 5 |  |  |  | 71.99 |
+| 10 | 2400 | Dish antenna | 35 | 75 |
+| 15 |  |  |  | 76.76 |
+| **Downlink** |  |  |  |  |
+| 0.5 |  |  |  | 28.5 |
+| 1 | 433 | GomSpace ANT430 | 1.5 | 31.5 |
+| 2 |  |  |  | 34.5 |
+| 0.5 |  |  |  | 34.3 |
+| 1 | 2400 | GomSpace ANT2000 | 7.3 | 37.3 |
+| 2 |  |  |  | 40.3 |
+
+#### **Tab. 2.3: Noise power and Path loss \(d = 750km \).**
+
+| Range\(in MHz\) | BandwidthB\(in MHz\) | Noise temperature\(in K\) | Noise powerN\(in dBm\) | Path Loss\(in dB\) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Uplink** |  |  |  |  |
+| 144 | 0.5                                                             | 234 | -117.5                       | -133.1 |
+|  | 1 |  | -114.45 |  |
+|  | 2 |  | -111.4 |  |
+| 2400 | 3 | 240 | -109.57    | -157.5 |
+|  | 6 |  | -106.56 |  |
+|  | 10 |  | -104.34 |  |
+| **Downlink** |  |  |  |  |
+| 433 | 0.5   | 1000 | -111.15  | -142.7 |
+|  | 1 |  | -108.1 |  |
+|  | 2 |  | -105.1 |  |
+| 2400 | 3 | 1000 | -103.37   | -157.5 |
+|  | 6 |  | -100.36 |  |
+|  | 10 |  | -98.15 |  |
+
+**Tab. 2.4: Expected Signal-to-Noise ratios**
+
+| Range \(in MHZ\) | Receiver bandwidth \(in MHz\) | Uplink |  | Downlink |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  | Power   \(in watts\) | SNR \(in dB\) | Power \(in Watts\) | SNR \(in dB\) |
+| 144 /433 | 0.5 | 5 | 30.3 | 0.5 | 6.97 |
+| antenna gains: |  | 10 | 33.3 | 1 | 9.98 |
+| 12.5 \(ground\) |  | 15 | 35.1 | 2 | 13 |
+| 1.5 dBi \(CubeSat\) | 1 | 5 | 27.3 | 0.5 | 3.96 |
+|  |  | 10 | 30.3 | 1 | 6.97 |
+|  |  | 15 | 32.1 | 2 | 9.98 |
+|  | 2 | 5 | 24.3 | 0.5 | 0.95 |
+|  |  | 10 | 27.3 | 1 | 3.96 |
+|  |  | 15 | 29.1 | 2 | 6.97 |
+| 2400 | 3 | 5 | 9.3 | 0.5 | -6.88 |
+| antenna gains: |  | 10 | 12.3 | 1 | -3.87 |
+| 18 dBi \(ground\) |  | 15 | 14.1 | 2 | -0.86 |
+| 7.3 dBi \(CubeSat\) | 6 | 5 | 6.3 | 0.5 | -9.89 |
+|  |  | 10 | 9.3 | 1 | -6.88 |
+|  |  | 15 | 11.1 | 2 | -3.87 |
+|  | 10 | 5 | 4.1 | 0.5 | -12.1 |
+|  |  | 10 | 7.1 | 1 | -9.1 |
+|  |  | 15 | 8.9 | 2 | -6.09 |
+| 2400 | 3 | 5 | 26.3 | 0.5 | 10.1 |
+| antenna gains: |  | 10 | 29.3 | 1 | 13.1 |
+| 36 dBi \(ground\) |  | 15 | 31.3 | 2 | 16.1 |
+| 7.3 dBi \(CubeSat\) | 6 | 5 | 23.3 | 0.5 | 7.1 |
+|  |  | 10 | 26.3 | 1 | 10.1 |
+|  |  | 15 | 28.3 | 2 | 13.1 |
+|  | 10 | 5 | 21.1 | 0.5 | 4.88 |
+|  |  | 10 | 24.1 | 1 | 7.8 |
+|  |  | 15 | 25.9 | 2 | 10.9 |
+
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)
+
+## 2.5 Possible doppler shifts 
+
+![](.gitbook/assets/doppler.png)
+
+Figure 2.6. Possible Doppler shifts in dependance of the elevation angle.
+
+As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 

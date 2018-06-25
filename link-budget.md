@@ -145,7 +145,13 @@ Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenu
 |  |  | 10 | 24.1 | 1 | 7.8 |
 |  |  | 15 | 25.9 | 2 | 10.9 |
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png) Distance between satellite and ground station was fixed in value that is equal to height of the orbit \(_h_\). More precise calculation of the distances in dependance of elevation angles \(_phi_\) can be provided according to \[8\]:
+
+$$
+d = \sqrt{(R_E+h)^2-R^2cos^2\phi} - R_Esin\phi \qquad (1.1)
+$$
+
+ where _RE_ is the Earth radius.
 
 ![Fig. 2.7. Distance between CubeSat and ground station in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/distance.png)
 

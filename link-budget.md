@@ -20,23 +20,17 @@ These parameters can be used for calculation of up-link link budget.
 
 For down-link estimation real example of CubeSat transceivers such as NanoCom AX100 \[26\] may be used. Additionally, as an example of CubeSat UHF/VHF antenna omnidirectional NanoCom ANT430 can be considered \[26\].
 
-![](.gitbook/assets/antenna1.png)
+![Fig. 2.1: NanoCom AX100 by GomSpace company.](.gitbook/assets/antenna1.png)
 
-_Fig. 2.1: NanoCom AX100 by GomSpace company._
-
-![](.gitbook/assets/transceiver.png)
-
-_Fig. 2.2: NanoCom ANT430 by GomSpace company._
+![Fig. 2.2: NanoCom ANT430 by GomSpace company.](.gitbook/assets/transceiver.png)
 
 For lager possible bandwidth 2.4GHz range also should be considered. For this range patch-antenna NanoCom ANT2000 and S-band transceiver NanoCom SR2000 are available \[26\].
 
-![](.gitbook/assets/transceiver2.png)
+![Fig. 2.3: NanoCom SR2000 by GomSpace company.](.gitbook/assets/transceiver2.png)
 
-_Fig. 2.3: NanoCom SR2000 by GomSpace company._
+![Fig. 2.4: ANT2000 by GomSpace company.](.gitbook/assets/antenna2.png)
 
-![](.gitbook/assets/antenna2.png)
 
-_Fig. 2.4: ANT2000 by GomSpace company._
 
 To sum up, main parameters for link budget calculation are maintained in table 2.4.
 
@@ -44,13 +38,11 @@ To sum up, main parameters for link budget calculation are maintained in table 2
 
 Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenuations due to hydrometeors and other additional loses can be evaluated by \[11\]. Fortunately, for ranges smaller than 10 GHz the losses are smaller than 1 dB.
 
-![](.gitbook/assets/atten1.png)
+![Fig. 2.5:  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].](.gitbook/assets/atten1.png)
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten1.png)_Fig. 2.5:_  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten1.png)
 
-![](.gitbook/assets/atten2.png)
-
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten2.png)_Fig. 2.5:_  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].
+![FigFig.  2.6:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].](.gitbook/assets/atten2.png)
 
 ## 2.4 Results
 
@@ -152,9 +144,7 @@ Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenu
 
 ## 2.5 Possible doppler shifts 
 
-![](.gitbook/assets/doppler.png)
-
-Figure 2.6. Possible Doppler shifts in dependance of the elevation angle.
+![Figure 2.6. Possible Doppler shifts in dependance of the elevation angle.](.gitbook/assets/doppler.png)
 
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 

@@ -14,7 +14,7 @@ Let us provide some parameters summary:
 
 ## 2.2. Considered equipment
 
-In fact, we use common example of ground station such as IC-910H [\[1\] ](http://www.sicom.ru/product/icom/show.php?model=IC-910H%20)or ISIS ground station[ \[2\] ](https://www.cubesatshop.com/wp-content/uploads/)however we can estimate some parameter of transceivers of real space communication systems. Fortunately, a lot of this information is open and available on official sites available [\[3\]](https://www.iridium.com%20), [\[4\],](https://www.globalstar.com) [\[5\]](http://www.gonets.ru/rus/%20).
+In fact, we use common example of ground station such as IC-910H [\[1\] ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)or ISIS ground station[ \[2\] ](https://www.cubesatshop.com/wp-content/uploads/)however we can estimate some parameter of transceivers of real space communication systems. Fortunately, a lot of this information is open and available on official sites available [\[3\]](https://www.iridium.com%20), [\[4\],](https://www.globalstar.com) [\[5\]](http://www.gonets.ru/rus/%20).
 
 These parameters can be used for calculation of up-link link budget.
 
@@ -162,21 +162,15 @@ More representive form of values is shown in table 1.1
 
 ##  References
 
-\[1\] IC-910H specification [http://www.sicom.ru/product/icom/show.php?model=IC-910H](http://www.sicom.ru/product/icom/show.php?model=IC-910H) \(date of the application is 16.06.2017\)
+\[1\] IC-910H specification[ ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)                                       [http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html) \(date of the application is 16.06.2017\)
 
-\[2\] ISIS CubeSate equipment technical specification
+\[2\] ISIS CubeSate equipment technical specification                                    [https://www.cubesatshop.com/wp-content/uploads/](https://www.cubesatshop.com/wp-content/uploads/) \(date of the application is 16.06.2017\)
 
-[https://www.cubesatshop.com/wp-content/uploads/](https://www.cubesatshop.com/wp-content/uploads/) \(date of the application is 16.06.2017\)
+\[3\] Official web-site of Iridium company                                                                                   [https://www.iridium.com](https://www.iridium.com/) \(date of the application is 16.06.2017\)
 
-\[3\] Official web-site of Iridium company
+\[4\] Official web-site of Globstar company                                                                             [https://www.globalstar.com](https://www.globalstar.com/) \(date of the application is 16.06.2017\)
 
-[https://www.iridium.com](https://www.iridium.com/) \(date of the application is 16.06.2017\)
-
-\[4\] Official web-site of Globstar company
-
-[https://www.globalstar.com](https://www.globalstar.com/) \(date of the application is 16.06.2017\)
-
-\[5\] Official web-site of Messenger company [http://www.gonets.ru/rus/](http://www.gonets.ru/rus/) \(date of the application is 16.06.2017\)
+\[5\] Official web-site of Messenger company                                                                   [http://www.gonets.ru/rus/](http://www.gonets.ru/rus/) \(date of the application is 16.06.2017\)
 
 \[6\] S-band patch antenna for high speed communication  by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(date of the application is 27.06.2018\)
 

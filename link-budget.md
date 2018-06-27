@@ -14,7 +14,7 @@ Let us provide some parameters summary:
 
 ## 2.2. Considered equipment
 
-In fact, we use common example of ground station such as IC-910H \[13\] or ISIS ground station \[14\] however we can estimate some parameter of transceivers of real space communication systems. Fortunately, a lot of this information is open and avail- able on official sites available \[15\], \[16\],\[17\] \(table 2.1\).
+In fact, we use common example of ground station such as IC-910H \[13\] or ISIS ground station \[14\] however we can estimate some parameter of transceivers of real space communication systems. Fortunately, a lot of this information is open and avail- able on official sites available \[15\], \[16\],\[17\] .
 
 These parameters can be used for calculation of up-link link budget.
 
@@ -32,7 +32,7 @@ For lager possible bandwidth 2.4GHz range also should be considered. For this ra
 
 
 
-To sum up, main parameters for link budget calculation are maintained in table 2.4.
+
 
 ## 2.3. Additional losses
 

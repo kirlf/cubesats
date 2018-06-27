@@ -96,14 +96,23 @@ Then Doppler shifts can be obtained.
 
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 
-Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For equatorial latitude and longitude it can be done via:
+Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory in fig. 2.12, 2.13 can be done via \[8\]:
 
 $$
 t=\frac{2(R_E+h)arccos(\frac{R_E}{R_E+h})}{v}
 \qquad (1.4)
 $$
 
-![Figure 2.12. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
+![Fig. 2.12 http://satellites4everyone.co.uk/](.gitbook/assets/all_fallback.png)
+
+  
+
+
+![Fig. 2.13.  Schematic description of a CubeSat trajectory in low Earth orbit \[8\].](.gitbook/assets/cubetrraj.png)
+
+Results are shown in fig. 2.14.
+
+![Figure 2.14. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
 
 More representive form of values is shown in table 1.1
 

@@ -44,11 +44,6 @@ Additional loses due to scattering in atmosphere can be compute by \[9\]. Attenu
 
 ![Fig.  2.6:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[9\].](.gitbook/assets/atten2.png)
 
-
-
-  
-
-
 ## 2.4 Results
 
 Results are performed in tables 2.2-2.4 in the following pdf-file:
@@ -76,9 +71,28 @@ $$
 
 ## 2.5 Possible doppler shifts 
 
+ Possible doppler shifts can be estimated by well-known formula:
+
+$$
+f_D = f\frac{v}{c}cos\phi
+$$
+
+ where _f_ is the carrier frequency, _c_ is the speed of the electromagnetic wave, _v_ is the circular velosity of the satellite and _ϕ_ is the elevation angle.
+
+ Assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
+
+$$
+v = \sqrt{G\frac{M}{R}}
+$$
+
+ where _G=6.67×\(10^−11\)_ m3×kg−1×s−2 is the Gravity constant, _M=6×10^24_ kg is the Earth mass and _R=RE+h_ is the orbit radius \(Earth radius plus orbit heigh\).
+
+![Figure 2.10. Cercular velosity of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/velosity.png)
+
+  
+Then Doppler shifts can be obtained.
+
+![Figure 2.11. Possible Doppler shifts in dependance of the elevation angle \(h = 750 km\). ](.gitbook/assets/doppler.png)
+
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
-
-![Figure 2.10. Possible Doppler shifts in dependance of the elevation angle.](.gitbook/assets/doppler.png)
-
-
 

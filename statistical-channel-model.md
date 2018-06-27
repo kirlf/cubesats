@@ -91,7 +91,7 @@ For verification of the proposal model we model random binary message \(length o
 
 ![Figure 3.2. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/06.png)
 
-As we can see in figure 5.1 BER performance of the proposal approaches completely matched with theoretical \(**berfading\(\) function in MatLab**\) results.
+As we can see in figures 3.1 and 3.2 BER performance of the proposal approaches completely matched with theoretical \(**berfading\(\) function in MatLab**\) results.
 
 ## 5.3. Ergodic capacity limits
 

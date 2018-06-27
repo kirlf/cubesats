@@ -74,7 +74,7 @@ $$
  Possible doppler shifts can be estimated by well-known formula:
 
 $$
-f_D = f\frac{v}{c}cos\phi
+f_D = f\frac{v}{c}cos\phi \qquad (1.2)
 $$
 
  where _f_ is the carrier frequency, _c_ is the speed of the electromagnetic wave, _v_ is the circular velosity of the satellite and _ϕ_ is the elevation angle.
@@ -82,7 +82,7 @@ $$
  Assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
 
 $$
-v = \sqrt{G\frac{M}{R}}
+v = \sqrt{G\frac{M}{R}} \qquad (1.3)
 $$
 
  where _G=6.67×\(10^−11\)_ m3×kg−1×s−2 is the Gravity constant, _M=6×10^24_ kg is the Earth mass and _R=RE+h_ is the orbit radius \(Earth radius plus orbit heigh\).
@@ -95,4 +95,60 @@ Then Doppler shifts can be obtained.
 ![Figure 2.11. Possible Doppler shifts in dependance of the elevation angle \(h = 750 km\). ](.gitbook/assets/doppler.png)
 
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
+
+Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For equatorial latitude and longitude it can be done via:
+
+$$
+t=\frac{2(R_E+h)arccos(\frac{R_E}{R_E+h})}{v}
+\qquad (1.4)
+$$
+
+![Figure 2.12. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
+
+More representive form of values is shown in table 1.1
+
+| **Hight of the orbit \(km\)** | **Visibility time \(min\)** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 200 | 6.9 |
+| 250 | 7.8 |
+| 300 | 8.6 |
+| 350 | 9.4 |
+| 400 | 10.1 |
+| 450 | 10.8 |
+| 500 | 11.5 |
+| 550 | 12.1 |
+| 600 | 12.8 |
+| 650 | 13.4 |
+| 700 | 14 |
+| 750 | 17.7 |
+| 800 | 15.3 |
+| 850 | 15.8 |
+| 900 | 16.4 |
+| 950 | 17 |
+| 1000 | 17.6 |
+| 1050 | 18.1 |
+| 1100 | 18.7 |
+| 1150 | 19.3 |
+| 1200 | 19.8 |
+| 1250 | 20.4 |
+| 1300 | 20.9 |
+| 1350 | 21.5 |
+| 1400 | 22 |
+| 1450 | 22.6 |
+| 1500 | 23.1 |
+| 1550 | 23.6 |
+| 1600 | 24.2 |
+| 1650 | 24.7 |
+| 1700 | 25.3 |
+| 1750 | 25.8 |
+| 1800 | 26.3 |
+| 1850 | 26.9 |
+| 1900 | 27.4 |
+| 1950 | 27.9 |
+| 2000 | 28.5 |
+
+  
+
+
+
 

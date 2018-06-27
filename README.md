@@ -27,7 +27,7 @@ Thank you for your attention and you are welcome!
 
 Ms.Sc. Vladimir Fadeev
 
-December 2017 - March 2018
+December 2017 - June  2018
 
 Kazan
 

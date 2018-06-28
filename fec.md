@@ -1,5 +1,7 @@
 # Modulation and coding \(FEC\)
 
+## Thechnical survey
+
 The main features of existing equipment are shown in table 3.1
 
 #### Table 3.1 Modulation and FEC of real cubesat S-band transceivers
@@ -13,5 +15,19 @@ The main features of existing equipment are shown in table 3.1
 | [Full-duplex Low-power S-band Transceiver \(Nano Avionics\)](https://n-avionics.com/cubesat-components/communication-systems/cubesat-s-band-transceiver/) | GMSK modulation \(BT=0.35\) | Configurable Reed-Solomon and convolutional coding forward error correction |
 | [CDMA communication system performance for a constellation of CubeSats around the Moon \(IEEE paper\)](https://ieeexplore.ieee.org/document/7500710/) | filtered offset QPSK with phase modulation \(a CCSDS standard\) \(OQPSK/PM\) | LDPC r=0.5 |
 
+## Modulation
 
+### Why QPSK is preferable in comparison with BPSK?
+
+### QPSK vs. OQPSK
+
+### QPSK vs. MSK
+
+### MSK vs. GMSK
+
+### Shaped OQPSK vs. conventional OQPSK
+
+### Shaped OQPS vs. MSK/GMSK
+
+## Channel coding \(FEC\)
 

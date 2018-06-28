@@ -99,7 +99,7 @@ For verification of the proposal model we model random binary message \(length o
 
 As we can see in figures 3.1 and 3.2 BER performance of the proposal approaches completely matched with theoretical \(**berfading\(\) function in MatLab**\) results.
 
-## 5.3. Ergodic capacity limits
+## 3.4. Ergodic capacity limits
 
 Ergodic capacity for our simplified channel model can be estimated cause of flat nature of considered fading process. For this we use following formula:
 

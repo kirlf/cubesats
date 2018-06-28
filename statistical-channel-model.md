@@ -2,7 +2,13 @@
 
 ## 3.1. Model
 
-It makes scense to model Rician flat fading channel to estimate primaraly BER performance. Rician process  can be estimated based on described in \[34\] channel model with simplification to **SISO.**
+It makes scense to model Rician flat fading channel to estimate primaraly BER performance. Rician process  can be estimated based on described in [\[1\]](https://pdfs.semanticscholar.org/0fdd/65ed5a4e90f2ee44a1a0a8caa3f7021ce9f9.pdf) channel model with simplification to **SISO.** Common formula:
+
+$$
+\mathbf{H} = \sqrt{\frac{K}{K+1}}\mathbf{H_{LoS}} + \sqrt{\frac{1} {K+1}}\mathbf{H_{NLoS}}  \qquad (3.1)
+$$
+
+where **H** is the channel matrix, _K_ is the Rician factor, **HLoS** is the Line-of-Sight component and **HNLoS** is the Non-Line-of-Sight component \(actually, is the Rayleigh fading process\).
 
 For modeling of an additive noise Additive White Gaussian Noise \(AWGN\) model was selected.
 
@@ -95,5 +101,45 @@ As we can see in figures 3.1 and 3.2 BER performance of the proposal approaches 
 
 ## 5.3. Ergodic capacity limits
 
+Ergodic capacity for our simplified channel model can be estimated cause of flat nature of considered fading process. For this we use following formula:
 
+$$
+C_{erg} = \frac{1}{2}E\{ log_2(1+|r|^2\frac{S}{N})\}  \quad [bits/transmission] \qquad (3.2)
+$$
+
+where _S/N_ is the Signal to Noise Ration in linear scale, _r_  is the fading process and _E{\*}_ denotes expectation. Avereged ergodic capacity is provided just for illustration: 
+
+$$
+C_{erg} = \frac{1}{2}E\{ log_2(1+E\{|r|^2\}\frac{S}{N})\}  \quad [bits/transmission] \qquad (3.3)
+$$
+
+ For AWGN channel capasity can be described via the Shannon theorem:
+
+$$
+C = \frac{1}{2}log_2(1+\frac{S}{N})  \quad [bits/transmission] \qquad (3.4)
+$$
+
+![Figure 3.3. Ergodic capacity in dependance of some set of SNRs.](.gitbook/assets/capacity.png)
+
+To estimate capasity in bits per channel use we can use following formula based on [\[2\]](http://www.gatestudymaterial.com/study-material/communication%20systems/text%20books/Communication-Systems-4Th-Edition-Simon-Haykin-With-Solutions-Manual.pdf): 
+
+$$
+C_{erg} = \frac{1}{2}E\{ log_2(1+|r|^2\frac{S}{2W\frac{N_0}{2}})\}  =  \frac{1}{2}E\{ log_2(1+|r|^2\frac{S}{WN_0})\} \quad [bits/channel-use] \qquad (3.5)
+$$
+
+ where _W_ is the channel bandwidth.
+
+To estimate capasity in bits second \(more common\) \(3.5\) should be multiplied by symbol rate Rs=2W \(by Kotelnikov / Nyquist criterion\):
+
+$$
+C_{erg} = WE\{ log_2(1+|r|^2\frac{S}{WN_0})\} \quad [bits/s] \qquad (3.6)
+$$
+
+ Final values depend on channel bandwidth selection. Let us to fix it to 1 MHz.
+
+## References
+
+\[1\] Farrokhi, Farrokh R., et al. "Spectral efficiency of FDMA/TDMA wireless systems with transmit and receive antenna arrays." IEEE transactions on wireless communications 1.4 \(2002\): 591-599.
+
+\[2\]  Haykin S. Communication systems. – John Wiley & Sons, 2008. - p.366-368
 

@@ -12,7 +12,7 @@ where **H** is the channel matrix, _K_ is the Rician factor, **HLoS** is the Lin
 
 For modeling of an additive noise Additive White Gaussian Noise \(AWGN\) model was selected.
 
-Results and description were presented in
+Results and description were presented in \[\].
 
 \(link\)
 

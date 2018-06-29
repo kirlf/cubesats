@@ -23,6 +23,11 @@ The main features of existing equipment are shown in table 3.1
 
 ### QPSK vs. MSK
 
+| Modulation | QPSK | MSK |
+| --- | --- | --- |
+| Energy gain |  |  |
+| Spectral efficiency | 1 | 0.667 |
+
 ### MSK vs. GMSK
 
 ### Shaped OQPSK vs. conventional OQPSK

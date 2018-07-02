@@ -1,6 +1,6 @@
 # Modulation and coding \(FEC\)
 
-## Thechnical survey
+## Technical survey
 
 The main features of existing equipment are shown in table 3.1
 

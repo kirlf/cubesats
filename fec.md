@@ -36,3 +36,20 @@ The main features of existing equipment are shown in table 3.1
 
 ## Channel coding \(FEC\)
 
+
+
+![ Deep-space concatenated coding system. \[1, p. 433\]](.gitbook/assets/rsc.png)
+
+
+
+![Typical performance curves for concatenated and unconcatenated coding systems for the space channel \[2, p.27\]](.gitbook/assets/rsc-2.png)
+
+  
+
+
+## References
+
+\[1\] Moon Todd, K. Error correction coding: mathematical methods and algorithms. 2005 by John Wiley & Sons. ISBN 0-471-64800-0.
+
+\[2\] J. Hagenauer, E. Offer, and L. Papke, Reed Solomon Codes and Their Applications. New York IEEE Press, 1994
+

@@ -2,15 +2,15 @@
 
 ## 2.1. Main formulas
 
-Main formulas are performed in 
+Main formulas are performed via the following link
 
-\(link\)
+[CLICK HERE](https://drive.google.com/file/d/1cbl3Sw5rWS5RDas8-cLphX1sKKeqfmWg/view?usp=sharing)
 
 Let us provide some parameters summary:
 
-1. **Initial point:** carrier frequency, distance ;
+1. **Initial point:** carrier frequency,  hight of the orbit;
 2. **Equipment dependent parameters \(ajustable\)**: transmitted power , receiver bandwidth ;
-3. **Reference data:** antenna gains  ****and ****, sum of antenna losses and sky noise , noise figure .
+3. **Reference data:** antenna gains  ****and ****, sum of antenna losses and sky noise  noise figure  or noise temperature,  statistical parameters of the shadowing.
 
 ## 2.2. Considered equipment
 

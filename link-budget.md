@@ -4,7 +4,7 @@
 
 Main formulas are performed via the following link
 
-[CLICK HERE](https://drive.google.com/file/d/1cbl3Sw5rWS5RDas8-cLphX1sKKeqfmWg/view?usp=sharing)
+[CLICK HERE](https://drive.google.com/file/d/1cbl3Sw5rWS5RDas8-cLphX1sKKeqfmWg/view?usp=sharing) \(OPEN in Colaboratory or DOWNLOAD and open via Anaconda\)
 
 Let us provide some parameters summary:
 

@@ -36,15 +36,19 @@ The main features of existing equipment are shown in table 3.1
 
 ## Channel coding \(FEC\)
 
+As we can see from table 3.1 very popular option of the FEC is RSC \(Reed-Solomon convolutional\) concatenated codes. It relates to deep-space communication standartd \(fig. 3.1\) that allows to achieve sufficiently high BER performance \(fig. 3.2\).
+
+![ Fig. 3.1. Deep-space concatenated coding system. \[1, p. 433\]](.gitbook/assets/rsc.png)
 
 
-![ Deep-space concatenated coding system. \[1, p. 433\]](.gitbook/assets/rsc.png)
 
-
-
-![Typical performance curves for concatenated and unconcatenated coding systems for the space channel \[2, p.27\]](.gitbook/assets/rsc-2.png)
+![Fig. 3.2. Typical performance curves for concatenated and unconcatenated coding systems for the space channel \(AWGN\) \[2, p.27\]](.gitbook/assets/rsc-2.png)
 
   
+Very interesting research can be found also in [\[3\]](https://publik.tuwien.ac.at/files/publik_262129.pdf)  where capabilities of Turbo convolutional , LDPC  and Polar codes are considered. 
+
+Morover, according to[ \[4\]](https://ieeexplore.ieee.org/document/7095355/), in general,  Turbo codes have the similar computational complexity with RSC codes.
+
 
 
 ## References
@@ -52,4 +56,8 @@ The main features of existing equipment are shown in table 3.1
 \[1\] Moon Todd, K. Error correction coding: mathematical methods and algorithms. 2005 by John Wiley & Sons. ISBN 0-471-64800-0.
 
 \[2\] J. Hagenauer, E. Offer, and L. Papke, Reed Solomon Codes and Their Applications. New York IEEE Press, 1994
+
+\[3\] Tahir, Bashar, Stefan Schwarz, and Markus Rupp. "BER comparison between Convolutional, Turbo, LDPC, and Polar codes." Telecommunications \(ICT\), 2017 24th International Conference on. IEEE, 2017.
+
+\[4\] Balaji,u Pavithra,u et al. "Evaluaton of decoding trade-ofs of concatenated RSconvolutonal codes and turbo codes via trellis." Signal Pricessing andIntegrated Netwirks \(SPIN\), 2015 2nd Internatinal Cinference in. IEEE, 2015
 

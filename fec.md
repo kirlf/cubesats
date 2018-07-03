@@ -15,6 +15,8 @@ The main features of existing equipment are shown in table 3.1
 | [Full-duplex Low-power S-band Transceiver \(Nano Avionics\)](https://n-avionics.com/cubesat-components/communication-systems/cubesat-s-band-transceiver/) | GMSK modulation \(BT=0.35\) | Configurable Reed-Solomon and convolutional coding forward error correction |
 | [CDMA communication system performance for a constellation of CubeSats around the Moon \(IEEE paper\)](https://ieeexplore.ieee.org/document/7500710/) | filtered offset QPSK with phase modulation \(a CCSDS standard\) \(OQPSK/PM\) | LDPC r=0.5 |
 
+[More examples](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160007683.pdf).
+
 ## Modulation
 
 ### Why QPSK is preferable in comparison with BPSK?
@@ -23,9 +25,31 @@ The main features of existing equipment are shown in table 3.1
 
 ### QPSK vs. MSK
 
-| Modulation | QPSK | MSK |
-| --- | --- | --- |
-| Energy gain |  |  |
+**Advantages** of the MSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
+
+> * A MSK modulated signal has continuous phase in all cases, while a QPSK modulated signal has phase shifts of π or π/2. 
+> * MSK signal does not have amplitude variations. 
+> *  99% of MSK power is in main lobe. QPSK: 90%. 
+> *  MSK modulated signals have lower side-lobes \(- 23dB\) than QPSK signals \(–10 dB\). Hence interchannel interference \(ICI\) is significantly larger in QPSK modulated signals. 
+> * To avoid ICI, QPSK requires filtering, which can change the amplitude and phase of the QPSK waveform. Not required for MSK modulation. 
+> * Distance between signal points is the same in QPSK and MSK. Probability of bit error in an additive white Gaussian noise channel \(AWGN\) is also the same.
+
+**Disadvantages** of the MSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
+
+> * Null-to-Null RF transmission bandwidth of MSK is: Bnull = 1.5fb , which is 50% larger then the null-to-null bandwidth for QPSK, which is Bnull = fb . 
+> * However, MSK can transmit 99% of the signal power within a bandwidth of 1.2fb . QPSK requires around 8fb to transmit the same signal power. 
+> * Generation and detection of a MSK modulated signal is slightly complex. 
+> * Phase jitter may be present in MSK because of incorrect synchronization, which can degrade performance. 
+> * Main lobe of MSK is wide. Unsuitable for applications where extremely narrow bandwidths and sharp cut-offs are required. 
+> * Slow decay of MSK’s Power Spectral Density can create adjacent interchannel interference: ICI. As such, MSK modulation is not suitable for multiuser communications, but can be overcome using Gaussian MSK: GMSK.
+
+![http://www.atlantarf.com/Downloads.php](.gitbook/assets/mskpowspec.png)
+
+  
+
+
+| **Modulation** | **QPSK** | **MSK** |
+| --- | --- |
 | Spectral efficiency | 1 | 0.667 |
 
 ### MSK vs. GMSK

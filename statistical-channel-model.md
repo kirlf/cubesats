@@ -55,7 +55,6 @@ for k = 1:length(K)
                 noisy_mod = ric_msg + sqrt(No(jj)/2)*(randn(size(mod_msg)) + 1j*randn(size(mod_msg))); %AWGN
                 noisy_mod = noisy_mod ./ r; % zero-forcing equalization
                 demod_msg = step(hDemod,noisy_mod);
-                %BER(c,jj) = just_ber(demod_msg,message);
                 [number,BER(c,jj)] = biterr(message,demod_msg);
             end
         end

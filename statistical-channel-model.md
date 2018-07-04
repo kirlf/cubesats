@@ -8,7 +8,7 @@ $$
 \mathbf{H} = \sqrt{\frac{K}{K+1}}\mathbf{H_{LoS}} + \sqrt{\frac{1} {K+1}}\mathbf{H_{NLoS}}  \qquad (3.1)
 $$
 
-where **H** is the channel matrix, _K_ is the Rician factor, **HLoS** is the Line-of-Sight component and **HNLoS** is the Non-Line-of-Sight component \(actually, is the Rayleigh fading process\).
+where $$\mathbf{H}$$ is the channel matrix,  $$K$$ is the Rician factor, $$\mathbf{H_{LoS}}$$ is the Line-of-Sight component and $$\mathbf{H_{NLoS}}$$is the Non-Line-of-Sight component \(actually, is the Rayleigh fading process\).
 
 For modeling of an additive noise Additive White Gaussian Noise \(AWGN\) model was selected.
 
@@ -104,19 +104,19 @@ As we can see in figures 3.1 and 3.2 BER performance of the proposal approaches 
 Ergodic capacity for our simplified channel model can be estimated cause of flat nature of considered fading process. For this we use following formula:
 
 $$
-C_{erg} = \frac{1}{2}E\{ log_2(1+|r|^2\frac{S}{N})\}  \quad [bits/transmission] \qquad (3.2)
+C_{erg} = \frac{1}{2}E\left\{ log_2\left(1+|r|^2\frac{S}{N}\right)\right\}  \quad [bits/transmission] \qquad (3.2)
 $$
 
-where _S/N_ is the Signal to Noise Ration in linear scale, _r_  is the fading process and _E{\*}_ denotes expectation. Avereged ergodic capacity is provided just for illustration: 
+where $$S/N$$ is the Signal to Noise Ration in linear scale,  $$r$$  is the fading process and $$E\{*\}$$ denotes expectation. Avereged ergodic capacity is provided just for illustration: 
 
 $$
-C_{erg} = \frac{1}{2}E\{ log_2(1+E\{|r|^2\}\frac{S}{N})\}  \quad [bits/transmission] \qquad (3.3)
+C_{erg} = \frac{1}{2}E\left\{ log_2\left(1+E\{|r|^2\}\frac{S}{N}\right)\right\}  \quad [bits/transmission] \qquad (3.3)
 $$
 
  For AWGN channel capasity can be described via the Shannon theorem:
 
 $$
-C = \frac{1}{2}log_2(1+\frac{S}{N})  \quad [bits/transmission] \qquad (3.4)
+C = \frac{1}{2}log_2\left(1+\frac{S}{N}\right)  \quad [bits/transmission] \qquad (3.4)
 $$
 
 ![Figure 3.3. Ergodic capacity in dependance of some set of SNRs.](.gitbook/assets/capacity.png)
@@ -124,7 +124,7 @@ $$
 To estimate capasity in bits per channel use we can use following formula based on [\[2\]](http://www.gatestudymaterial.com/study-material/communication%20systems/text%20books/Communication-Systems-4Th-Edition-Simon-Haykin-With-Solutions-Manual.pdf): 
 
 $$
-C_{erg} = \frac{1}{2}E\{ log_2(1+|r|^2\frac{S}{2W\frac{N_0}{2}})\}  =  \frac{1}{2}E\{ log_2(1+|r|^2\frac{S}{WN_0})\} \quad [bits/channel-use] \qquad (3.5)
+C_{erg} = \frac{1}{2}E\left\{ log_2\left(1+|r|^2\frac{S}{2W\frac{N_0}{2}}\right)\right\}  =  \frac{1}{2}E\left\{ log_2\left(1+|r|^2\frac{S}{WN_0}\right)\right\} \quad [bits/channel-use] \qquad (3.5)
 $$
 
  where _W_ is the channel bandwidth.
@@ -132,7 +132,7 @@ $$
 To estimate capasity in bits second \(more common\) \(3.5\) should be multiplied by symbol rate Rs=2W \(by Kotelnikov / Nyquist criterion\):
 
 $$
-C_{erg} = WE\{ log_2(1+|r|^2\frac{S}{WN_0})\} \quad [bits/s] \qquad (3.6)
+C_{erg} = WE\left\{ log_2\left(1+|r|^2\frac{S}{WN_0}\right)\right\} \quad [bits/s] \qquad (3.6)
 $$
 
  Final values depend on channel bandwidth selection. Let us to fix it to 1 MHz.

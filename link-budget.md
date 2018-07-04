@@ -14,7 +14,7 @@ Let us provide some parameters summary:
 
 ## 2.2. Considered equipment
 
-In fact, we use common example of ground station such as IC-910H [\[1\] ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)or ISIS ground station[ \[2\] ](https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/)however we can estimate some parameter of mobile stations of real space communication systems also. Fortunately, a lot of this information is open and available on official sites available [\[3\]](https://www.iridium.com%20), [\[4\],](https://www.globalstar.com) [\[5\]](http://www.gonets.ru/rus/%20).
+In fact, we use common example of ground station such as IC-910H [\[1\] ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)or ISIS ground station[ \[2\] ](https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/)however we can estimate some parameter of mobile stations of real space communication systems also. Fortunately, a lot of this information is open and available on official sites [\[3\]](https://www.iridium.com%20), [\[4\],](https://www.globalstar.com) [\[5\]](http://www.gonets.ru/rus/%20).
 
 These parameters can be used for calculation of up-link link budget.
 
@@ -50,7 +50,7 @@ Results are performed in tables 2.2-2.4 in the following pdf-file:
 
 [Click here ](https://yadi.sk/i/SuZLOYhV3Qoy6o)
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png) Distance between satellite and ground station was fixed in value that is equal to height of the orbit \(_h_\). More precise calculation of the distances in dependance of elevation angles \(_phi_\) can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png) Distance between satellite and ground station was fixed in value that is equal to height of the orbit \($$h$$\). More precise calculation of the distances in dependance of elevation angles \($$\phi$$\) can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
 
 $$
 d = \sqrt{(R_E+h)^2-R^2cos^2\phi} - R_Esin\phi \qquad (1.1)
@@ -96,7 +96,7 @@ Then Doppler shifts can be obtained.
 
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 
-Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory in fig. 2.12, 2.13 can be done via [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
+Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory that is shown in fig. 2.12 and 2.13 this can be done via [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
 
 $$
 t=\frac{2(R_E+h)arccos(\frac{R_E}{R_E+h})}{v}
@@ -114,9 +114,9 @@ Results are shown in fig. 2.14.
 
 ![Figure 2.14. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
 
-More representive form of values is shown in table 1.1
+More representive form of values is shown in table 2.1
 
-#### Table 1.1 Visibility time of CubeSats
+#### Table 2.1 Visibility time of CubeSats
 
 | **Hight of the orbit \(km\)** | **Visibility time \(min\)** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

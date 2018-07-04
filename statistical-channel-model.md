@@ -129,7 +129,7 @@ $$
 
  where _W_ is the channel bandwidth.
 
-To estimate capasity in bits second \(more common\) \(3.5\) should be multiplied by symbol rate $$R_s = 2W$$  \(by Kotelnikov / Nyquist criterion\):
+To estimate capasity in bits second \(more common\) \(3.5\) should be multiplied  by sampling rate $$f_{samp} = 2W$$  \(by Kotelnikov / Nyquist criterion\):
 
 $$
 C_{erg} = WE\left\{ log_2\left(1+|r|^2\frac{S}{WN_0}\right)\right\} \quad [bits/s] \qquad (3.6)

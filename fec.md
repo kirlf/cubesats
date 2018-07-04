@@ -45,14 +45,36 @@ The main features of existing equipment are shown in table 3.1
 
 ![http://www.atlantarf.com/Downloads.php](.gitbook/assets/mskpowspec.png)
 
-  
-
-
 | **Modulation** | **QPSK** | **MSK** |
 | --- | --- |
 | Spectral efficiency | 1 | 0.667 |
 
 ### MSK vs. GMSK
+
+![Block scheme of the GMSK modulator \(http://www.atlantarf.com/Downloads.php\)](.gitbook/assets/image.png)
+
+**Motivation** to the GMSK \(cited by [\[1\]](https://www.researchgate.net/publication/315258808_Estimation_techniques_for_GMSK_using_linear_detectors_in_satellite_communications)\):
+
+> One of the methods for achieving this is the use of more bandwidth-efficient modulations, especially those best suited for use with nonlinear power amplifiers. Gaussian minimum shift keying \(GMSK\) is a popular waveform choice for bandwidth-constrained systems using nonlinear amplifiers. Since GMSK is a constant envelope modulation, nonlinear amplification does not produce spectral “regrowth” in the transmitted waveform. The instantaneous frequency is smoothed by a Gaussian low-pass filter to produce a signal with excellent spectral containment. The 3 dB bandwidth of the Gaussian low-pass smoothing filter can be adjusted to provide the system designer with a trade-off between detection efficiency and occupied bandwidth. GMSK has much better spectral containment than binary phase-shift keying \(BPSK\), quaternary phase-shift keying \(QPSK\), and offset QPSK which are used in the many of the current SATCOM systems.
+
+**Advantages** of the MSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
+
+> Data stream is first shaped with a pre-modulation linear Gaussian lowpass filter, which smoothes the phase trajectory of the MSK signal, before being applied to a frequency modulator. This has the advantage of reducing side-band power, which reduces out-of-band interference between signal carriers in adjacent frequency channels \(i.e. lower side-lobe RF power levels\).
+
+![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%282%29.png)
+
+**Disadvantages** of the MSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
+
+> As the bandwidth of the Gaussian lowpass filter is lowered, the amount of Inter-Symbol Interference \(ISI\) increases.
+
+$$
+P_{e,GMSK} =Q\left(\sqrt{\frac{2\lambda E_b}{N_0}}\right)  = \frac{1}{2}erfc\left( \sqrt{\frac{\lambda E_b}{N_0}}\right)
+$$
+
+| $$B_{3dB}T_b$$  | $$\lambda$$  |
+| --- | --- | --- |
+| 0.25 | 0.68 |
+| $$\infty$$  | 0.85 |
 
 ### Shaped OQPSK vs. conventional OQPSK
 
@@ -76,6 +98,8 @@ Morover, according to[ \[4\]](https://ieeexplore.ieee.org/document/7095355/), in
 
 
 ## References
+
+\[1\] Rice, M., Oliphant, T., & Mcintire, W. \(2007\). Estimation techniques for GMSK using linear detectors in satellite communications. IEEE Transactions on Aerospace and Electronic Systems, 43\(4\).
 
 \[1\] Moon Todd, K. Error correction coding: mathematical methods and algorithms. 2005 by John Wiley & Sons. ISBN 0-471-64800-0.
 

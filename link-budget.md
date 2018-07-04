@@ -56,7 +56,7 @@ $$
 d = \sqrt{(R_E+h)^2-R^2cos^2\phi} - R_Esin\phi \qquad (1.1)
 $$
 
- where _RE_ is the Earth radius.
+ where __$$R_E$$ is the Earth radius.
 
 ![Fig. 2.7. Distance between CubeSat and ground station in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/distance.png)
 
@@ -77,7 +77,7 @@ $$
 f_D = f\frac{v}{c}cos\phi \qquad (1.2)
 $$
 
- where _f_ is the carrier frequency, _c_ is the speed of the electromagnetic wave, _v_ is the circular velosity of the satellite and _ϕ_ is the elevation angle.
+ where $$f$$  is the carrier frequency, $$c$$ is the speed of the electromagnetic wave, $$v$$ is the circular velosity of the satellite and $$\phi$$ is the elevation angle.
 
  Assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
 
@@ -85,7 +85,7 @@ $$
 v = \sqrt{G\frac{M}{R}} \qquad (1.3)
 $$
 
- where _G=6.67×\(10^−11\)_ m3×kg−1×s−2 is the Gravity constant, _M=6×10^24_ kg is the Earth mass and _R=RE+h_ is the orbit radius \(Earth radius plus orbit heigh\).
+ where $$G=6.67 \times 10^{-11} m^3 \times kg^{-1} \times s^{-2}$$  is the Gravity constant, $$M = 6\times 10^{24} kg$$  is the Earth mass and $$R = R_E + h$$  is the orbit radius \(Earth radius plus orbit heigh\).
 
 ![Figure 2.10. Cercular velosity of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/velosity.png)
 

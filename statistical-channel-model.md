@@ -6,7 +6,9 @@
 Following matherials will be presented in absentia in X International Youth Forum "Education, Science and Production", timed to the 65th anniversary of BSTU n.a. V.G. Shukhov, which will be held from September 21 to September 27, 2018 within the framework of the VI Regional Science Festival in Belgorod at the Belgorod State Technological University named after. V.G. Shukhov \(BSTU named after V.G. Shukhov\).
 {% endhint %}
 
-According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the Rician and lognormal independent fading processes with two ultimate conditions: light shadowing and strong shadowing \(tab.1\). Moreover, shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf).
+According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the Rician and lognormal independent fading processes with two ultimate conditions: light shadowing and strong shadowing \(tab.1\). Moreover, shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 3.1\) [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf).
+
+![Fig. 3.1. Model parameters, sigma, mu,and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]](.gitbook/assets/image%20%282%29.png)
 
  Table 1. Statistical characteristics of the LEO channel
 
@@ -40,7 +42,7 @@ $$
 
  where $$f_0$$  is the carrier frequency, $$c$$ is the speed of the electromagnetic wave, $$v$$ is the circular velosity of the satellite and $$\phi$$ is the elevation angle.
 
-![Figure 3.1. Possible Doppler shifts in dependance of the elevation angle \(h = 750 km\). ](.gitbook/assets/doppler.png)
+![Figure 3.2. Possible Doppler shifts in dependance of the elevation angle \(h = 750 km\). ](.gitbook/assets/doppler.png)
 
   
 Symbol duration $$T_s$$should be at least 10 times smaller to avoid time selectivity \[2\]. For LEO orbits \(200-2000 km\) symbol duration will be approximately $$T_{s,max} = 1.6 \mu s$$ and therefore $$R_{s,min} = 625$$ kHz \(since $$R_s = 1/T_s$$ in case of linear modulation schemes\). That means that the channel is the time-flat in the range of $$R_s$$ from 625 kHz to 2 MHz.
@@ -147,9 +149,9 @@ grid on
 
 For verification of the proposal model we model random binary message \(length of the message equals to 100000 bits\), modulate it by pi/4-QPSK Gray mapping rule, multiply elementwise with fading process, add white gaussian noise, equalize by Zero-Forcing method, demodulate and calculate BER. The number of trials is equal to 100.
 
-![Figure 3.1. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/4.png)
+![Figure 3.3. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/4.png)
 
-![Figure 3.2. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/06.png)
+![Figure 3.4. Bit error ratio performance of described ways of the modeling.](.gitbook/assets/06.png)
 
 As we can see in figures 3.1 and 3.2 BER performance of the proposal approaches completely matched with theoretical \(**berfading\(\) function in MatLab**\) results.
 
@@ -173,7 +175,7 @@ $$
 C = \frac{1}{2}log_2\left(1+\frac{S}{N}\right)  \quad [bits/transmission] \qquad (3.4)
 $$
 
-![Figure 3.3. Ergodic capacity in dependance of some set of SNRs.](.gitbook/assets/capacity.png)
+![Figure 3.5. Ergodic capacity in dependance of some set of SNRs.](.gitbook/assets/capacity.png)
 
 To estimate capasity in bits per channel use we can use following formula based on [\[6\]](http://www.gatestudymaterial.com/study-material/communication%20systems/text%20books/Communication-Systems-4Th-Edition-Simon-Haykin-With-Solutions-Manual.pdf): 
 

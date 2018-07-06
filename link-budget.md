@@ -69,11 +69,7 @@ $$
 
 ![Fig. 2.9: Pathloss in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/pathloss.png)
 
-## 2.5 Possible doppler shifts 
-
-
-
- Assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
+If we assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
 
 $$
 v = \sqrt{G\frac{M}{R}} \qquad (1.3)
@@ -83,28 +79,25 @@ $$
 
 ![Figure 2.10. Cercular velosity of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/velosity.png)
 
-  
-
-
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 
-Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory that is shown in fig. 2.12 and 2.13 this can be done via [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
+Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory that is shown in fig. 2.11 and 2.12 this can be done via [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
 
 $$
 t=\frac{2(R_E+h)arccos(\frac{R_E}{R_E+h})}{v}
 \qquad (1.4)
 $$
 
-![Fig. 2.12 http://satellites4everyone.co.uk/](.gitbook/assets/all_fallback.png)
+![Fig. 2.11 http://satellites4everyone.co.uk/](.gitbook/assets/all_fallback.png)
 
   
 
 
-![Fig. 2.13.  Schematic description of a CubeSat trajectory in low Earth orbit \[12\].](.gitbook/assets/cubetrraj.png)
+![Fig. 2.12.  Schematic description of a CubeSat trajectory in low Earth orbit \[12\].](.gitbook/assets/cubetrraj.png)
 
-Results are shown in fig. 2.14.
+Results are shown in fig. 2.13.
 
-![Figure 2.14. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
+![Figure 2.13. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
 
 More representive form of values is shown in table 2.1
 

@@ -71,13 +71,7 @@ $$
 
 ## 2.5 Possible doppler shifts 
 
- Possible doppler shifts can be estimated by well-known formula:
 
-$$
-f_D = f\frac{v}{c}cos\phi \qquad (1.2)
-$$
-
- where $$f$$  is the carrier frequency, $$c$$ is the speed of the electromagnetic wave, $$v$$ is the circular velosity of the satellite and $$\phi$$ is the elevation angle.
 
  Assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
 
@@ -90,9 +84,7 @@ $$
 ![Figure 2.10. Cercular velosity of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/velosity.png)
 
   
-Then Doppler shifts can be obtained.
 
-![Figure 2.11. Possible Doppler shifts in dependance of the elevation angle \(h = 750 km\). ](.gitbook/assets/doppler.png)
 
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 

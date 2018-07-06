@@ -1,6 +1,6 @@
 # Statistical channel model
 
-## 3.1. Model
+## 3.1. Rician Model
 
 {% hint style="info" %}
 Following matherials will be presented in absentia in X International Youth Forum "Education, Science and Production", timed to the 65th anniversary of BSTU n.a. V.G. Shukhov, which will be held from September 21 to September 27, 2018 within the framework of the VI Regional Science Festival in Belgorod at the Belgorod State Technological University named after. V.G. Shukhov \(BSTU named after V.G. Shukhov\).
@@ -192,6 +192,10 @@ C_{erg} = WE\left\{ log_2\left(1+|r|^2\frac{S}{WN_0}\right)\right\} \quad [bits/
 $$
 
  Final values depend on channel bandwidth selection. Let us to fix it to 1 MHz.
+
+## 3.5 Corazza-Vatalaro model
+
+
 
 ## References
 

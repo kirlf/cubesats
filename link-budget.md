@@ -2,15 +2,65 @@
 
 ## 2.1. Main formulas
 
-Main formulas are performed via the following link
+### 2.1.1. Expected Signal-to-Noise ratio
 
-[CLICK HERE](https://drive.google.com/file/d/1cbl3Sw5rWS5RDas8-cLphX1sKKeqfmWg/view?usp=sharing) \(OPEN in Colaboratory or DOWNLOAD and open via Anaconda\)
+Before we start considering even different types of modulation it is extremely valuable to know what SNR values can be expected on the receiver side. In fact, we can calculate the SNR as:
+
+$$
+SNR  = P_t  + G_t + G_r + \eta_{t} + \eta_{r} - L_r - L_t - L_{add} - L - N  \qquad (1.1)
+$$
+
+Where $$N$$ is the total termal noise power \(relates to noise spectral density $$N_0=kT_{noise}$$ and double-sided white noise variance $$\sigma^2=\frac{N_0}{2}$$\) in dBm, $$P_t$$ is the transmitted power in dBm, $$G_t$$ and $$G_r$$ are the antenna gains \(relatively to isotropic antenna\) on the transmitter and receiver sides respectively \(in dBi\), $$\eta_{t}$$ и $$\eta_{r}$$ are feeder gains in dB, $$L_t$$ and $$L_r$$ are the feeder losses in dB, $$L$$ is the path losses in dB, $$L_{add}$$ is additional losses \(some margin\) in dB.
+
+### 2.1.2. Path loss
+
+Path losses can be estimated by Friis formula:
+
+$$
+L = 20lg\frac{\lambda}{4\pi d}[dB] \qquad (1.2)
+$$
+
+where $$\lambda$$ \(relates to the carrier frequency $$f_0=\frac{c}{λ}$$, $$c$$ is the speed of the electromagnetic wave\) is the wave length and $$d$$ is the distance between satellite and the ground station.
+
+Calculation of the distances in dependance of elevation angles $$\phi$$ can be provided according to \[2\]:
+
+$$
+d = \sqrt{(R_E + h)^2 - R_E^2cos\phi ^2} - R_Esin\phi \qquad (1.3)
+$$
+
+ where $$R_E$$ is the Earth radius.
+
+### 2.1.3. Noise power
+
+Noise power can be calculated by:
+
+$$
+N = 10lg\left(\frac{kT_{noise}B_{noise}}{10^{-3}}\right) [dBm] \qquad (1.4)
+$$
+
+where $$k$$ is the Boltzmann constant, $$T_{noise}$$ is the equivalent noise temperature and $$B_{noise}$$ is the noise bandwidth. According to \[1, p.98\] the noise bandwidth $$B_{noise}$$ can be estimated roughly as $$\gamma B$$ where $$B$$ is the receiver bandwidth and $$\gamma$$ is the constant from 1.002 to 1.57 that relates to configuration of receiver.
+
+Equivalent noise temperature is not the physical temperature of an antenna. It is equal to the temperature of a resistor, which would have the same thermal noise power in the given frequency band. This parameter can be represented as:
+
+$$
+T_{noise} = T_a+T_e \qquad (1.5)
+$$
+
+where $$T_a$$ is the sum of antenna losses and sky noise and $$T_e$$ is the receiver noise temperature. Additionally, receiver noise temperature can be calculated by following formula:
+
+$$
+T_e=T_0(F_{sys}−1) \qquad (1.6)
+$$
+
+where $$T_0$$ is equal to $$290K$$ and $$F_{sys} = 10^{\frac{NF}{10}}$$ is the noise factor which can be estimated by noise figure \($$NF$$\) of receive antenna.
+
+### 2.1.4. Summary
 
 Let us provide some parameters summary:
 
 1. **Initial point:** carrier frequency,  hight of the orbit;
 2. **Equipment dependent parameters \(ajustable\)**: transmitted power , receiver bandwidth ;
-3. **Reference data:** antenna gains  ****and ****, sum of antenna losses and sky noise  noise figure  or noise temperature,  statistical parameters of the shadowing.
+3. **Reference data:** antenna gains  ****and ****, sum of antenna losses and sky noise  noise figure  or noise temperature,  additional losses.
 
 ## 2.2. Considered equipment
 

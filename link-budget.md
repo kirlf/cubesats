@@ -22,14 +22,6 @@ $$
 
 where $$\lambda$$ \(relates to the carrier frequency $$f_0=\frac{c}{λ}$$, $$c$$ is the speed of the electromagnetic wave\) is the wave length and $$d$$ is the distance between satellite and the ground station.
 
-Calculation of the distances in dependance of elevation angles $$\phi$$ can be provided according to \[2\]:
-
-$$
-d = \sqrt{(R_E + h)^2 - R_E^2cos\phi ^2} - R_Esin\phi \qquad (1.3)
-$$
-
- where $$R_E$$ is the Earth radius.
-
 ### 2.1.3. Noise power
 
 Noise power can be calculated by:
@@ -54,13 +46,62 @@ $$
 
 where $$T_0$$ is equal to $$290K$$ and $$F_{sys} = 10^{\frac{NF}{10}}$$ is the noise factor which can be estimated by noise figure \($$NF$$\) of receive antenna.
 
+### 2.1.4. Additional losses
+
+According to \[1, p.88-96\] additional losses include:
+
+* loss due to refraction and inaccuracy of antenna pointing \(Antenna Beam Loss\);
+* phase effects in the atmosphere;
+* loss due to inconsistency of polarization of antennas;
+* attenuations due to hydrometeors.
+
+**Loss due to refraction and inaccuracy of antenna pointing** depends on characteristics of the certain antenna:
+
+$$
+L_b = 10log_{10}(1+ (2\theta/\theta_{0.5})^2) \qquad (1.7)
+$$
+
+where $$ \theta$$ is the beamwidth and $$\theta_{0.5}$$ is the halfpowered beamwidth.
+
+ 
+
+![Antennas - An Overview \(2.7MB pdf\) Feb-2014 \(http://www.atlantarf.com/Downloads.php\)](.gitbook/assets/image%20%284%29.png)
+
+According to \[\] total antenna losses for large cassegrain antennas are equal to 1.65 dB.
+
+**Phase effects in the atmosphere** influence data rate, due to receiver bandwidth should be disirably selected according to table 2.1 \[1, p. 91\] to avoid phase distortions.
+
+Table 2.1 Maximum receiver bandwidths for different ranges.
+
+| Carrier frequency, GHz | 0.5 | 1 | 5 | 10 |
+| --- | --- |
+| Receiver bandwidth \(B\), MHz | 10 | 25 | 270 | 750 |
+
+Additionaly, to avoid Faradey effect for ranges less 10 GHz only circular polarization should be used \[1, p. 91\].
+
+**Loss due to inconsistency of polarization of antennas** can be estimated by figure 2.1 \($$e_1$$ and $$e_2$$ are coefficients of elipticity\).
+
+
+
+![Fig. 2.1. Dependence of losses due to inconsistency of the polarizations of the transmitting and receiving antennas from the polarity elepticity. \[1, p. 93\]](.gitbook/assets/image%20%283%29.png)
+
+In general, this parameter is kind of reference data, e.g. in the link budget calculation for [NanoCom AX100](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-ax100-33.pdf) polarization losses are qual to 3 dB \(and athmospheric losses are 2.1 dB,  ionospheric losses are 0.4 dB\).
+
+**Attenuations due to hydrometeors and other additional losses** can be evaluated by [\[11\]](https://ieeexplore.ieee.org/document/6769991/). Fortunately, for ranges smaller than 10 GHz the losses are smaller than 1 dB.
+
+![Fig. 2.5:  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten1.png)
+
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten1.png)
+
+![Fig.  2.6:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten2.png)
+
 ### 2.1.4. Summary
 
 Let us provide some parameters summary:
 
 1. **Initial point:** carrier frequency,  hight of the orbit;
 2. **Equipment dependent parameters \(ajustable\)**: transmitted power , receiver bandwidth ;
-3. **Reference data:** antenna gains  ****and ****, sum of antenna losses and sky noise  noise figure  or noise temperature,  additional losses.
+3. **Reference data:** antenna gains and losses, feeder gains and losses , ****noise temperature,  additional losses.
 
 ## 2.2. Considered equipment
 
@@ -84,23 +125,13 @@ For lager possible bandwidth 2.4GHz range also should be considered. For this ra
 
 
 
-## 2.3. Additional losses
-
-Additional loses due to scattering in atmosphere can be compute by [\[10\]](https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.676-11-201609-I!!PDF-E.pdf). Attenuations due to hydrometeors and other additional loses can be evaluated by [\[11\]](https://ieeexplore.ieee.org/document/6769991/). Fortunately, for ranges smaller than 10 GHz the losses are smaller than 1 dB.
-
-![Fig. 2.5:  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten1.png)
-
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten1.png)
-
-![Fig.  2.6:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten2.png)
-
 ## 2.4 Results
 
-Results are performed in tables 2.2-2.4 in the following pdf-file:
+Results for distance between satellite and ground station that was fixed in value that is equal to height of the orbit $$h$$ are shown in the tables 2.2-2.4 of the following pdf-file:
 
 [Click here ](https://yadi.sk/i/SuZLOYhV3Qoy6o)
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png) Distance between satellite and ground station was fixed in value that is equal to height of the orbit \($$h$$\). More precise calculation of the distances in dependance of elevation angles \($$\phi$$\) can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)  More precise calculation of the distances in dependance of elevation angles $$\phi$$ can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
 
 $$
 d = \sqrt{(R_E+h)^2-R^2cos^2\phi} - R_Esin\phi \qquad (1.1)

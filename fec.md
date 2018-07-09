@@ -61,7 +61,7 @@ The main features of existing equipment are shown in table 3.1
 
 > Data stream is first shaped with a pre-modulation linear Gaussian lowpass filter, which smoothes the phase trajectory of the MSK signal, before being applied to a frequency modulator. This has the advantage of reducing side-band power, which reduces out-of-band interference between signal carriers in adjacent frequency channels \(i.e. lower side-lobe RF power levels\).
 
-![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%283%29.png)
+![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%285%29.png)
 
 **Disadvantages** of the MSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
 

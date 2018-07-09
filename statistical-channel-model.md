@@ -8,7 +8,7 @@ Following matherials will be presented in absentia in X International Youth Foru
 
 According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the Rician and lognormal independent fading processes with two ultimate conditions: light shadowing and strong shadowing \(tab.1\). Moreover, shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 3.1\) [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf).
 
-![Fig. 3.1. Model parameters, sigma, mu,and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]](.gitbook/assets/image%20%282%29.png)
+![Fig. 3.1. Model parameters, sigma, mu,and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]](.gitbook/assets/image%20%284%29.png)
 
  Table 1. Statistical characteristics of the LEO channel
 

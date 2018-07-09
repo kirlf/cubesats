@@ -10,7 +10,7 @@ $$
 SNR  = P_t  + G_t + G_r + \eta_{t} + \eta_{r} - L_r - L_t - L_{add} - L - N  \qquad (1.1)
 $$
 
-Where $$N$$ is the total termal noise power \(relates to noise spectral density $$N_0=kT_{noise}$$ and double-sided white noise variance $$\sigma^2=\frac{N_0}{2}$$\) in dBm, $$P_t$$ is the transmitted power in dBm, $$G_t$$ and $$G_r$$ are the antenna gains \(relatively to isotropic antenna\) on the transmitter and receiver sides respectively \(in dBi\), $$\eta_{t}$$ и $$\eta_{r}$$ are feeder gains in dB, $$L_t$$ and $$L_r$$ are the feeder losses in dB, $$L$$ is the path losses in dB, $$L_{add}$$ is additional losses \(some margin\) in dB.
+where $$N$$ is the total termal noise power \(relates to the noise spectral density $$N_0=kT_{noise}$$ and double-sided white noise variance $$\sigma^2=\frac{N_0}{2}$$\) in dBm, $$P_t$$ is the transmitted power in dBm, $$G_t$$ and $$G_r$$ are the antenna gains  on the transmitter and receiver sides respectively \(in dBi\), $$\eta_{t}$$ и $$\eta_{r}$$ are feeder gains in dB, $$L_t$$ and $$L_r$$ are the feeder losses in dB, $$L$$ is the path losses in dB, $$L_{add}$$ is additional losses \(some margin\) in dB.
 
 ### 2.1.2. Path loss
 
@@ -30,7 +30,7 @@ $$
 N = 10lg\left(\frac{kT_{noise}B_{noise}}{10^{-3}}\right) [dBm] \qquad (1.4)
 $$
 
-where $$k$$ is the Boltzmann constant, $$T_{noise}$$ is the equivalent noise temperature and $$B_{noise}$$ is the noise bandwidth. According to \[1, p.98\] the noise bandwidth $$B_{noise}$$ can be estimated roughly as $$\gamma B$$ where $$B$$ is the receiver bandwidth and $$\gamma$$ is the constant from 1.002 to 1.57 that relates to configuration of receiver.
+where $$k$$ is the Boltzmann constant, $$T_{noise}$$ is the equivalent noise temperature and $$B_{noise}$$ is the noise bandwidth. According to \[1, p.98\] the noise bandwidth $$B_{noise}$$ can be estimated roughly as $$\gamma B$$, where $$B$$ is the receiver bandwidth and $$\gamma$$ is the constant from 1.002 to 1.57 that relates to configuration of receiver.
 
 Equivalent noise temperature is not the physical temperature of an antenna. It is equal to the temperature of a resistor, which would have the same thermal noise power in the given frequency band. This parameter can be represented as:
 
@@ -61,15 +61,15 @@ $$
 L_b = 10log_{10}(1+ (2\theta/\theta_{0.5})^2) \qquad (1.7)
 $$
 
-where $$ \theta$$ is the beamwidth and $$\theta_{0.5}$$ is the halfpowered beamwidth.
+where $$ \theta$$ is the beamwidth and $$\theta_{0.5}$$ is the halfpowered beamwidth \(fig. 2.1\).
 
  
 
-![Antennas - An Overview \(2.7MB pdf\) Feb-2014 \(http://www.atlantarf.com/Downloads.php\)](.gitbook/assets/image%20%284%29.png)
+![Fig. 2.1 Antenna gain pattern  \[2\]](.gitbook/assets/image%20%284%29.png)
 
-According to \[\] total antenna losses for large cassegrain antennas are equal to 1.65 dB.
+According to [\[2\]](http://www.atlantarf.com/Downloads.php) total antenna losses for large cassegrain antennas are equal to 1.65 dB.
 
-**Phase effects in the atmosphere** influence data rate, due to receiver bandwidth should be disirably selected according to table 2.1 \[1, p. 91\] to avoid phase distortions.
+**Phase effects in the atmosphere** influence data rate, due to receiver bandwidth should be desirably selected according to table 2.1 \[1, p. 91\] to avoid phase distortions.
 
 Table 2.1 Maximum receiver bandwidths for different ranges.
 
@@ -79,21 +79,21 @@ Table 2.1 Maximum receiver bandwidths for different ranges.
 
 Additionaly, to avoid Faradey effect for ranges less 10 GHz only circular polarization should be used \[1, p. 91\].
 
-**Loss due to inconsistency of polarization of antennas** can be estimated by figure 2.1 \($$e_1$$ and $$e_2$$ are coefficients of elipticity\).
+**Loss due to inconsistency of polarization of antennas** can be estimated by figure 2.2 \($$e_1$$ and $$e_2$$ are coefficients of elipticity\).
 
 
 
-![Fig. 2.1. Dependence of losses due to inconsistency of the polarizations of the transmitting and receiving antennas from the polarity elepticity. \[1, p. 93\]](.gitbook/assets/image%20%283%29.png)
+![Fig. 2.2. Dependence of losses due to inconsistency of the polarizations of the transmitting and receiving antennas from the polarity elepticity. \[1, p. 93\]](.gitbook/assets/image%20%283%29.png)
 
-In general, this parameter is kind of reference data, e.g. in the link budget calculation for [NanoCom AX100](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-ax100-33.pdf) polarization losses are qual to 3 dB \(and athmospheric losses are 2.1 dB,  ionospheric losses are 0.4 dB\).
+In general, this parameter is kind of reference data, e.g. in the link budget calculation for [NanoCom AX100](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-ax100-33.pdf) polarization losses are equal to 3 dB \(and athmospheric losses are 2.1 dB,  ionospheric losses are 0.4 dB\).
 
-**Attenuations due to hydrometeors and other additional losses** can be evaluated by [\[11\]](https://ieeexplore.ieee.org/document/6769991/). Fortunately, for ranges smaller than 10 GHz the losses are smaller than 1 dB.
+**Attenuations due to hydrometeors and other additional losses** can be evaluated by [\[10\]](https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.676-11-201609-I!!PDF-E.pdf). Fortunately, for ranges smaller than 10 GHz the losses are smaller than 1 dB \(fig. 2.3 and 2.4\).
 
-![Fig. 2.5:  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten1.png)
+![Fig. 2.3:  Specific attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten1.png)
 
 ![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/atten1.png)
 
-![Fig.  2.6:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten2.png)
+![Fig.  2.4:  Zenith attenuation due to atmospheric gases, calculated at 1 GHz intervals, including line centres \[10\].](.gitbook/assets/atten2.png)
 
 ### 2.1.4. Summary
 
@@ -105,25 +105,21 @@ Let us provide some parameters summary:
 
 ## 2.2. Considered equipment
 
-In fact, we use common example of ground station such as IC-910H [\[1\] ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)or ISIS ground station[ \[2\] ](https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/)however we can estimate some parameter of mobile stations of real space communication systems also. Fortunately, a lot of this information is open and available on official sites [\[3\]](https://www.iridium.com%20), [\[4\],](https://www.globalstar.com) [\[5\]](http://www.gonets.ru/rus/%20).
+In fact, we use common example of ground station such as IC-910H [\[3\] ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)or ISIS ground station[ \[4\] ](https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/)however we can estimate some parameter of mobile stations of real space communication systems also. Fortunately, a lot of this information is open and available on official sites [\[5\]](https://www.iridium.com%20), [\[6\],](https://www.globalstar.com) [\[7\]](http://www.gonets.ru/rus/%20).
 
 These parameters can be used for calculation of up-link link budget.
 
-For down-link estimation real example of CubeSat transceivers such as NanoCom AX100 [\[6\]](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(fig. 2.4\) may be used. Additionally, as an example of CubeSat UHF/VHF antenna omnidirectional NanoCom ANT430 \(fig. 2.1\) can be considered [\[7\]](https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx).
+For down-link estimation real example of CubeSat transceivers such as NanoCom AX100 [\[8\]](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(fig. 2.6\) may be used. Additionally, as an example of CubeSat UHF/VHF antenna omnidirectional NanoCom ANT430 \(fig. 2.5\) can be considered [\[9\]](https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx).
 
-![Fig. 2.1: NanoCom AX100 by GomSpace company.](.gitbook/assets/antenna1.png)
+![Fig. 2.5: NanoCom AX100 by GomSpace company.](.gitbook/assets/antenna1.png)
 
-![Fig. 2.2: NanoCom ANT430 by GomSpace company.](.gitbook/assets/transceiver.png)
+![Fig. 2.6: NanoCom ANT430 by GomSpace company.](.gitbook/assets/transceiver.png)
 
-For lager possible bandwidth 2.4GHz range also should be considered. For this range patch-antenna NanoCom ANT2000 and S-band transceiver NanoCom SR2000 are available[ \[8\]](https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx) \(fig. 2.3\). For low speed transmission \(for example, for signaling\) UHF/VHF NanoCom ANT430 [\[9\]](https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx) \(fig. 2.2\) can be used.
+For lager possible bandwidth 2.4GHz range also should be considered. For this range patch-antenna NanoCom ANT2000 and S-band transceiver NanoCom SR2000 are available[ \[10\]](https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx) \(fig. 2.7\). For low speed transmission \(for example, for signaling\) UHF/VHF NanoCom ANT430 [\[11\]](https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx) \(fig. 2.8\) can be used.
 
-![Fig. 2.3: NanoCom SR2000 by GomSpace company.](.gitbook/assets/transceiver2.png)
+![Fig. 2.7: NanoCom SR2000 by GomSpace company.](.gitbook/assets/transceiver2.png)
 
-![Fig. 2.4: ANT2000 by GomSpace company.](.gitbook/assets/antenna2.png)
-
-
-
-
+![Fig. 2.8: ANT2000 by GomSpace company.](.gitbook/assets/antenna2.png)
 
 ## 2.4 Results
 
@@ -131,58 +127,57 @@ Results for distance between satellite and ground station that was fixed in valu
 
 [Click here ](https://yadi.sk/i/SuZLOYhV3Qoy6o)
 
-![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)  More precise calculation of the distances in dependance of elevation angles $$\phi$$ can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
+![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)  More precise calculation of the distances in dependance of elevation angles $$\phi$$ can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/) for orbit geometries that are shown in fig. 2.8 and 2.9:
 
 $$
-d = \sqrt{(R_E+h)^2-R^2cos^2\phi} - R_Esin\phi \qquad (1.1)
+d = \sqrt{(R_E+h)^2-R^2cos^2\phi} - R_Esin\phi \qquad (1.8)
 $$
 
  where __$$R_E$$ is the Earth radius.
 
-![Fig. 2.7. Distance between CubeSat and ground station in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/distance.png)
+
+
+![Fig. 2.8 http://satellites4everyone.co.uk/](.gitbook/assets/all_fallback.png)
 
 
 
-![Fig. 2.8: Distances between CubeSat and ground station in dependance of elevation angles.](.gitbook/assets/distance2.png)
+![Fig. 2.9.  Schematic description of a CubeSat trajectory in low Earth orbit \[12\].](.gitbook/assets/cubetrraj.png)
 
   
+For orbit's altitude 750 km results are shown in fig. 2.10.
 
+![Fig. 2.10. Distance between CubeSat and ground station in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/distance.png)
 
-![Fig. 2.9: Pathloss in dependance of elevation angles \(h = 750 km\).](.gitbook/assets/pathloss.png)
+For different LEO altitudes results are shown in fig. 2.11.
 
-If we assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way:
+![Fig. 2.11: Distances between CubeSat and ground station in dependance of elevation angles.](.gitbook/assets/distance2.png)
+
+Morover, if we assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way \(fig. 2.12\):
 
 $$
-v = \sqrt{G\frac{M}{R}} \qquad (1.3)
+v = \sqrt{G\frac{M}{R}} \qquad (1.9)
 $$
 
  where $$G=6.67 \times 10^{-11} m^3 \times kg^{-1} \times s^{-2}$$  is the Gravity constant, $$M = 6\times 10^{24} kg$$  is the Earth mass and $$R = R_E + h$$  is the orbit radius \(Earth radius plus orbit heigh\).
 
-![Figure 2.10. Cercular velosity of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/velosity.png)
+![Figure 2.12. Cercular velosity of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/velosity.png)
 
 As we see in the Figure 2.6 Doppler shifts for 2.4 GHz may be significant and therefore mitigation of the time selective fading techniques should be included in the final CubeSat configuration.
 
-Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory that is shown in fig. 2.11 and 2.12 this can be done via [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
+Based on knowledge about circular velocity and heigh of the orbit visibility time can be calculated. For trajectory that is shown in fig. 2.8 and 2.9 this can be done via [\[12\]](https://ieeexplore.ieee.org/document/7506756/):
 
 $$
 t=\frac{2(R_E+h)arccos(\frac{R_E}{R_E+h})}{v}
-\qquad (1.4)
+\qquad (1.10)
 $$
-
-![Fig. 2.11 http://satellites4everyone.co.uk/](.gitbook/assets/all_fallback.png)
-
-  
-
-
-![Fig. 2.12.  Schematic description of a CubeSat trajectory in low Earth orbit \[12\].](.gitbook/assets/cubetrraj.png)
 
 Results are shown in fig. 2.13.
 
 ![Figure 2.13. Visibility time of LEO satellites in dependance of the orbit heigh.](.gitbook/assets/time.png)
 
-More representive form of values is shown in table 2.1
+More representive form of values is shown in table 2.2
 
-#### Table 2.1 Visibility time of CubeSats
+#### Table 2.2 Visibility time of CubeSats
 
 | **Hight of the orbit \(km\)** | **Visibility time \(min\)** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -228,27 +223,29 @@ More representive form of values is shown in table 2.1
 
 ##  References
 
-\[1\] IC-910H specification[ ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)                                       [http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html) \(date of the application is 27.06.2018\)
+\[1\] L. Kantor, Satellite communication and broadcasting. Directory,Radio and communication,1988, 
 
-\[2\] ISIS CubeSate equipment technical specification                                                     [https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/](https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/) \(date of the application is 27.06.2018\)
+\[2\]  Antennas - An Overview [http://www.atlantarf.com/Downloads.php](http://www.atlantarf.com/Downloads.php)  \(date of the application is 09.07.2018\)
 
-\[3\] Official web-site of Iridium company                                                                                   [https://www.iridium.com](https://www.iridium.com/) \(date of the application is  27.06.2018\)
+\[3\] IC-910H specification[ ](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html)                                       [http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html](http://sicom.ru/catalog/radiostancii/lyubitelskie/bazovye/icom-ic-9100.html) \(date of the application is 27.06.2018\)
 
-\[4\] Official web-site of Globstar company                                                                             [https://www.globalstar.com](https://www.globalstar.com/) \(date of the application is  27.06.2018\)
+\[4\] ISIS CubeSate equipment technical specification                                                     [https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/](https://www.cubesatshop.com/product/full-ground-station-kit-vhfuhfs-band/) \(date of the application is 27.06.2018\)
 
-\[5\] Official web-site of Messenger company                                                                   [http://www.gonets.ru/rus/](http://www.gonets.ru/rus/) \(date of the application is  27.06.2018\)
+\[5\] Official web-site of Iridium company                                                                                   [https://www.iridium.com](https://www.iridium.com/) \(date of the application is  27.06.2018\)
 
-\[6\] S-band patch antenna for high speed communication  by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(date of the application is 27.06.2018\)
+\[6\] Official web-site of Globstar company                                                                             [https://www.globalstar.com](https://www.globalstar.com/) \(date of the application is  27.06.2018\)
 
-\[7\] Omnidirectional canted turnstile UHF antenna system by GomSpace company[https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx) \(date of the application is 27.06.2018\)
+\[7\] Official web-site of Messenger company                                                                   [http://www.gonets.ru/rus/](http://www.gonets.ru/rus/) \(date of the application is  27.06.2018\)
 
-\[8\]  Flexible High Speed S-Band Radio Transceiver by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx) \(date of the application is  27.06.2018\)
+\[8\] S-band patch antenna for high speed communication  by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(date of the application is 27.06.2018\)
 
-\[9\] Flexible and Miniaturised Transceiver  by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx) \(date of the application is 27.06.2018\)
+\[9\] Omnidirectional canted turnstile UHF antenna system by GomSpace company[https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx) \(date of the application is 27.06.2018\)
+
+\[10\]  Flexible High Speed S-Band Radio Transceiver by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx) \(date of the application is  27.06.2018\)
+
+\[11\] Flexible and Miniaturised Transceiver  by GomSpace company [https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx](https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx) \(date of the application is 27.06.2018\)
 
 \[10\] Attenuation by atmospheric gases, ITU 2016                                         [https://www.itu.int/dms\_pubrec/itu-r/rec/p/R-REC-P.676-11-201609-I!!PDF-E.pdf](https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.676-11-201609-I!!PDF-E.pdf) \(date of the application is 27.06.2017\)
-
- \[11\] D. O. Reudink Estimates of Path Loss and Radiated Power for UHF Mobile-Satellite Systems, The Bell system technical journal Vol. 62, No.8, October 1983 Printed in U.S.A.
 
 \[12\] Otilia Popescuy, Jason S. Harrisz and Dimitrie C. Popescuz, Designing the Communica- tion Sub-System for Nanosatellite CubeSat Missions: Operational and Implementation Perspectives, 2016, IEEE  
 

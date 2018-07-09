@@ -25,7 +25,7 @@ Amplitude modulations usually is not used in satellite communications due to lar
 
 ### M-PSK vs. M-FSK
 
-
+Frequency modulation schemes is not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
 
 ### QPSK vs. BPSK
 

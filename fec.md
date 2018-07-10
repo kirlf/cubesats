@@ -55,7 +55,7 @@ The sequence in the Q-branch is delayed by $$T_0 = T/2$$, where T is channel sym
 
 The same BER performance. 
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%283%29.png)
 
 ### QPSK vs. MSK
 
@@ -95,7 +95,7 @@ The same BER performance.
 
 > Data stream is first shaped with a pre-modulation linear Gaussian lowpass filter, which smoothes the phase trajectory of the MSK signal, before being applied to a frequency modulator. This has the advantage of reducing side-band power, which reduces out-of-band interference between signal carriers in adjacent frequency channels \(i.e. lower side-lobe RF power levels\).
 
-![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%287%29.png)
+![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%289%29.png)
 
 **Disadvantages** of the GMSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
 
@@ -112,17 +112,33 @@ $$
 
 ### Shaped OQPSK vs. conventional OQPSK
 
+Pulse shaping motivation \(cited by  [Root Raised Cosine Filters & Pulse Shaping in Communication Systems](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)\)
+
+> This presentation briefly discusses application of the Root Raised Cosine \(RRC\) pulse shaping in the space telecommunication. Use of the RRC filtering \(i.e., pulse shaping\) is adopted in commercial communications, such as cellular technology, and used extensively. However, its use in space communication is still relatively new. This will possibly change as the crowding of the frequency spectrum used in the space communication becomes a problem. The two conflicting requirements in telecommunication are the demand for high data rates per channel \(or user\) and need for more channels, i.e., more users. Theoretically as the channel bandwidth is increased to provide higher data rates the number of channels allocated in a fixed spectrum must be reduced. Tackling these two conflicting requirements at the same time led to the development of the RRC filters. More channels with wider bandwidth might be tightly packed in the frequency spectrum achieving the desired goals. A link model with the RRC filters has been developed and simulated. Using 90% power Bandwidth \(BW\) measurement definition showed that the RRC filtering might improve spectrum efficiency by more than 75%. Furthermore using the matching RRC filters both in the transmitter and receiver provides the improved Bit Error Rate \(BER\) performance.
+
+Impulse response of the filter:
+
+![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390555](.gitbook/assets/image%20%288%29.png)
+
+With decreasing of the roll-off  factor $$ \beta$$ we have more compact frequency response \(more efficient usage of the spectrum\):    
+
+
+![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895](.gitbook/assets/image%20%282%29.png)
+
+  
+However, $$\beta = 0$$ is the perfect case with difficulties of implementation and synchronization.
+
 ### Shaped OQPS vs. MSK/GMSK
 
 ## Channel coding \(FEC\)
 
 As we can see from table 3.1 very popular option of the FEC is RSC \(Reed-Solomon convolutional\) concatenated codes. It relates to deep-space communication standartd \(fig. 3.1\) that allows to achieve sufficiently high BER performance \(fig. 3.2\).
 
-![ Fig. 3.1. Deep-space concatenated coding system. \[1, p. 433\]](.gitbook/assets/rsc.png)
+![ Fig. 3.1. Deep-space concatenated coding system. \[2, p. 433\]](.gitbook/assets/rsc.png)
 
 
 
-![Fig. 3.2. Typical performance curves for concatenated and unconcatenated coding systems for the space channel \(AWGN\) \[2, p.27\]](.gitbook/assets/rsc-2.png)
+![Fig. 3.2. Typical performance curves for concatenated and unconcatenated coding systems for the space channel \(AWGN\) \[3, p.27\]](.gitbook/assets/rsc-2.png)
 
   
 Very interesting research can be found also in [\[3\]](https://publik.tuwien.ac.at/files/publik_262129.pdf)  where capabilities of Turbo convolutional , LDPC  and Polar codes are considered. 

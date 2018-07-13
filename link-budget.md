@@ -123,9 +123,13 @@ For lager possible bandwidth 2.4GHz range also should be considered. For this ra
 
 ## 2.4 Results
 
+### 2.4.1. Primary consideration
+
 Results for distance between satellite and ground station that was fixed in value that is equal to height of the orbit $$h$$ are shown in the tables 2.2-2.4 of the following pdf-file:
 
 [Click here ](https://yadi.sk/i/SuZLOYhV3Qoy6o)
+
+### 2.4.2. Sat-to-Ground distance
 
 ![](https://github.com/kirlf/cubesats/tree/4904a8c7c26549dc8a1a08a45237d264e5cc9806/assets/8.png)  More precise calculation of the distances in dependance of elevation angles $$\phi$$ can be provided according to [\[12\]](https://ieeexplore.ieee.org/document/7506756/) for orbit geometries that are shown in fig. 2.8 and 2.9:
 
@@ -151,6 +155,8 @@ For orbit's altitude 750 km results are shown in fig. 2.10.
 For different LEO altitudes results are shown in fig. 2.11.
 
 ![Fig. 2.11: Distances between CubeSat and ground station in dependance of elevation angles.](.gitbook/assets/distance2.png)
+
+### 2.4.3. Visibility time
 
 Morover, if we assume that we consider environment without any influence of the atmosphere. Then circular velosity can be calculated via the classical way \(fig. 2.12\):
 

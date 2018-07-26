@@ -65,7 +65,7 @@ where $$ \theta$$ is the beamwidth and $$\theta_{0.5}$$ is the halfpowered beamw
 
  
 
-![Fig. 2.1 Antenna gain pattern  \[2\]](.gitbook/assets/image%20%287%29.png)
+![Fig. 2.1 Antenna gain pattern  \[2\]](.gitbook/assets/image%20%288%29.png)
 
 According to [\[2\]](http://www.atlantarf.com/Downloads.php) total antenna losses for large cassegrain antennas are equal to 1.65 dB.
 
@@ -83,7 +83,7 @@ Additionaly, to avoid Faradey effect for ranges less than 10 GHz only circular p
 
 
 
-![Fig. 2.2. Dependence of losses due to inconsistency of the polarizations of the transmitting and receiving antennas from the polarity elepticity. \[1, p. 93\]](.gitbook/assets/image%20%286%29.png)
+![Fig. 2.2. Dependence of losses due to inconsistency of the polarizations of the transmitting and receiving antennas from the polarity elepticity. \[1, p. 93\]](.gitbook/assets/image%20%287%29.png)
 
 In general, this parameter is kind of reference data, e.g. in the link budget calculation for [NanoCom AX100](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-ax100-33.pdf) polarization losses are equal to 3 dB \(and athmospheric losses are 2.1 dB,  ionospheric losses are 0.4 dB\).
 

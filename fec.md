@@ -56,13 +56,18 @@ Practically, BPSK is more robust due to its simplicity.
 
 Envelope of modification of the QPSK - π/4-QPSK has already no zeros crossings. However the possibility of 135 degrees phase jumps still exists in this case. This will have negative impact on spectral characteristics. One solution to avoid this, is to use Offset QPSK \(OQPSK\).
 
-![](.gitbook/assets/image.png)
+![Conventional QPSK and OQPSK signal contellations.](.gitbook/assets/image%20%2811%29.png)
+
+  
+
+
+![Signal constellation of the pi/4-QPSK.](.gitbook/assets/image%20%281%29.png)
 
 The sequence in the Q-branch is delayed by $$T_0 = T/2$$, where T is channel symbol duration \(by 1 bit\). With this operation 180 degrees phase jumps are avoided and hence deep distortions in envelope will not occur.
 
 The same theoretical BER performance. 
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 ### QPSK vs. MSK
 
@@ -88,7 +93,7 @@ The same theoretical BER performance.
 
 ### MSK vs. GMSK
 
-![Block scheme of the GMSK modulator \(http://www.atlantarf.com/Downloads.php\)](.gitbook/assets/image%20%281%29.png)
+![Block scheme of the GMSK modulator \(http://www.atlantarf.com/Downloads.php\)](.gitbook/assets/image%20%282%29.png)
 
 **Motivation** to the GMSK \(cited by [\[2\]](https://www.researchgate.net/publication/315258808_Estimation_techniques_for_GMSK_using_linear_detectors_in_satellite_communications)\):
 
@@ -98,7 +103,7 @@ The same theoretical BER performance.
 
 > Data stream is first shaped with a pre-modulation linear Gaussian lowpass filter, which smoothes the phase trajectory of the MSK signal, before being applied to a frequency modulator. This has the advantage of reducing side-band power, which reduces out-of-band interference between signal carriers in adjacent frequency channels \(i.e. lower side-lobe RF power levels\).
 
-![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%289%29.png)
+![GMSK modulation Eye-pattern and waveform \(http://www.atlantarf.com/Downloads.php\) ](.gitbook/assets/image%20%2810%29.png)
 
 **Disadvantages** of the GMSK \(cited by  [Link Budget Analysis: Digital Modulation-Part 2-FSK \(1.2MB pdf\) Oct-2013](http://www.atlantarf.com/Downloads.php)\):
 
@@ -121,12 +126,12 @@ Pulse shaping motivation \(cited by  [Root Raised Cosine Filters & Pulse Shaping
 
 Impulse response of the filter:
 
-![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390555](.gitbook/assets/image%20%288%29.png)
+![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390555](.gitbook/assets/image%20%289%29.png)
 
 With decreasing of the roll-off  factor $$ \beta$$ we have more compact frequency response \(more efficient usage of the spectrum\):    
 
 
-![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895](.gitbook/assets/image%20%282%29.png)
+![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895](.gitbook/assets/image%20%283%29.png)
 
   
 However, $$\beta = 0$$ is the perfect case with difficulties of implementation and synchronization.
@@ -145,16 +150,57 @@ As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solom
 
 ![ Deep-space concatenated coding system. \[6, p. 433\]](.gitbook/assets/rsc.png)
 
-  
+### Turbo codes vs. RSCC
+
 Very interesting research can be found also in [\[8\]](https://publik.tuwien.ac.at/files/publik_262129.pdf)  where capabilities of [Turbo convolutional](http://www.scholarpedia.org/article/Turbo_code), LDPC  and Polar codes are considered. 
 
-Moreover, according to[ \[9\]](https://ieeexplore.ieee.org/document/7095355/), in general,  Turbo codes have the similar computational complexity with RSC codes, however outperform them in terms of BER.
+Turbo codes outperform RSCC in terms of BER performance.
 
-![Bit error rate curves for several codes with rates near 1/6: k &#xBC; 1784 and k&#xBC; 8920 turbo codes and the \(n &#xBC; 255, k&#xBC; 223\) Reed&#x2013;Solomon code concatenated with a constraint length N &#xBC; 15, rate 1/6 convolutional code. \[10\]](.gitbook/assets/turbovsrs%20%284%29.png)
+![Bit error rate curves for several codes with rates near 1/6: k &#xBC; 1784 and k&#xBC; 8920 turbo codes and the \(n &#xBC; 255, k&#xBC; 223\) Reed&#x2013;Solomon code concatenated with a constraint length N &#xBC; 15, rate 1/6 convolutional code. \[9\]](.gitbook/assets/turbovsrs%20%284%29.png)
 
 Since 2000-s modern error correction schemes are used more widely in space communications.
 
-![Codes Used by NASA Missions \[10\]](.gitbook/assets/image%20%2810%29.png)
+![Codes Used by NASA Missions \[9\]](.gitbook/assets/image%20%2812%29.png)
+
+### Turbo codes vs. LDPC
+
+**LDPC disadvanges** \(cited by [\[9\]](https://ieeexplore.ieee.org/document/4383367/)\):
+
+> Turbo codes were the first of the modern iteratively decoded codes to become practical. LDPC codes followed and have proven very versatile, but they have not replaced turbo codes, or even the traditional block and convolutional codes. LDPC codes are decoded on a parity check matrix, and this matrix grows larger as the code rate is decreased, making low-rate LDPC decoders more complex. In contrast, turbo codes are decoded on trellises, with one trellis section per information bit, corresponding to several code symbols. Hence turbo codes remain superior to LDPC codes at low rates. Iterative decoding, of either turbo or LDPC codes, remains complex relative to either Viterbi decoding of convolutional codes or to algebraic decoding techniques for Reed–Solomon and other block codes. When decoding complexity is constrained, as it is in highdata- rate applications, the traditional codes remain unbeaten. It is unknown if there are fundamental reasons why these different niches require different coding solutions. It is quite possible that good LDPC codes based on generator matrices will be found, and that low complexity LDPC decoding algorithms will be discovered. If so, perhaps LDPC codes will eventually solve all coding problems.
+
+**Turbo codes disadvantages** \(cited by wikipedia article\)
+
+In other hand,  BER performance of the Turbo codes are influenced by low weight codes  limitation \[6 , p.614\]. This phenomenon indirectly means that for decreasing of the BER in fixed SNR only decreasing of the code rate \(and hence of the net bit rate\) can be used.
+
+LDPC codes have no limitations of minimum distance \(cited by \[6, p. 653\]\):
+
+> LDPC codes have excellent distance properties. Gallager showed that for random LDPC codes, the minimum distance dmin between codewords increases with N \[code word length\] when column and row weights are held fixed \[ 112, p. 51\], that is, as they become increasingly sparse. Sequences of LDPC codes as N -&gt; inf have been proved to reach channel capacity \[217\].
+
+That indirectly means that LDPC codes may be more efficient on relatively large code rates \(e.g. 3/4, 5/6, 7/8\) than Turbo codes.
+
+In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) comparison formulated as:
+
+> LDPC codes have certain advantages over turbo codes: 
+>
+> • They tend to have a better block error performance, and a better performance on bursty channels. 
+>
+> • They are more amenable to high rates, and in fact can be designed for almost any rate and blocklength. \(In contrast, the rate of turbo codes is usually adjusted by means of a puncturing scheme, which necessitates an additional design step.\) 
+>
+> • Their error floor tends to occur at a lower BER. 
+>
+> • The encoder and decoder do not require interleavers. 
+>
+> • A single LDPC code can be universally good for a collection of channels. 
+>
+> • There exist iterative LDPC decoding algorithms that are easy to implement, have moderate complexity \(which scales linearly with the blocklength\), and are parallelizable in hardware. In particular, LDPC decoding using the belief propagation \(sum-product\) algorithm tends to be less complex than turbo decoding using the BCJR algorithm. 
+>
+> • LDPC decoders inherently check if a codeword satisfying the check equations has been found, and otherwise declare a decoding failure. \(In contrast, turbo decoders usually need to perform additional operations to compute a stopping criterion, and even then it is not clear if the decoding result corresponds to a codeword satisfying the check equations.\) 
+>
+> LDPC codes also have certain disadvantages relative to turbo codes: 
+>
+> • In general, the encoding complexity is higher than for turbo codes. \(However, there are special LDPC code constructions with low encoding complexity.\) 
+>
+> • Iterative LDPC decoding typically requires many more iterations than iterative turbo decoding, which may lead to a higher latency. \(The complexity per iteration is much lower, though.\)
 
 ## References
 
@@ -174,9 +220,7 @@ Since 2000-s modern error correction schemes are used more widely in space commu
 
 \[8\] Tahir, Bashar, Stefan Schwarz, and Markus Rupp. "BER comparison between Convolutional, Turbo, LDPC, and Polar codes." Telecommunications \(ICT\), 2017 24th International Conference on. IEEE, 2017.
 
-\[9\] Balaji, Pavithra,u et al. "Evaluaton of decoding trade-ofs of concatenated RSconvolutonal codes and turbo codes via trellis." Signal Pricessing andIntegrated Netwirks \(SPIN\), 2015 2nd Internatinal Cinference in. IEEE, 2015
-
-\[10\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
+\[9\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
 
 
 

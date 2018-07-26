@@ -6,6 +6,8 @@
 Following matherials will be presented in absentia in X International Youth Forum "Education, Science and Production", timed to the 65th anniversary of BSTU n.a. V.G. Shukhov, which will be held from September 21 to September 27, 2018 within the framework of the VI Regional Science Festival in Belgorod at the Belgorod State Technological University named after. V.G. Shukhov \(BSTU named after V.G. Shukhov\).
 {% endhint %}
 
+### 3.1.1. Description
+
 According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the Rician and lognormal independent fading processes with two ultimate conditions: light shadowing and strong shadowing \(tab.1\). Moreover, shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 3.1\) [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf).
 
 ![Fig. 3.1. Model parameters, sigma, mu,and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]](.gitbook/assets/image%20%285%29.png)
@@ -73,7 +75,7 @@ $$
 
  where noise spectral density $$N_0 = \frac{E_s}{(E_b/N_0)log_2M}$$ , $$E_b/N_0$$  is the energy per bit to noise power spectral density ratio in linear scale, $$M$$ is the modulation order and $$ E_s = \frac{1}{L}\sum\limits^{L}_{K=1} |x_k|^2 $$  is the actual power of modeled signal \( $$x_k$$ is complex symbol and $$L$$is the length of signal \(block or frame\)\).
 
-## 3.2. MATLAB script
+### 3.1.2.  MATLAB script
 
 ```text
 clear all
@@ -145,7 +147,7 @@ ylabel('BER')
 grid on
 ```
 
-## 3.3. Model verification
+### 3.1.3. Model verification
 
 For verification of the proposal model we model random binary message \(length of the message equals to 100000 bits\), modulate it by pi/4-QPSK Gray mapping rule, multiply elementwise with fading process, add white gaussian noise, equalize by Zero-Forcing method, demodulate and calculate BER. The number of trials is equal to 100.
 
@@ -155,7 +157,7 @@ For verification of the proposal model we model random binary message \(length o
 
 As we can see in figures 3.1 and 3.2 BER performance of the proposal approaches completely matched with theoretical \(**berfading\(\) function in MatLab**\) results.
 
-## 3.4. Ergodic capacity limits
+### 3.1.4. Ergodic capacity limits
 
 Ergodic capacity for our simplified channel model can be estimated cause of flat nature of considered fading process. For this we use following formula:
 
@@ -193,7 +195,7 @@ $$
 
  Final values depend on channel bandwidth selection. Let us to fix it to 1 MHz.
 
-## 3.5 Corazza-Vatalaro model
+## 3.2 Corazza-Vatalaro model
 
 
 

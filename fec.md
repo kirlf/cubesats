@@ -1,6 +1,6 @@
 # Modulation and coding \(FEC\)
 
-## Technical survey
+## 3.1. Technical survey
 
 The main features of existing equipment are shown in table 3.1
 
@@ -17,7 +17,7 @@ The main features of existing equipment are shown in table 3.1
 
 [More examples](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160007683.pdf).
 
-## Modulation
+## 3.2. Modulation schemes
 
 ### M-PSK vs. M-QAM/M-ASK
 
@@ -26,6 +26,13 @@ Amplitude modulations usually is not used in satellite communications due to lar
 ### M-PSK vs. M-FSK
 
 Frequency modulation schemes is not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
+
+**Tab. 3.2. Spectral efficient values \(bit/s/Hz\) for different modulation orders \[1\].** 
+
+| **Modulation scheme / Modulation order** | 2 | 4 | 8 | 16 | 32 | 64 |
+| --- | --- | --- |
+| M-PSK | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 |
+| M-FSK | 1 | 1 | 0.75 | 0.5 | 0.3125 | 0.1875 |
 
 ### QPSK vs. BPSK
 
@@ -47,13 +54,13 @@ Practically, BPSK is more robust due to its simplicity.
 
 ### QPSK vs. OQPSK
 
-Envelope of π/4-QPSK has no zeros crossings.However the possibility of 180 degrees phase jumps still exists in this case. This will have negative impact on spectral characteristics. One solution to avoid this, is to use Offset QPSK \(OQPSK\).
+Envelope of modification of the QPSK - π/4-QPSK has already no zeros crossings. However the possibility of 135 degrees phase jumps still exists in this case. This will have negative impact on spectral characteristics. One solution to avoid this, is to use Offset QPSK \(OQPSK\).
 
 ![](.gitbook/assets/image.png)
 
 The sequence in the Q-branch is delayed by $$T_0 = T/2$$, where T is channel symbol duration \(by 1 bit\). With this operation 180 degrees phase jumps are avoided and hence deep distortions in envelope will not occur.
 
-The same BER performance. 
+The same theoretical BER performance. 
 
 ![](.gitbook/assets/image%20%283%29.png)
 
@@ -79,15 +86,11 @@ The same BER performance.
 
 ![http://www.atlantarf.com/Downloads.php](.gitbook/assets/mskpowspec.png)
 
-| **Modulation** | **QPSK** | **MSK** |
-| --- | --- |
-| Spectral efficiency | 1 | 0.667 |
-
 ### MSK vs. GMSK
 
 ![Block scheme of the GMSK modulator \(http://www.atlantarf.com/Downloads.php\)](.gitbook/assets/image%20%281%29.png)
 
-**Motivation** to the GMSK \(cited by [\[1\]](https://www.researchgate.net/publication/315258808_Estimation_techniques_for_GMSK_using_linear_detectors_in_satellite_communications)\):
+**Motivation** to the GMSK \(cited by [\[2\]](https://www.researchgate.net/publication/315258808_Estimation_techniques_for_GMSK_using_linear_detectors_in_satellite_communications)\):
 
 > One of the methods for achieving this is the use of more bandwidth-efficient modulations, especially those best suited for use with nonlinear power amplifiers. Gaussian minimum shift keying \(GMSK\) is a popular waveform choice for bandwidth-constrained systems using nonlinear amplifiers. Since GMSK is a constant envelope modulation, nonlinear amplification does not produce spectral “regrowth” in the transmitted waveform. The instantaneous frequency is smoothed by a Gaussian low-pass filter to produce a signal with excellent spectral containment. The 3 dB bandwidth of the Gaussian low-pass smoothing filter can be adjusted to provide the system designer with a trade-off between detection efficiency and occupied bandwidth. GMSK has much better spectral containment than binary phase-shift keying \(BPSK\), quaternary phase-shift keying \(QPSK\), and offset QPSK which are used in the many of the current SATCOM systems.
 
@@ -130,32 +133,54 @@ However, $$\beta = 0$$ is the perfect case with difficulties of implementation a
 
 ### Shaped OQPS vs. MSK/GMSK
 
-## Channel coding \(FEC\)
+Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation \(CPM\) [\[3\]](https://pdfs.semanticscholar.org/f025/2fa31444fad6a5090527d73f87352137c9b8.pdf).
 
-As we can see from table 3.1 very popular option of the FEC is RSC \(Reed-Solomon convolutional\) concatenated codes. It relates to deep-space communication standartd \(fig. 3.1\) that allows to achieve sufficiently high BER performance \(fig. 3.2\).
-
-![ Fig. 3.1. Deep-space concatenated coding system. \[2, p. 433\]](.gitbook/assets/rsc.png)
+Minimum shift keying \(MSK\) is the partial case of the Continuous Phase Frequency Shift keying \(CPFSK\) and therefore of the CPM. MSK waveform can also be designed as OQPSK with the sinusoidal pulse shaping \[4, 5\].
 
 
 
-![Fig. 3.2. Typical performance curves for concatenated and unconcatenated coding systems for the space channel \(AWGN\) \[3, p.27\]](.gitbook/assets/rsc-2.png)
+## 3.3. Channel coding \(FEC\)
+
+As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes). It relates to deep-space communication standartd \(fig. 3.1\) that allows to achieve sufficiently high BER performance \(fig. 3.2\).
+
+![ Deep-space concatenated coding system. \[6, p. 433\]](.gitbook/assets/rsc.png)
 
   
-Very interesting research can be found also in [\[3\]](https://publik.tuwien.ac.at/files/publik_262129.pdf)  where capabilities of Turbo convolutional , LDPC  and Polar codes are considered. 
+Very interesting research can be found also in [\[8\]](https://publik.tuwien.ac.at/files/publik_262129.pdf)  where capabilities of [Turbo convolutional](http://www.scholarpedia.org/article/Turbo_code), LDPC  and Polar codes are considered. 
 
-Morover, according to[ \[4\]](https://ieeexplore.ieee.org/document/7095355/), in general,  Turbo codes have the similar computational complexity with RSC codes.
+Moreover, according to[ \[9\]](https://ieeexplore.ieee.org/document/7095355/), in general,  Turbo codes have the similar computational complexity with RSC codes, however outperform them in terms of BER.
 
+![Bit error rate curves for several codes with rates near 1/6: k &#xBC; 1784 and k&#xBC; 8920 turbo codes and the \(n &#xBC; 255, k&#xBC; 223\) Reed&#x2013;Solomon code concatenated with a constraint length N &#xBC; 15, rate 1/6 convolutional code. \[10\]](.gitbook/assets/turbovsrs%20%284%29.png)
 
+Since 2000-s modern error correction schemes are used more widely in space communications.
+
+![Codes Used by NASA Missions \[10\]](.gitbook/assets/image%20%2810%29.png)
 
 ## References
 
-\[1\] Rice, M., Oliphant, T., & Mcintire, W. \(2007\). Estimation techniques for GMSK using linear detectors in satellite communications. IEEE Transactions on Aerospace and Electronic Systems, 43\(4\).
+\[1\]  Haykin S. Communication systems. – John Wiley & Sons, 2008. - p. 368, 402 
 
-\[1\] Moon Todd, K. Error correction coding: mathematical methods and algorithms. 2005 by John Wiley & Sons. ISBN 0-471-64800-0.
+\[2\] Rice, M., Oliphant, T., & Mcintire, W. \(2007\). Estimation techniques for GMSK using linear detectors in satellite communications. IEEE Transactions on Aerospace and Electronic Systems, 43\(4\).
 
-\[2\] J. Hagenauer, E. Offer, and L. Papke, Reed Solomon Codes and Their Applications. New York IEEE Press, 1994
+\[3\]  Li, Lifang, and M. K. Simon. "Performance of coded offset quadrature phase-shift keying \(OQPSK\) and MIL-STD shaped OQPSK \(SOQPSK\) with iterative decoding." Interplanetary Network Prog. Rep. 42 \(2004\).
 
-\[3\] Tahir, Bashar, Stefan Schwarz, and Markus Rupp. "BER comparison between Convolutional, Turbo, LDPC, and Polar codes." Telecommunications \(ICT\), 2017 24th International Conference on. IEEE, 2017.
+\[4\] Proakis J. G. Digital communications. 1995 //McGraw-Hill, New York. – p. 126-128
 
-\[4\] Balaji, Pavithra,u et al. "Evaluaton of decoding trade-ofs of concatenated RSconvolutonal codes and turbo codes via trellis." Signal Pricessing andIntegrated Netwirks \(SPIN\), 2015 2nd Internatinal Cinference in. IEEE, 2015
+\[5\] Anderson J. B., Aulin T., Sundberg C. E. Digital phase modulation. – Springer Science & Business Media, 2013. – p.49-50
+
+\[6\] Moon Todd, K. Error correction coding: mathematical methods and algorithms. 2005 by John Wiley & Sons. ISBN 0-471-64800-0.
+
+\[7\] J. Hagenauer, E. Offer, and L. Papke, Reed Solomon Codes and Their Applications. New York IEEE Press, 1994
+
+\[8\] Tahir, Bashar, Stefan Schwarz, and Markus Rupp. "BER comparison between Convolutional, Turbo, LDPC, and Polar codes." Telecommunications \(ICT\), 2017 24th International Conference on. IEEE, 2017.
+
+\[9\] Balaji, Pavithra,u et al. "Evaluaton of decoding trade-ofs of concatenated RSconvolutonal codes and turbo codes via trellis." Signal Pricessing andIntegrated Netwirks \(SPIN\), 2015 2nd Internatinal Cinference in. IEEE, 2015
+
+\[10\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
+
+
+
+
+
+
 

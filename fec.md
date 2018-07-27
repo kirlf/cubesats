@@ -36,7 +36,7 @@ Frequency modulation schemes is not usually used in satellite communications due
 
 ### QPSK vs. BPSK
 
-The same AWGN \(Additive White Gaussian Noise\) BER \(Bit-error ratio\) performance:
+The same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel:
 
 $$
 P_b = Q\left(\sqrt{\frac{2E_b}{N_0}}\right) = \frac{1}{2}erfc \left(\sqrt{\frac{E_b}{N_0}} \right)
@@ -44,7 +44,7 @@ $$
 
 where  $$Q(*)$$ is the Marcum Q-function, $$ E_b $$ is the energy per bit and $$ N_0 $$ is the power spectral density.
 
-QPSK has two times larger throughput \(2 bits per symbol\).
+QPSK has two twice as larger throughput \(2 bits per symbol\).
 
 | **Modulation** | **BPSK** | **QPSK** |
 | --- | --- |
@@ -54,9 +54,9 @@ Practically, BPSK is more robust due to its simplicity.
 
 ### QPSK vs. OQPSK
 
-Envelope of modification of the QPSK - π/4-QPSK has already no zeros crossings. However the possibility of 135 degrees phase jumps still exists in this case. This will have negative impact on spectral characteristics. One solution to avoid this, is to use Offset QPSK \(OQPSK\).
+Envelope of  π/4-QPSK \(modification of the QPSK\) has already no zeros crossings. However the possibility of 135 degrees phase jumps still exists in this case. This will have negative impact on spectral characteristics. One solution to avoid this, is to use Offset QPSK \(OQPSK\).
 
-![Conventional QPSK and OQPSK signal contellations.](.gitbook/assets/image%20%2812%29.png)
+![ Signal constellations of the conventional QPSK and OQPSK.](.gitbook/assets/image%20%2812%29.png)
 
   
 
@@ -134,7 +134,7 @@ With decreasing of the roll-off  factor $$ \beta$$ we have more compact frequenc
 ![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895](.gitbook/assets/image%20%283%29.png)
 
   
-However, $$\beta = 0$$ is the perfect case with difficulties of implementation and synchronization.
+However, $$\beta = 0$$ is the ideal case with difficulties of implementation in reality. Theoretically, decreasing of the roll-off factor increases ISI \(intersymbol interference\), however, in practice, it could be negligible.
 
 Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[3\]](https://ieeexplore.ieee.org/document/904973/).
 
@@ -162,7 +162,7 @@ As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solom
 
 Very interesting research can be found also in [\[9\]](https://publik.tuwien.ac.at/files/publik_262129.pdf)  where capabilities of [Turbo convolutional](http://www.scholarpedia.org/article/Turbo_code), LDPC  and Polar codes are considered. 
 
-Turbo codes outperform RSCC in terms of BER performance.
+Turbo codes outperform RSCC in terms of theoretical BER performance.
 
 ![Bit error rate curves for several codes with rates near 1/6: k &#xBC; 1784 and k&#xBC; 8920 turbo codes and the \(n &#xBC; 255, k&#xBC; 223\) Reed&#x2013;Solomon code concatenated with a constraint length N &#xBC; 15, rate 1/6 convolutional code. \[10\]](.gitbook/assets/turbovsrs%20%284%29.png)
 

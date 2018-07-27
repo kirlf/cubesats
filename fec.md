@@ -21,7 +21,7 @@ The main features of existing equipment are shown in table 3.1
 
 ### M-PSK vs. M-QAM/M-ASK
 
-Amplitude modulations usually is not used in satellite communications due to large power \(and hence amplitude\) losses.
+Amplitude modulations usually [is not used in satellite communications](https://www.quora.com/Why-is-amplitude-modulation-not-used-in-satellite-communication) due to large power \(and hence amplitude\) losses.
 
 ### M-PSK vs. M-FSK
 

@@ -1,5 +1,7 @@
 # Modulation and coding \(FEC\)
 
+## I. Down-link
+
 ## 3.1. Technical survey
 
 The main features of existing equipment are shown in table 3.1
@@ -209,6 +211,14 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 > • In general, the encoding complexity is higher than for turbo codes. \(However, there are special LDPC code constructions with low encoding complexity.\) 
 >
 > • Iterative LDPC decoding typically requires many more iterations than iterative turbo decoding, which may lead to a higher latency. \(The complexity per iteration is much lower, though.\)
+
+
+
+## II. Up-link
+
+## 3.4. Modulation schemes
+
+## 3.5. Channel coding schemes
 
 ## References
 

@@ -15,7 +15,7 @@ According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Mate
  Table 1. Statistical characteristics of the LEO channel
 
 | Parameter | Light shadowing | Strong shadowing |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- |
 |  Rician factor \(linear scale\) | 4.0 | 0.6 |
 |  Lognormal mean \(linear scale\) | 0.13 | -1.08 |
 |  Lognormal variance \(linear scale\) | 1.0 | 2.5 |

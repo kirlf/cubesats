@@ -2,14 +2,14 @@
 
 ## I. Down-link
 
-## 3.1. Technical survey
+## 4.1. Technical survey
 
 The main features of existing equipment are shown in table 3.1
 
 #### Table 3.1 Modulation and FEC of real cubesat S-band transceivers
 
 | Title | Modulation | FEC |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | [ NanoCom SR2000](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-sr2000-10.pdf) | Filtered QPSK \( Square root raised cosine filter, 𝛼 = 0.2\) | Concatenated coding: convolutional code plus Reed-Solomon \[C\(7, ½\) and RS \(255, 223\), interleaving depth 𝐿 = 8\] |
 | [ISIS TXS High Data Rate S-Band Transmitter](https://www.cubesatshop.com/product/isis-txs-s-band-transmitter/) | OQPSK \( Pulse shaping: Square Root Raised Cosine, Roll-off 0.5, 0.35\) | Concatenated Reed Solomon and Convolutional coding \[C\(7, ½\) and RS \(255, 223\)\] |
 | [ISIS TXS High Data Rate S-Band Transmitter](https://www.cubesatshop.com/product/isis-txs-s-band-transmitter/) | DQPSK | TURBO code, rate =0.489 |
@@ -19,7 +19,7 @@ The main features of existing equipment are shown in table 3.1
 
 [More examples](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160007683.pdf).
 
-## 3.2. Modulation schemes
+## 4.2. Modulation schemes
 
 ### M-PSK vs. M-QAM/M-ASK
 
@@ -32,7 +32,7 @@ Frequency modulation schemes is not usually used in satellite communications due
 **Tab. 3.2. Spectral efficient values \(bit/s/Hz\) for different modulation orders \[1\].** 
 
 | **Modulation scheme / Modulation order** | 2 | 4 | 8 | 16 | 32 | 64 |
-| --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | M-PSK | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 |
 | M-FSK | 1 | 1 | 0.75 | 0.5 | 0.3125 | 0.1875 |
 
@@ -49,7 +49,7 @@ where  $$Q(*)$$ is the Marcum Q-function, $$ E_b $$ is the energy per bit and $$
 QPSK has two twice as larger throughput \(2 bits per symbol\).
 
 | **Modulation** | **BPSK** | **QPSK** |
-| --- | --- |
+| :--- | :--- | :--- |
 | Spectral efficiency | 0.5 | 1 |
 
 Practically, BPSK is more robust due to its simplicity.
@@ -116,7 +116,7 @@ P_{e,GMSK} =Q\left(\sqrt{\frac{2\lambda E_b}{N_0}}\right)  = \frac{1}{2}erfc\lef
 $$
 
 | $$B_{3dB}T_b$$  | $$\lambda$$  |
-| --- | --- | --- |
+| :--- | :--- |
 | 0.25 | 0.68 |
 | $$\infty$$  | 0.85 |
 
@@ -154,7 +154,7 @@ However, it should be taken into account that MSK \(GMSK\) is the [partial case 
 
 
 
-## 3.3. Channel coding \(FEC\)
+## 5.3. Channel coding \(FEC\)
 
 As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes). It relates to deep-space communication standartd \(fig. 3.1\) that allows to achieve sufficiently high BER performance \(fig. 3.2\).
 
@@ -216,9 +216,11 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 
 ## II. Up-link
 
-## 3.4. Modulation schemes
 
-## 3.5. Channel coding schemes
+
+## 5.4. Modulation schemes
+
+## 5.5. Channel coding schemes
 
 ## References
 

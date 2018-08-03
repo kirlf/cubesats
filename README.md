@@ -14,7 +14,7 @@ So, I guess it's also necessary to say couple of words about research object - C
 Table 1.1 CubeSat's basic configurations 
 
 | CubeSat format | Dimensions, cm | Mass, kg |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | 1U | 10x10x10 | 1.33 |
 | 1.5U | 15x10x10 | 2 |
 | 2U | 20x10x10 | 2.66 |

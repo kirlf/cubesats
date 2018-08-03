@@ -74,7 +74,7 @@ According to [\[2\]](http://www.atlantarf.com/Downloads.php) total antenna losse
 Table 2.1 Maximum receiver bandwidths for different ranges.
 
 | Carrier frequency, GHz | 0.5 | 1 | 5 | 10 |
-| --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | Receiver bandwidth \(B\), MHz | 10 | 25 | 270 | 750 |
 
 Additionaly, to avoid Faradey effect for ranges less than 10 GHz only circular polarization should be used \[1, p. 91\].
@@ -182,7 +182,7 @@ $$
 where $$\sin \eta_{max} = \sin \rho \cos \epsilon_{min}$$  and $$ \lambda_{max} = 90^0 - \epsilon_{min} - \eta_{max}$$ \($$\epsilon_{min}$$ is the minimum spacecraft elevation\).
 
 | $$h$$\(km\) | $$ d_{min}$$\(km\) | $$d_{max}$$\(km\) |
-| --- | --- |
+| :--- | :--- | :--- |
 | 750 | 1867.5 | 2671.6 |
 
 ### 2.4.3. Python script
@@ -311,7 +311,7 @@ Results are shown in table 2.2
 #### Table 2.2 Visibility time of CubeSats
 
 | **Hight of the orbit \(km\)** | **Visibility time \(min\) formula 1.13** | **Visibility time \(min\) formula 1.14 \(**$$ lat_{pole} = 61.5^0$$, $$ long_{pole} = 100^0$$, $$ lat_{gs} = 22^0$$, $$long_{gs} = 200^0$$, $$ \epsilon_{min} = 5^0$$**\)** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | 200 | 6.9 | 0 |
 | 250 | 7.8 | 0 |
 | 300 | 8.6 | 0 |

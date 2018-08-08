@@ -6,8 +6,7 @@
 
 Before we start considering even different types of modulation it is extremely valuable to know what SNR values can be expected on the receiver side. In fact, we can calculate the SNR as:
 
-$$
-<a href="https://www.codecogs.com/eqnedit.php?latex=SNR&space;=&space;P_t&space;&plus;&space;G_t&space;&plus;&space;G_r&space;&plus;&space;\eta_{t}&space;&plus;&space;\eta_{r}&space;-&space;L_r&space;-&space;L_t&space;-&space;L_{add}&space;-&space;L&space;-&space;N&space;\qquad&space;(1.1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SNR&space;=&space;P_t&space;&plus;&space;G_t&space;&plus;&space;G_r&space;&plus;&space;\eta_{t}&space;&plus;&space;\eta_{r}&space;-&space;L_r&space;-&space;L_t&space;-&space;L_{add}&space;-&space;L&space;-&space;N&space;\qquad&space;(1.1)" title="SNR = P_t + G_t + G_r + \eta_{t} + \eta_{r} - L_r - L_t - L_{add} - L - N \qquad (1.1)" /></a>$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=SNR&space;=&space;P_t&space;&plus;&space;G_t&space;&plus;&space;G_r&space;&plus;&space;\eta_{t}&space;&plus;&space;\eta_{r}&space;-&space;L_r&space;-&space;L_t&space;-&space;L_{add}&space;-&space;L&space;-&space;N&space;\qquad&space;(1.1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SNR&space;=&space;P_t&space;&plus;&space;G_t&space;&plus;&space;G_r&space;&plus;&space;\eta_{t}&space;&plus;&space;\eta_{r}&space;-&space;L_r&space;-&space;L_t&space;-&space;L_{add}&space;-&space;L&space;-&space;N&space;\qquad&space;(1.1)" title="SNR = P_t + G_t + G_r + \eta_{t} + \eta_{r} - L_r - L_t - L_{add} - L - N \qquad (1.1)" /></a>
 
 where $$N$$ is the total termal noise power \(relates to the noise spectral density $$N_0=kT_{noise}$$ and double-sided white noise variance $$\sigma^2=\frac{N_0}{2}$$\) in dBm, $$P_t$$ is the transmitted power in dBm, $$G_t$$ and $$G_r$$ are the antenna gains  on the transmitter and receiver sides respectively \(in dBi\), $$\eta_{t}$$ и $$\eta_{r}$$ are feeder gains in dB, $$L_t$$ and $$L_r$$ are the feeder losses in dB, $$L$$ is the path losses in dB, $$L_{add}$$ is additional losses \(some margin\) in dB.
 
@@ -15,9 +14,9 @@ where $$N$$ is the total termal noise power \(relates to the noise spectral dens
 
 Path losses can be estimated by Friis formula:
 
-$$
-L = 20lg\frac{\lambda}{4\pi d}[dB] \qquad (1.2)
-$$
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;20lg\frac{\lambda}{4\pi&space;d}[dB]&space;\qquad&space;(1.2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;20lg\frac{\lambda}{4\pi&space;d}[dB]&space;\qquad&space;(1.2)" title="L = 20lg\frac{\lambda}{4\pi d}[dB] \qquad (1.2)" /></a>
+
 
 where $$\lambda$$ \(relates to the carrier frequency $$f_0=\frac{c}{λ}$$, $$c$$ is the speed of electromagnetic wave\) is the wave length and $$d$$ is the distance between satellite and the ground station.
 

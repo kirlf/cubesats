@@ -34,7 +34,7 @@ Kazan
 # Table of contents
 
 * [Introduction](README.md)
-* [Link Budget](link budget.ipynb)
+* [Link Budget](link%20budget.ipynb)
 * [Statistical channel model](statistical-channel-model.md)
 * [Modulation and coding \(FEC\)](fec.md)
 * [Cooperative communications](cooperative-communications.md)

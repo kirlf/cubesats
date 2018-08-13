@@ -27,13 +27,15 @@ Thank you for your attention and you are welcome!
 
 Ms.Sc. Vladimir Fadeev
 
-December 2017 - June  2018
+December 2017 - August  2018
 
 Kazan
 
-P.S.
+# Table of contents
 
-You can also compare my results with [this paper ](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7964683)by Otilia Popetscu, \(Senior Member, IEEE\) Department of Engineering Technology, Old Dominion University, Norfolk, VA 23529 USA.
-
-For me, frankly speaking, this paper is little bit surprising, however I'm even glad: in fact, we worked in the same topic paralelly. I've worked parallely with the IEEE Senior Member! :\)
+* [Introduction](README.md)
+* [Link Budget](link budget.ipynb)
+* [Statistical channel model](statistical-channel-model.md)
+* [Modulation and coding \(FEC\)](fec.md)
+* [Cooperative communications](cooperative-communications.md)
 

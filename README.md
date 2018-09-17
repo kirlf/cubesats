@@ -36,5 +36,5 @@ Kazan
 * [Link Budget](link%20budget.ipynb)
 * [Statistical channel model](statistical-channel-model.ipynb)
 * [Modulation and coding \(FEC\)](fec.ipynb)
-* [Cooperative communications](cooperative-communications.md)
+* [Optical Link Budget](https://github.com/kirlf/cubesats/blob/master/Optical-ISL.ipynb)
 

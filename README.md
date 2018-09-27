@@ -7,11 +7,7 @@
 
 # Introduction
 
-These matherials are the part of the my Master Thesis **"Design of cooperative communication system based on CubeSat satellites"** that were completed in August 2017.
-
-There are the link budget calculation procedure, results for different type of equipment and some extensions of the research in this work.
-
-These results can be used, for example, for future estimations of BER \(now we have expected SNRs\) of different signaling constructions.
+These matherials relate to my Master Thesis [**"Design of cooperative communication system based on CubeSat satellites"**] (https://books.google.ru/books/about/Design_of_Cooperative_Communication_Syst.html?id=bPIWtAEACAAJ&redir_esc=y) that were completed in August 2017 and developed more deeply during 2017-2018.
 
 So, I guess it's also necessary to say couple of words about research object - CubeSat satellites. Briefly, it is the type of miniaturized satellites that used primiraly for education and science in the begining of their history \(the standard was developed in 1999\). Nowadays, CubeSats are used in navigation and other commercial applications more and more. We believe, that communication is also branch for CubeSats and therefore we've tried to increase their radiolink capacity during our research. In short, we can mention that theoretically it is possible and prospective.
 

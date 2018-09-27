@@ -1,3 +1,10 @@
+# Table of contents
+
+* [Link Budget](link%20budget.ipynb)
+* [Statistical channel model](statistical-channel-model.ipynb)
+* [Modulation and coding \(FEC\)](fec.ipynb)
+* [Optical Link Budget](https://github.com/kirlf/cubesats/blob/master/Optical-ISL.ipynb)
+
 # Introduction
 
 These matherials are the part of the my Master Thesis **"Design of cooperative communication system based on CubeSat satellites"** that were completed in August 2017.
@@ -30,11 +37,3 @@ Ms.Sc. Vladimir Fadeev
 December 2017 - August  2018
 
 Kazan
-
-# Table of contents
-
-* [Link Budget](link%20budget.ipynb)
-* [Statistical channel model](statistical-channel-model.ipynb)
-* [Modulation and coding \(FEC\)](fec.ipynb)
-* [Optical Link Budget](https://github.com/kirlf/cubesats/blob/master/Optical-ISL.ipynb)
-

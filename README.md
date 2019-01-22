@@ -28,7 +28,7 @@ Actually, CubeSats are very interesting topic and if you want to learn more you 
 
 Thank you for your attention and you are welcome!
 
-Ms.Sc. Vladimir Fadeev
+M.Sc. Vladimir Fadeev
 
 December 2017 - August  2018
 

@@ -30,14 +30,7 @@ Frequency modulation schemes is not usually used in satellite communications due
 
 ### QPSK vs. BPSK
 
-The same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel:
-
-$$
-P_b = Q\left(\sqrt{\frac{2E_b}{N_0}}\right) = \frac{1}{2}erfc \left(\sqrt{\frac{E_b}{N_0}} \right)
-$$
-
-where  $Q(*)$ is the Marcum Q-function, $ E_b $ is the energy per bit and $ N_0 $ is the power spectral density.
-
+The same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel.
 QPSK has two twice as larger throughput \(2 bits per symbol\).
 
 | **Modulation** | **BPSK** | **QPSK** |
@@ -48,16 +41,11 @@ Practically, BPSK is more robust due to its simplicity.
 
 ### QPSK vs. OQPSK
 
-Envelope of  π/4-QPSK \(modification of the QPSK\) has already no zeros crossings. However the possibility of 135 degrees phase jumps still exists in this case. This will have negative impact on spectral characteristics. One solution to avoid this, is to use Offset QPSK \(OQPSK\).
+One solution to avoid π radians phase jumps (zero crossings), is to use Offset QPSK \(OQPSK\).
 
 ![ Signal constellations of the conventional QPSK and OQPSK.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2812%29.png)
 *Signal constellations of the conventional QPSK and OQPSK*
   
-
-
-![Signal constellation of the pi/4-QPSK.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%281%29.png)
-*Signal constellation of the pi/4-QPSK.*
-
 The sequence in the Q-branch is delayed by $T_0 = T/2$, where T is channel symbol duration \(by 1 bit duration\). With this operation 180 degrees phase jumps are avoided and hence deep distortions in envelope will not occur.
 
 The same theoretical BER performance. 

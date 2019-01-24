@@ -62,15 +62,17 @@ Pulse shaping motivation \(cited by  [Root Raised Cosine Filters & Pulse Shaping
 Impulse response of the filter:
 
 ![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390555](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2810%29.png)
-*By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390555*
+
+>[*By Krishnavedala - Own work, CC BY-SA 3.0*](https://commons.wikimedia.org/w/index.php?curid=15390555)
 
 With decreasing of the roll-off  factor $ \beta$ we have more compact frequency response \(more efficient usage of the spectrum\):    
 
 
 ![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%283%29.png)
-*By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895*
+
+>[*By Krishnavedala - Own work, CC BY-SA 3.0*](https://commons.wikimedia.org/w/index.php?curid=15390895)
   
-However, $\beta = 0$ is the ideal case with difficulties of implementation in reality. Theoretically, decreasing of the roll-off factor increases ISI \(intersymbol interference\), however, in practice, it could be negligible.
+However, beta = 0 is the ideal case with difficulties of implementation in reality. Theoretically, decreasing of the roll-off factor increases ISI \(intersymbol interference\), however, in practice, it could be negligible.
 
 Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[3\]](https://ieeexplore.ieee.org/document/904973/).
 
@@ -81,19 +83,22 @@ Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation 
 Minimum shift keying \(MSK\) is the partial case of the Continuous Phase Frequency Shift keying \(CPFSK\) and therefore of the CPM. MSK waveform can also be designed as OQPSK with the sinusoidal pulse shaping \[5, 6\]. 
 
 ![https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2813%29.png)
-*https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures*
+
+>*https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures*
 
 However, it should be taken into account that MSK \(GMSK\) is the [partial case of the 2-FSK](https://www.quora.com/How-many-bits-per-symbol-are-transmitted-in-MSK). OQPSK is the quadrature modulation scheme and has the same throughput as QPSK or 4-QAM.
 
 ![http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%289%29.png)
-*http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html*
+
+>*http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html*
 
 ## 4.3. Channel coding \(FEC\)
 
-As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes). It relates to deep-space communication standartd \(fig. 3.1\) that allows to achieve sufficiently high BER performance \(fig. 3.2\).
+As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates, probably, to the deep-space communication standartd. However, since 2000-s modern error correction schemes are used more widely in space communications.
 
-![ Deep-space concatenated coding system. \[8, p. 433\]](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/rsc.png)
-*Deep-space concatenated coding system. \[8, p. 433\]*
+![Codes Used by NASA Missions \[10\]](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2814%29.png)
+
+>*Codes Used by NASA Missions \[10\]*
 
 ### Turbo codes vs. LDPC
 

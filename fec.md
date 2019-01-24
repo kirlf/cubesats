@@ -4,7 +4,7 @@
 
 The main features of existing equipment are shown in table 3.1
 
-#### Table 3.1 Modulation and FEC of real cubesat S-band transceivers
+#### Table 3.1 Modulation and FEC of real cubesat S-band, X-band and Ka-band transceivers (some of examples are provided by [\[0\]](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160007683.pdf).)
 
 | Title | Modulation | FEC |
 | :--- | :--- | :--- |
@@ -31,10 +31,6 @@ The main features of existing equipment are shown in table 3.1
 | Ames Ka-band Tx | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | Tethers Unlimited | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | SWIFT-KTX | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-
-
-
-[More examples](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160007683.pdf).
 
 ### M-PSK vs. M-FSK
 
@@ -207,6 +203,8 @@ Interesting and comprehensive survey of the multiple access schemes for satellit
 This indirectly explains why [CDMA is not so popular](https://www.quora.com/How-does-CDMA-operate-on-satellite-communication) in the real communication systems.
 
 ## References
+
+\[0\] Wong, Y. F., Kegege, O., Schaire, S. H., Bussey, G., Altunc, S., Zhang, Y., & Chitra, P. (2016). An optimum space-to-ground communication concept for CubeSat platform utilizing NASA space network and near earth network.
 
 \[1\]  Haykin S. Communication systems. – John Wiley & Sons, 2008. - p. 368, 402 
 

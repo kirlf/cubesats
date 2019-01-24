@@ -32,6 +32,9 @@ The main features of existing equipment are shown in table 3.1
 | Tethers Unlimited | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | SWIFT-KTX | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 
+![ModStat1](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png)
+![ModStat2](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations1.png)
+
 ### M-PSK vs. M-FSK
 
 Frequency modulation schemes is not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.

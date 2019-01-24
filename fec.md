@@ -44,7 +44,8 @@ Practically, BPSK is more robust due to its simplicity.
 One solution to avoid π radians phase jumps (zero crossings), is to use Offset QPSK \(OQPSK\).
 
 ![ Signal constellations of the conventional QPSK and OQPSK.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2812%29.png)
-*Signal constellations of the conventional QPSK and OQPSK*
+
+>*Signal constellations of the conventional QPSK and OQPSK*
   
 The sequence in the Q-branch is delayed by T/2, where T is channel symbol duration \(by 1 bit duration\). With this operation 180 degrees phase jumps are avoided and hence deep distortions in envelope will not occur.
 

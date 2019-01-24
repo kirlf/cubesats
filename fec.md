@@ -33,7 +33,7 @@ The main features of existing equipment are shown in table 3.1
 | SWIFT-KTX | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 
 ![ModStat1](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png)
-![ModStat2](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations1.png)
+![ModStat2](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png)
 
 ### M-PSK vs. M-FSK
 

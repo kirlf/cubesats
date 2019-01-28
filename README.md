@@ -3,7 +3,7 @@
 * [Link Budget](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LB.md)
 * [Statistical channel model](statistical-channel-model.ipynb)
 * [Modulation and coding \(FEC\)](fec.ipynb)
-* [Optical Link Budget](https://github.com/kirlf/cubesats/blob/master/Optical-ISL.ipynb)
+* [Optical Link Budget](https://nbviewer.jupyter.org/gist/kirlf/5374c07342521a32e9c25ee8df95697d)
 
 # Introduction
 

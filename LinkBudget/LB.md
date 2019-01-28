@@ -22,28 +22,13 @@ In fact, we use informstion about common example of ground station such as [IC-9
 
 These parameters can be used for calculation of up-link link budget.
 
-For down-link estimation real example of CubeSat transceivers such as [NanoCom AX100](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(fig. 1.6.1\) may be used. Additionally, as an example of CubeSat UHF/VHF antenna omnidirectional [NanoCom ANT430](https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx) \(fig. 1.6.2\) can be considered.
+For down-link estimation real example of CubeSat transceivers such as [NanoCom AX100](https://gomspace.com/Shop/subsystems/communication/nanocom-ant2000.aspx) \(fig. 1.6.1\) may be used. Additionally, as an example of CubeSat UHF/VHF antenna omnidirectional [NanoCom ANT430](https://gomspace.com/Shop/subsystems/communication/nanocom-ant430.aspx) can be considered.
 
-![Fig. 2.5: NanoCom AX100 by GomSpace company.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/antenna1.png)
 
-*Fig. 1.6.1. NanoCom AX100 by GomSpace company.*
-
-![Fig. 2.6: NanoCom ANT430 by GomSpace company.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/transceiver.png)
-
-*Fig. 1.6.2. NanoCom ANT430 by GomSpace company.*
-
-For larger possible bandwidth 2.4GHz range also should be considered. For this range patch-antenna NanoCom ANT2000 and S-band transceiver [NanoCom SR2000](https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx) are available  \(fig. 1.6.3\). For low speed transmission \(for example, for signaling\) UHF/VHF NanoCom [ANT430](https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx) \(fig. 1.6.4\) can be used.
-
-![Fig. 2.7: NanoCom SR2000 by GomSpace company.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/transceiver2.png)
-
-*Fig. 1.6.3. NanoCom SR2000 by GomSpace company.*
-
-![Fig. 2.8: ANT2000 by GomSpace company.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/antenna2.png)
-
-*Fig. 1.6.4. ANT2000 by GomSpace company.*
+For larger possible bandwidth 2.4GHz range also should be considered. For this range patch-antenna NanoCom ANT2000 and S-band transceiver [NanoCom SR2000](https://gomspace.com/Shop/subsystems/communication/nanocom-sr2000.aspx) are available. For low speed transmission \(for example, for signaling\) UHF/VHF NanoCom [ANT430](https://gomspace.com/Shop/subsystems/communication/nanocom-ax100.aspx) can be used.
 
 1.7. [Python source code](https://github.com/kirlf/cubesats/blob/master/LinkBudget/SmallSatLB.py)
 
-1.8. [Tests](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LBTests.ipynb)
+1.8. [Tests (Jupyter)](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LBTests.ipynb)
 
 

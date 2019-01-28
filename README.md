@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Link Budget](link%20budget.ipynb)
+* [Link Budget](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LB.md)
 * [Statistical channel model](statistical-channel-model.ipynb)
 * [Modulation and coding \(FEC\)](fec.ipynb)
 * [Optical Link Budget](https://github.com/kirlf/cubesats/blob/master/Optical-ISL.ipynb)

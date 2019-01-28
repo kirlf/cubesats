@@ -12,3 +12,5 @@ Let us provide some parameters summary:
 2. **Equipment dependent parameters \(adjustable\)**: transmitted power , receiver bandwidth ;
 3. **Reference data:** antenna gains and losses, feeder gains and losses , noise temperature,  additional losses.
 
+[1.4. Sat-to-Ground distance](https://github.com/kirlf/cubesats/blob/master/LinkBudget/SatDist.ipynb)
+

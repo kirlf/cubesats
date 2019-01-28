@@ -14,3 +14,5 @@ Let us provide some parameters summary:
 
 [1.4. Sat-to-Ground distance](https://github.com/kirlf/cubesats/blob/master/LinkBudget/SatDist.ipynb)
 
+[1.5. Visibility time](https://github.com/kirlf/cubesats/blob/master/LinkBudget/VisTime.ipynb)
+

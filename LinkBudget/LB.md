@@ -42,3 +42,8 @@ For larger possible bandwidth 2.4GHz range also should be considered. For this r
 
 *Fig. 1.6.4. ANT2000 by GomSpace company.*
 
+1.7. [Python source code](https://github.com/kirlf/cubesats/blob/master/LinkBudget/SmallSatLB.py)
+
+1.8. [Tests](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LBTests.ipynb)
+
+

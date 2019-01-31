@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 class LinkBudget:
-    def __init__(self, h, mode, L_node = None, incl = None, lat_gs = None, long_gs = None, eps_min = 0):
+    def __init__(self, h, mode, L_node = None,\
+                 incl = None, lat_gs = None, long_gs = None, eps_min = 0):
         # h - orbit height
         # mode - 'draft' (w/o coordinates consideration) or 'precise' (w/ coordinates consideration)
         # L_node - instantaneous ascending node (degrees)
@@ -11,51 +12,54 @@ class LinkBudget:
         # eps_min - minimum spacecraft elevation (degrees)
         self.h = h
         self.mode = mode
+        self.R_E = 6356863
         if mode == 'precise':
             if L_node == None:
-                L_node = float(input('Print  different for distinct passes of the satellite over the ground station (L_node) in degrees: '))
-            self.lat_pole = 90 - incl
+                L_node = float(input('Print  different for\
+                distinct passes of the satellite\
+                over the ground station (L_node) in degrees: '))
+            long_pole = (L_node - 90)*np.pi/180
             if incl == None:
                 incl = float(input('Print  orbit inclination (incl) in degrees: '))
-            self.long_pole = L_node - 90
+            lat_pole = (90 - incl)*np.pi/180
             if lat_gs == None:
-                self.lat_gs = float(input('Print latitude of the ground station (lat_gs) in degrees: '))
-            else:
-                self.lat_gs = lat_gs
+                lat_gs = float(input('Print latitude\
+                of the ground station (lat_gs) in degrees: '))
             if long_gs == None:
-                self.long_gs = float(input('Print longtitude of the ground station (long_gs) in degrees: '))
-            else:
-                self.long_gs = long_gs
-            self.eps_min = eps_min
-    
+                long_gs = float(input('Print longtitude\
+                of the ground station (long_gs) in degrees: '))
+            lat_gs = lat_gs*np.pi/180
+            long_gs = long_gs*np.pi/180
+            
+            self.eps_min = eps_min*np.pi/180
+            delta_l = long_gs - long_pole
+            
+            sin_lambda_min = np.sin(lat_pole)*np.sin(lat_gs)\
+                + np.cos(lat_pole)*np.cos(lat_gs)*np.cos(delta_l)
+            self.lambda_min = np.arcsin(sin_lambda_min)
+            
+            sin_rho = self.R_E /(self.R_E+self.h)
+            self.rho = np.arcsin(sin_rho)
+            self.eta_max = np.arcsin(sin_rho*np.cos(self.eps_min))
+            self.lambda_max = np.pi/2 - self.eps_min - self.eta_max
+            
+
     def distance(self):
         # Outputs:
             # d - satellite-to-ground distance (m)
-        R_E = 6356863
         if self.mode == 'draft':
             phi = np.pi*np.array(range(0,181,5))/180
-            d = np.array(np.sqrt((R_E+self.h)**2 - (R_E**2)*np.cos(phi)**2) - R_E*np.sin(phi))
+            d = np.array(np.sqrt((self.R_E+self.h)**2\
+                                 - (self.R_E**2)*np.cos(phi)**2) - self.R_E*np.sin(phi))
         else:
-            #coordinates
-            lat_pole = self.lat_pole*np.pi/180
-            long_pole = self.long_pole*np.pi/180
-            lat_gs = self.lat_gs*np.pi/180
-            long_gs = self.long_gs*np.pi/180
-            eps_min = self.eps_min*np.pi/180
-            delta_l = (self.long_gs - self.long_pole)*np.pi/180
-            #minimum distance
-            sin_lambda_min = np.sin(lat_pole)*np.sin(lat_gs) + np.cos(lat_pole)*np.cos(lat_gs)*np.cos(delta_l)
-            self.lambda_min = np.arcsin(sin_lambda_min)
-            sin_rho = R_E /(R_E+self.h)
-            cos_lambda_min = np.cos(np.arcsin(sin_lambda_min)) 
-            tan_eta_min = sin_rho*sin_lambda_min / (1 - sin_rho*cos_lambda_min)
+            #minimum distance 
+            tan_eta_min = np.sin(self.rho)*np.sin(self.lambda_min)\
+                / (1 - np.sin(self.rho)*np.cos(self.lambda_min))
             sin_eta_min = np.sin(np.arctan(tan_eta_min))
-            dmin = (R_E)*(sin_lambda_min/sin_eta_min)
+            dmin = self.R_E*(np.sin(self.lambda_min)/sin_eta_min)
             #maximum distance 
-            sin_eta_max = sin_rho*np.cos(eps_min)
-            lambda_max = np.pi/2 - eps_min - np.arcsin(sin_eta_max)
-            self.lambda_max = lambda_max
-            dmax = R_E*(np.sin(lambda_max)/sin_eta_max)            
+            sin_eta_max = np.sin(self.eta_max)
+            dmax = self.R_E*(np.sin(self.lambda_max)/sin_eta_max)            
             d = np.array(range(int(np.round(dmin)),int(np.round(dmax))))
         return d
                 
@@ -65,7 +69,6 @@ class LinkBudget:
         #Outputs:
             # 20*np.log10(L) - path loss (dB)
         c = 3*1e8 #electromagnetic wave speed
-        R_E = 6356863
         lambd = c/f0
         d = self.distance()
         L = 4*np.pi*d/lambd
@@ -126,13 +129,12 @@ class LinkBudget:
         #Outputs:
             # T - visibility time (min) 
         if self.mode == 'precise':
-            self.distance()
             P = 1.658669e-4*((6378.14 + self.h*1e-3)**1.5)
             T = (P/np.pi)*np.arccos(np.cos(self.lambda_max)/np.cos(self.lambda_min))
         elif self.mode == 'draft':
             R_E = 6356863
             v = np.sqrt(6.67e-11*6e24/(R_E + self.h))
-            T = (2*(R_E + self.h)*np.arccos(R_E/(R_E + self.h)) / v)/60
+            T = (2*(self.R_E + self.h)*np.arccos(self.R_E/(self.R_E + self.h)) / v)/60
         else:
             print('Wrong mode.')
         return T 

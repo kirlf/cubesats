@@ -32,8 +32,8 @@ The main features of existing equipment are shown in table 3.1
 | Tethers Unlimited | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | SWIFT-KTX | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 
-![ModStat1](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png)
-![ModStat2](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png)
+<img alt="ModStat1" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png" width="400"/>
+<img alt="ModStat2" src="(https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png" width="400"/>
 
 ### M-PSK vs. M-FSK
 

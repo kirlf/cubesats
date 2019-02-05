@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Link Budget](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
-* [Statistical channel model](statistical-channel-model.ipynb)
+* [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 * [Modulation and coding \(FEC\)](fec.ipynb)
 
 **Extra files:**

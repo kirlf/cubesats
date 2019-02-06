@@ -73,7 +73,7 @@ The same theoretical BER performance.
 
 Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure is frequently applied. 
 
-> Pulse shaping motivation provided in [Root Raised Cosine Filters & Pulse Shaping in Communication Systems](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)\)
+> Pulse shaping motivation provided in [Root Raised Cosine Filters & Pulse Shaping in Communication Systems](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)
 
 Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[3\]](https://ieeexplore.ieee.org/document/904973/).
 

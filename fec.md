@@ -71,26 +71,9 @@ The same theoretical BER performance.
 
 ![BER](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%284%29.png)
 
-### Shaped OQPSK vs. conventional OQPSK
+Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure is frequently applied. 
 
-Pulse shaping motivation \(cited by  [Root Raised Cosine Filters & Pulse Shaping in Communication Systems](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)\)
-
-> This presentation briefly discusses application of the Root Raised Cosine \(RRC\) pulse shaping in the space telecommunication. Use of the RRC filtering \(i.e., pulse shaping\) is adopted in commercial communications, such as cellular technology, and used extensively. However, its use in space communication is still relatively new. This will possibly change as the crowding of the frequency spectrum used in the space communication becomes a problem. The two conflicting requirements in telecommunication are the demand for high data rates per channel \(or user\) and need for more channels, i.e., more users. Theoretically as the channel bandwidth is increased to provide higher data rates the number of channels allocated in a fixed spectrum must be reduced. Tackling these two conflicting requirements at the same time led to the development of the RRC filters. More channels with wider bandwidth might be tightly packed in the frequency spectrum achieving the desired goals. A link model with the RRC filters has been developed and simulated. Using 90% power Bandwidth \(BW\) measurement definition showed that the RRC filtering might improve spectrum efficiency by more than 75%. Furthermore using the matching RRC filters both in the transmitter and receiver provides the improved Bit Error Rate \(BER\) performance.
-
-Impulse response of the filter:
-
-![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390555](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2810%29.png)
-
->[*By Krishnavedala - Own work, CC BY-SA 3.0*](https://commons.wikimedia.org/w/index.php?curid=15390555)
-
-With decreasing of the roll-off  factor $ \beta$ we have more compact frequency response \(more efficient usage of the spectrum\):    
-
-
-![By Krishnavedala - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15390895](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%283%29.png)
-
->[*By Krishnavedala - Own work, CC BY-SA 3.0*](https://commons.wikimedia.org/w/index.php?curid=15390895)
-  
-However, beta = 0 is the ideal case with difficulties of implementation in reality. Theoretically, decreasing of the roll-off factor increases ISI \(intersymbol interference\), however, in practice, it could be negligible.
+> Pulse shaping motivation provided in [Root Raised Cosine Filters & Pulse Shaping in Communication Systems](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)\)
 
 Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[3\]](https://ieeexplore.ieee.org/document/904973/).
 

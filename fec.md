@@ -40,7 +40,7 @@ We can make the following summary analyzing the considered matherials:
 
 3. Only DVB-S2/S2X standard (**{Q,8,16A,32A}PSK**) is presented for the *Ka-band*;
 
-4. The following options are used for the Forward Error Correction (mostly): **Reed-Solomon** codes concatenated with **convolutional** codes, **Turbo** codes, **LDPC** (concatenated with **BCH** in DVB-S2/S2X) codes.
+4. The following options are used for the Forward Error Correction (mostly): **Reed-Solomon** codes concatenated with **convolutional** codes and **LDPC** (concatenated with **BCH** in DVB-S2/S2X) codes.
 
 <img alt="ModStat1" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png" width="600"/>
 <img alt="ModStat2" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png" width="600"/>

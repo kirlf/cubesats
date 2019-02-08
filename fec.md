@@ -47,7 +47,7 @@ We can make the following summary analyzing the considered matherials:
 
 ## Small suggestions
 
-###  Why M-PSK replaced M-FSK
+###  Why M-PSK replaced M-FSK?
 
 Higher order frequency modulation schemes are not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
 
@@ -58,7 +58,7 @@ Higher order frequency modulation schemes are not usually used in satellite comm
 | M-PSK | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 |
 | M-FSK | 1 | 1 | 0.75 | 0.5 | 0.3125 | 0.1875 |
 
-### Why BPSK is the one of the popular solutions
+### Why BPSK is the one of the popular solutions?
  
 Although QPSK has two twice as larger throughput \(2 bits per symbol\) and the same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel, but, practically, BPSK is more robust due to its simplicity.
 
@@ -67,19 +67,21 @@ Although QPSK has two twice as larger throughput \(2 bits per symbol\) and the s
 | Spectral efficiency | 0.5 | 1 |
 
 
-### QPSK vs. OQPSK
+### Why OQPSK is used more than QPSK?
 
-One solution to avoid π radians phase jumps (zero crossings), is to use Offset QPSK \(OQPSK\).
+QPSK has possible phase jumps (zero crossings). When the signal is low-pass filtered (as is typical in a transmitter), these phase-shifts result in large amplitude fluctuations. One solution to avoid π radians phase jumps, is to use Offset QPSK \(OQPSK\).
 
 ![ Signal constellations of the conventional QPSK and OQPSK.](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2812%29.png)
 
->*Signal constellations of the conventional QPSK and OQPSK*
+>*Fig. 3.2. Signal constellations of the conventional QPSK and OQPSK*
   
 The sequence in the Q-branch is delayed by T/2, where T is channel symbol duration \(by 1 bit duration\). With this operation 180 degrees phase jumps are avoided and hence deep distortions in envelope will not occur.
 
-The same theoretical BER performance. 
+OQPS and QPSK have the same theoretical BER performance. 
 
 ![BER](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%284%29.png)
+
+> *Fig. 3.3. Bit error ratio curves in Rician flat fading channel. *
 
 Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure is frequently applied. 
 

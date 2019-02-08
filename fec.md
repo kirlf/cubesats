@@ -87,9 +87,16 @@ Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure
 
 > Pulse shaping motivation provided in [Root Raised Cosine Filters & Pulse Shaping in Communication Systems.](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)
 
-Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[3\]](https://ieeexplore.ieee.org/document/904973/).
+Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[2\]](https://ieeexplore.ieee.org/document/904973/).
 
-### Shaped OQPS vs. MSK/GMSK
+### Why GMSK was replaced in modern solutions?
+
+GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (fig. 3.4).
+
+![PSD-MSSK](https://upload.wikimedia.org/wikipedia/commons/b/b2/PSD_MSK_PSK.png)
+![PSD-GMSK](https://upload.wikimedia.org/wikipedia/commons/5/5e/GMSK_PSD.png)
+
+> *Fig. 3.4. Power-spectral densities of the BPSK, QPSK, MSK, GMSK.
 
 Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation \(CPM\) [\[4\]](https://pdfs.semanticscholar.org/f025/2fa31444fad6a5090527d73f87352137c9b8.pdf).
 
@@ -158,9 +165,9 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 
 \[1\]  Haykin S. Communication systems. – John Wiley & Sons, 2008. - p. 368, 402 
 
-\[2\] Rice, M., Oliphant, T., & Mcintire, W. \(2007\). Estimation techniques for GMSK using linear detectors in satellite communications. IEEE Transactions on Aerospace and Electronic Systems, 43\(4\).
+\[2\]  Hill, Terrance J. "A non-proprietary, constant envelope, variant of shaped offset QPSK \(SOQPSK\) for improved spectral containment and detection efficiency." MILCOM 2000. 21st Century Military Communications Conference Proceedings. Vol. 1. IEEE, 2000.
 
-\[3\]  Hill, Terrance J. "A non-proprietary, constant envelope, variant of shaped offset QPSK \(SOQPSK\) for improved spectral containment and detection efficiency." MILCOM 2000. 21st Century Military Communications Conference Proceedings. Vol. 1. IEEE, 2000.
+\[3\] Rice, M., Oliphant, T., & Mcintire, W. \(2007\). Estimation techniques for GMSK using linear detectors in satellite communications. IEEE Transactions on Aerospace and Electronic Systems, 43\(4\).
 
 \[4\]  Li, Lifang, and M. K. Simon. "Performance of coded offset quadrature phase-shift keying \(OQPSK\) and MIL-STD shaped OQPSK \(SOQPSK\) with iterative decoding." Interplanetary Network Prog. Rep. 42 \(2004\).
 

@@ -42,6 +42,7 @@ We can make the following summary analyzing the considered matherials:
 
 <img alt="ModStat1" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png" width="600"/>
 <img alt="ModStat2" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png" width="600"/>
+
 > *Fig. 3.1. The diagrams of the modulation schemes usage*.
 
 ## Small suggestions

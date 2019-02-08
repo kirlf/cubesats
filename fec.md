@@ -81,7 +81,7 @@ OQPS and QPSK have the same theoretical BER performance.
 
 ![BER](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%284%29.png)
 
-> *Fig. 3.3. Bit error ratio curves in Rician flat fading channel. *
+> *Fig. 3.3. Bit error ratio curves in Rician flat fading channel.*
 
 Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure is frequently applied. 
 

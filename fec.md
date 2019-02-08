@@ -32,12 +32,22 @@ The main features of existing equipment are shown in table 3.1
 | Tethers Unlimited | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | SWIFT-KTX | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 
+We can make the following summary analyzing the considered matherials:
+
+1. S-band includes both some of the "old" modulation schemes such as **PCM/FM**, **FSK** and **GMSK** and some of the modern schemes such as **M-APSK** (depends on a vendor's design);
+
+2. The most popular class of the modulation schemes are M-PSK (BPSK, QPSK, OQPSK) for both S- and X-bands.
+
+3. Only DVB-S2/S2X standard (Q,8,16A,32A}PSK) is presented for the Ka-band.
+
 <img alt="ModStat1" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png" width="600"/>
 <img alt="ModStat2" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png" width="600"/>
 
-### M-PSK vs. M-FSK
+## Small suggestions
 
-Frequency modulation schemes is not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
+###  Why M-PSK replaced M-FSK
+
+Higher order frequency modulation schemes are not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
 
 **Tab. 3.2. Spectral efficient values \(bit/s/Hz\) for different modulation orders \[1\].** 
 
@@ -46,16 +56,14 @@ Frequency modulation schemes is not usually used in satellite communications due
 | M-PSK | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 |
 | M-FSK | 1 | 1 | 0.75 | 0.5 | 0.3125 | 0.1875 |
 
-### QPSK vs. BPSK
-
-The same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel.
-QPSK has two twice as larger throughput \(2 bits per symbol\).
+### Why BPSK is the one of the popular solutions
+ 
+Although QPSK has two twice as larger throughput \(2 bits per symbol\) and the same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel, but, practically, BPSK is more robust due to its simplicity.
 
 | **Modulation** | **BPSK** | **QPSK** |
 | :--- | :--- | :--- |
 | Spectral efficiency | 0.5 | 1 |
 
-Practically, BPSK is more robust due to its simplicity.
 
 ### QPSK vs. OQPSK
 

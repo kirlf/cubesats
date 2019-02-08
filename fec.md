@@ -34,7 +34,7 @@ The main features of existing equipment are shown in table 3.1
 
 We can make the following summary analyzing the considered matherials:
 
-1. *S-band* includes both some of the "old" modulation schemes such as **PCM/FM**, **FSK** and **GMSK** and some of the modern schemes such as **M-APSK** (depends on a vendor's design);
+1. *S-band* includes both some of the "old" modulation schemes such as **PCM/FM**, **FSK** and **GMSK** and some of the modern schemes such as **M-APSK** (depends on a vendor's design mostly);
 
 2. The most popular class of the modulation schemes are **M-PSK** (BPSK, QPSK, OQPSK) for both *S-* and *X-bands*.
 
@@ -42,6 +42,7 @@ We can make the following summary analyzing the considered matherials:
 
 <img alt="ModStat1" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png" width="600"/>
 <img alt="ModStat2" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png" width="600"/>
+> *Fig. 3.1. The diagrams of the modulation schemes usage*.
 
 ## Small suggestions
 

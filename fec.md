@@ -164,7 +164,7 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 >
 > • Iterative LDPC decoding typically requires many more iterations than iterative turbo decoding, which may lead to a higher latency. \(The complexity per iteration is much lower, though.\)
 
-The interesting research about LDPC-BCH codes is done in \[15\].
+The interesting research about LDPC-BCH codes is done in \[11\].
 
 ## References
 
@@ -188,13 +188,4 @@ The interesting research about LDPC-BCH codes is done in \[15\].
 
 \[10\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
 
-\[11\] Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme. In 2018Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.
-
-\[12\] Arapoglou, P. D., Liolis, K., Bertinelli, M., Panagopoulos, A., Cottis, P., & De Gaudenzi, R. (2011). MIMO over satellite: A review. IEEE communications surveys & tutorials, 13(1), 27-51.
-
-\[13\] Kyröläinen, J., Hulkkonen, A., Ylitalo, J., Byman, A., Shankar, B., Arapoglou, P. D., & Grotz, J. (2014). Applicability of MIMO to satellite communications. International Journal of Satellite Communications and Networking, 32(4), 343-357.
-
-\[14\] Tiwari, K., & Saini, D. S. (2014, December). BER performance comparison of MIMO system with STBC and MRC over different fading channels. In High Performance Computing and Applications (ICHPCA), 2014 International Conference on (pp. 1-6). IEEE.
-
-\[15\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
-
+\[11\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.

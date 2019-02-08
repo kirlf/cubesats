@@ -34,6 +34,6 @@ Thank you for your attention and you are welcome!
 
 M.Sc. Vladimir Fadeev
 
-December 2017 - August  2018
+December 2017 - February  2019
 
 Kazan

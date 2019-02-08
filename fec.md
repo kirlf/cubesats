@@ -107,7 +107,7 @@ However, it should be taken into account that MSK \(GMSK\) is the [partial case 
 
 ### Why M-QAM schemes are not presented above?
 
-M-QAM was replaced by the M-APSK in space communication due to (cited by the [tandard + Customized APSK Schemes For Satellite Transmission By Donald Vanderweit, Agilent Technologies, Inc.](http://www.satmagazine.com/story.php?number=1051727556)):
+M-QAM was replaced by the M-APSK in space communication due to (cited by the [Standard + Customized APSK Schemes For Satellite Transmission By Donald Vanderweit, Agilent Technologies, Inc.](http://www.satmagazine.com/story.php?number=1051727556)):
 
 > Like QAM, APSK gives more bits per symbol than QPSK, allowing more data to be sent in the same bandwidth. But unlike QAM, the states are configured in rings, with the intent that symbol points in a given ring will react the same way to compression. This has two positive effects. The first is that compression of the signal tends to have less of an effect on the spacing between states (sometimes referred to as the “Euclidean distance”), and so the states are easier to distinguish from each other during demodulation.
 >

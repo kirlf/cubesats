@@ -124,7 +124,7 @@ As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solom
 
 ![Codes Used by NASA Missions \[10\]](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2814%29.png)
 
->*Codes Used by NASA Missions \[10\]*
+>*Fig. 3.5. Codes Used by NASA Missions \[10\]*
 
 ### Turbo codes vs. LDPC
 
@@ -166,6 +166,7 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 >
 > • Iterative LDPC decoding typically requires many more iterations than iterative turbo decoding, which may lead to a higher latency. \(The complexity per iteration is much lower, though.\)
 
+The interesting research about LDPC-BCH codes is done in \[15\].
 
 ## References
 
@@ -196,4 +197,6 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 \[13\] Kyröläinen, J., Hulkkonen, A., Ylitalo, J., Byman, A., Shankar, B., Arapoglou, P. D., & Grotz, J. (2014). Applicability of MIMO to satellite communications. International Journal of Satellite Communications and Networking, 32(4), 343-357.
 
 \[14\] Tiwari, K., & Saini, D. S. (2014, December). BER performance comparison of MIMO system with STBC and MRC over different fading channels. In High Performance Computing and Applications (ICHPCA), 2014 International Conference on (pp. 1-6). IEEE.
+
+\[15\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
 

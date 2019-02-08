@@ -96,11 +96,15 @@ GMSK was a good solution for the satellite communications \[3\] for a long time 
 ![PSD-MSSK](https://upload.wikimedia.org/wikipedia/commons/b/b2/PSD_MSK_PSK.png)
 ![PSD-GMSK](https://upload.wikimedia.org/wikipedia/commons/5/5e/GMSK_PSD.png)
 
-> *Fig. 3.4. Power-spectral densities of the BPSK, QPSK, MSK, GMSK.
+> *Fig. 3.4. Power-spectral densities of the BPSK, QPSK, MSK, GMSK.*
 
-Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation \(CPM\) [\[4\]](https://pdfs.semanticscholar.org/f025/2fa31444fad6a5090527d73f87352137c9b8.pdf).
+However, MSK waveform can also be designed as OQPSK with the sinusoidal pulse shaping \[5, 6\].
 
-Minimum shift keying \(MSK\) is the partial case of the Continuous Phase Frequency Shift keying \(CPFSK\) and therefore of the CPM. MSK waveform can also be designed as OQPSK with the sinusoidal pulse shaping \[5, 6\]. 
+> **NOTE**:
+> * Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation \(CPM\) [\[4\]](https://pdfs.semanticscholar.org/f025/2fa31444fad6a5090527d73f87352137c9b8.pdf).
+> * Minimum shift keying \(MSK\) is the partial case of the Continuous Phase Frequency Shift keying \(CPFSK\) and therefore of the CPM.
+
+  
 
 ![https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2813%29.png)
 

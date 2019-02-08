@@ -98,23 +98,15 @@ GMSK was a good solution for the satellite communications \[3\] for a long time 
 
 > *Fig. 3.4. Power-spectral densities of the BPSK, QPSK, MSK, GMSK.*
 
-However, MSK waveform can also be designed as OQPSK with the sinusoidal pulse shaping \[5, 6\].
+In other hand, MSK waveform can also be designed as OQPSK (i.e. in [I/Q manner](https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures)) with the sinusoidal pulse shaping \[5, 6\].
 
 > **NOTE**:
 > * Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation \(CPM\) [\[4\]](https://pdfs.semanticscholar.org/f025/2fa31444fad6a5090527d73f87352137c9b8.pdf).
 > * Minimum shift keying \(MSK\) is the partial case of the Continuous Phase Frequency Shift keying \(CPFSK\) and therefore of the CPM.
 
-  
+Moreover, theoretically, the spectral parameters of the SOQPSK can be optimized as well as in GMSK case with a good selection of the filter for the pulse shaping.  
 
-![https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2813%29.png)
-
->*https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures*
-
-However, it should be taken into account that MSK \(GMSK\) is the [partial case of the 2-FSK](https://www.quora.com/How-many-bits-per-symbol-are-transmitted-in-MSK). OQPSK is the quadrature modulation scheme and has the same throughput as QPSK or 4-QAM.
-
-![http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%289%29.png)
-
->*http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html*
+However, it should be taken into account that MSK \(GMSK\) is the [partial case of the 2-FSK](https://www.quora.com/How-many-bits-per-symbol-are-transmitted-in-MSK). OQPSK is the [quadrature modulation](http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html) scheme and has the same throughput as QPSK or 4-QAM.
 
 ## 4.3. Channel coding \(FEC\)
 

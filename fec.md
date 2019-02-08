@@ -141,20 +141,6 @@ In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016
 >
 > • Iterative LDPC decoding typically requires many more iterations than iterative turbo decoding, which may lead to a higher latency. \(The complexity per iteration is much lower, though.\)
 
-# 4.4. MIMO / MISO / SIMO cases
-
-Another way to improve reliability is using of space-time coding schemes such as Alamouti [12, 13]. 
-In this case system model can be discribed as following figure:
-
-<img src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Cooperativeeng.png" alt="mimo" width="700" height="500">
-
-*System model for the cooperative MIMO (channel unknown for the transmitter) case \[11\].*
-
-Estimation of the capabilities of this scheme including cojunction with channel coding is done in [[11]]().
-
-Additionally, reliability can be improved using combining schemes such as MRC (Maximum Ratio Combining) for the SIMO and channel known for the transmitter MISO system cases [[14]](https://www.researchgate.net/publication/272726183_BER_performance_comparison_of_MIMO_system_with_STBC_and_MRC_over_different_fading_channels). 
-
-Theoretically, if the channel known for the transmitter and MIMO configuration is available, [DET (Dominant eigenmode transmission)]() as more powerful technique is also possible.
 
 ## References
 

@@ -62,11 +62,6 @@ Higher order frequency modulation schemes are not usually used in satellite comm
  
 Although QPSK has two twice as larger throughput \(2 bits per symbol\) and the same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel, but, practically, BPSK is more robust due to its simplicity.
 
-| **Modulation** | **BPSK** | **QPSK** |
-| :--- | :--- | :--- |
-| Spectral efficiency | 0.5 | 1 |
-
-
 ### Why OQPSK is used more than QPSK?
 
 QPSK has possible phase jumps (zero crossings). When the signal is low-pass filtered (as is typical in a transmitter), these phase-shifts result in large amplitude fluctuations. One solution to avoid π radians phase jumps, is to use Offset QPSK \(OQPSK\).

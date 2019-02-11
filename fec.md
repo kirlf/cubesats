@@ -1,6 +1,6 @@
 # Modulation and coding \(FEC\)
 
-## 4.1. Technical survey
+## 3.1. Technical survey
 
 The main features of existing equipment are shown in table 3.1
 
@@ -47,7 +47,7 @@ We can make the following summary analyzing the considered matherials:
 
 > *Fig. 3.1. The diagrams of the modulation schemes usage*.
 
-## 4.2. Small suggestions about modulation schemes
+## 3.2. Small suggestions about modulation schemes
 
 ###  Why M-PSK replaced M-FSK?
 
@@ -118,7 +118,7 @@ M-QAM was replaced by the M-APSK in space communication due to (cited by the [St
 > Peak to Average Power Ratio (PAPR): Another consideration is Peak-to-Average Power Ratio (PAPR). This metric gives the ratio of the highest power the amplifier will be expected to send to the average power. This ratio is important to designers because the amount of data that can be sent is proportional to the average power, but the size of the amplifier needed for a given format depends on the peak power. The ideal PAPR would be 1:1, and this is in fact the ratio for QPSK. All of the points in the constellation are the same distance from the origin, and therefore require the same power to transmit. For more complicated schemes, APSK has an advantage over QAM: the 32-APSK scheme shown above has a PAPR of approx. 1.57, compared to 1.7 for 32-QAM. By adjusting the spacing between rings and other factors, a designer can reach a balance between lower PAPR and better resistance to distortion.
 
 
-## 4.3. Channel coding \(FEC\)
+## 3.3. Channel coding \(FEC\)
 
 As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates, probably, to the deep-space communication standartd. However, since 2000-s modern error correction schemes are used more widely in space communications.
 

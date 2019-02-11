@@ -86,7 +86,6 @@ function ber_conv_fin = punct_conv(message, trellis, PuncturePattern,...
 
     % Processing
     noisy_encoded = awgn(qpsk_msg,snr(ii),'measured','dB');
-    %noisy_encoded = step(chanAWGN,qpsk_msg);
     demodul = step(hDemod,noisy_encoded);
   
     if InputFormat == 'Soft'

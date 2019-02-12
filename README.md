@@ -5,6 +5,32 @@
 * [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
+**Links related to *[Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme](https://ieeexplore.ieee.org/document/8456940)***:
+* [Proposed channel model (Rician) testing](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
+* [Alamouti test modeling](https://nbviewer.jupyter.org/gist/kirlf/9587c6859db08e5e813b0650f97c7344)
+
+> **NOTE**:
+>
+> Considered links are contributions to the [teaching materials about MIMO communications](https://github.com/kirlf/CSP/blob/master/MIMO/README.md).
+
+Followink MatLab objects were used for the modeling:
+* [comm.PSKModulator](https://www.mathworks.com/help/comm/ref/comm.pskmodulator-system-object.html?s_tid=doc_ta)
+* [comm.PSKDemodulator](https://www.mathworks.com/help/comm/ref/comm.pskdemodulator-system-object.html)
+* [comm.ConvolutionalEncoder](https://www.mathworks.com/help/comm/ref/comm.convolutionalencoder-system-object.html)
+* [comm.ViterbiDecoder](https://www.mathworks.com/help/comm/ref/comm.viterbidecoder-system-object.html)
+* [comm.RSEncoder](https://www.mathworks.com/help/comm/ref/comm.rsencoder-system-object.html?s_tid=doc_ta)
+* [comm.RSDecoder](https://www.mathworks.com/help/comm/ref/comm.rsdecoder-system-object.html)
+* [comm.TurboEncoder](https://www.mathworks.com/help/comm/ref/comm.turboencoder-system-object.html)
+* [comm.TurboDecoder](https://www.mathworks.com/help/comm/ref/comm.turbodecoder-system-object.html)
+* [comm.LDPCEncoder](https://www.mathworks.com/help/comm/ref/comm.ldpcencoder-system-object.html?s_tid=doc_ta)
+* [comm.LDPCDecoder](https://www.mathworks.com/help/comm/ref/comm.ldpcdecoder-system-object.html?s_tid=doc_ta)
+* [comm.OSTBCEncoder](https://www.mathworks.com/help/comm/ref/comm.ostbcencoder-system-object.html?s_tid=doc_ta)
+* [comm.OSTBCCombiner](https://www.mathworks.com/help/comm/ref/comm.ostbccombiner-system-object.html)
+
+> **NOTE**
+>
+> The papers mentioned above are just a part of the student projects and therefore all of the numerical results should be reviewed additionally. For example, the mistake may occured in channel modeling (unfortunatelly, the source codes were lost mostly). 
+
 **Extra files:**
 * [Optical Link Budget](https://nbviewer.jupyter.org/gist/kirlf/5374c07342521a32e9c25ee8df95697d)
 * [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)

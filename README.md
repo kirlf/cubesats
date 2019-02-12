@@ -15,7 +15,7 @@ Considered links are contributions to the [teaching materials about MIMO communi
 >
 > The papers mentioned above are just a part of the student projects and therefore all of the numerical results should be reviewed additionally. For example, the mistake may occured in channel modeling (unfortunatelly, the source codes were lost mostly). 
 >
->Followink MatLab objects were used for the modeling:
+>Following MatLab objects were used for the modeling:
 >* [comm.PSKModulator](https://www.mathworks.com/help/comm/ref/comm.pskmodulator-system-object.html?s_tid=doc_ta) and [comm.PSKDemodulator](https://www.mathworks.com/help/comm/ref/comm.pskdemodulator-system-object.html)
 >* [comm.ConvolutionalEncoder](https://www.mathworks.com/help/comm/ref/comm.convolutionalencoder-system-object.html) and [comm.ViterbiDecoder](https://www.mathworks.com/help/comm/ref/comm.viterbidecoder-system-object.html)
 >* [comm.RSEncoder](https://www.mathworks.com/help/comm/ref/comm.rsencoder-system-object.html?s_tid=doc_ta) and [comm.RSDecoder](https://www.mathworks.com/help/comm/ref/comm.rsdecoder-system-object.html)

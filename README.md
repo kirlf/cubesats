@@ -5,7 +5,7 @@
 * [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
-**Links related to *[Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme](https://ieeexplore.ieee.org/document/8456940)***:
+**Files related to *[Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme](https://ieeexplore.ieee.org/document/8456940)***:
 * [Proposed channel model (Rician) testing](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
 * [Alamouti test modeling](https://nbviewer.jupyter.org/gist/kirlf/9587c6859db08e5e813b0650f97c7344)
 

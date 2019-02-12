@@ -6,7 +6,7 @@
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
 **Files related to *[Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme](https://ieeexplore.ieee.org/document/8456940)***:
-* [Testing of the channel model (Rician) for primary BER estmation](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
+* [Testing of the channel model (Rician) for primary BER estimation](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
 * [Alamouti test modeling](https://nbviewer.jupyter.org/gist/kirlf/9587c6859db08e5e813b0650f97c7344)
 
 Considered links are contributions to the [teaching materials about MIMO communications](https://github.com/kirlf/CSP/blob/master/MIMO/README.md).

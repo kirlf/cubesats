@@ -14,15 +14,14 @@ Considered links are contributions to the [teaching materials about MIMO communi
 > **NOTE**
 >
 > The papers mentioned above are just a part of the student projects and therefore all of the numerical results should be reviewed additionally. For example, the mistake may occured in channel modeling (unfortunatelly, the source codes were lost mostly). 
-
-
-Followink MatLab objects were used for the modeling:
-* [comm.PSKModulator](https://www.mathworks.com/help/comm/ref/comm.pskmodulator-system-object.html?s_tid=doc_ta) and [comm.PSKDemodulator](https://www.mathworks.com/help/comm/ref/comm.pskdemodulator-system-object.html)
-* [comm.ConvolutionalEncoder](https://www.mathworks.com/help/comm/ref/comm.convolutionalencoder-system-object.html) and [comm.ViterbiDecoder](https://www.mathworks.com/help/comm/ref/comm.viterbidecoder-system-object.html)
-* [comm.RSEncoder](https://www.mathworks.com/help/comm/ref/comm.rsencoder-system-object.html?s_tid=doc_ta) and [comm.RSDecoder](https://www.mathworks.com/help/comm/ref/comm.rsdecoder-system-object.html)
-* [comm.TurboEncoder](https://www.mathworks.com/help/comm/ref/comm.turboencoder-system-object.html) and [comm.TurboDecoder](https://www.mathworks.com/help/comm/ref/comm.turbodecoder-system-object.html)
-* [comm.LDPCEncoder](https://www.mathworks.com/help/comm/ref/comm.ldpcencoder-system-object.html?s_tid=doc_ta) and [comm.LDPCDecoder](https://www.mathworks.com/help/comm/ref/comm.ldpcdecoder-system-object.html?s_tid=doc_ta)
-* [comm.OSTBCEncoder](https://www.mathworks.com/help/comm/ref/comm.ostbcencoder-system-object.html?s_tid=doc_ta) and [comm.OSTBCCombiner](https://www.mathworks.com/help/comm/ref/comm.ostbccombiner-system-object.html)
+>
+>Followink MatLab objects were used for the modeling:
+>* [comm.PSKModulator](https://www.mathworks.com/help/comm/ref/comm.pskmodulator-system-object.html?s_tid=doc_ta) and [comm.PSKDemodulator](https://www.mathworks.com/help/comm/ref/comm.pskdemodulator-system-object.html)
+>* [comm.ConvolutionalEncoder](https://www.mathworks.com/help/comm/ref/comm.convolutionalencoder-system-object.html) and [comm.ViterbiDecoder](https://www.mathworks.com/help/comm/ref/comm.viterbidecoder-system-object.html)
+>* [comm.RSEncoder](https://www.mathworks.com/help/comm/ref/comm.rsencoder-system-object.html?s_tid=doc_ta) and [comm.RSDecoder](https://www.mathworks.com/help/comm/ref/comm.rsdecoder-system-object.html)
+>* [comm.TurboEncoder](https://www.mathworks.com/help/comm/ref/comm.turboencoder-system-object.html) and [comm.TurboDecoder](https://www.mathworks.com/help/comm/ref/comm.turbodecoder-system-object.html)
+>* [comm.LDPCEncoder](https://www.mathworks.com/help/comm/ref/comm.ldpcencoder-system-object.html?s_tid=doc_ta) and [comm.LDPCDecoder](https://www.mathworks.com/help/comm/ref/comm.ldpcdecoder-system-object.html?s_tid=doc_ta)
+>* [comm.OSTBCEncoder](https://www.mathworks.com/help/comm/ref/comm.ostbcencoder-system-object.html?s_tid=doc_ta) and [comm.OSTBCCombiner](https://www.mathworks.com/help/comm/ref/comm.ostbccombiner-system-object.html)
 
 **Extra files:**
 * [Optical Link Budget](https://nbviewer.jupyter.org/gist/kirlf/5374c07342521a32e9c25ee8df95697d)

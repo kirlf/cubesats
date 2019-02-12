@@ -9,7 +9,7 @@
 * [Proposed channel model (Rician) testing](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
 * [Alamouti test modeling](https://nbviewer.jupyter.org/gist/kirlf/9587c6859db08e5e813b0650f97c7344)
 
-> Considered links are contributions to the [teaching materials about MIMO communications](https://github.com/kirlf/CSP/blob/master/MIMO/README.md).
+Considered links are contributions to the [teaching materials about MIMO communications](https://github.com/kirlf/CSP/blob/master/MIMO/README.md).
 
 Followink MatLab objects were used for the modeling:
 * [comm.PSKModulator](https://www.mathworks.com/help/comm/ref/comm.pskmodulator-system-object.html?s_tid=doc_ta) and [comm.PSKDemodulator](https://www.mathworks.com/help/comm/ref/comm.pskdemodulator-system-object.html)

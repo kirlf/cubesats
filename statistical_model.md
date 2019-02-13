@@ -45,4 +45,4 @@ Interesting research can be obtained in [\[3\]](https://www.db-thueringen.de/rec
 ## Afterwords
 
 The following Wikipedia articles were contributed based on these materials:
-* [Doppler_effect: Satellite_communication](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication)
+* [Doppler effect: Satellite communication](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication)

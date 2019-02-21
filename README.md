@@ -19,7 +19,7 @@ Considered links are contributions to the [teaching materials about MIMO communi
 
 
 **Extra files:**
-* [Optical Link Budget](https://nbviewer.jupyter.org/gist/kirlf/5374c07342521a32e9c25ee8df95697d)
+* [Optical Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 * [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)
 
 # Introduction

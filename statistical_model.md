@@ -25,7 +25,7 @@ Corazza-Vatalaro model (the mixture of the Rician fast fading channel and Log-no
 ![Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping..](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/cvm.png)
 *Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
 
-> Our suggestion is that implementation of this model in MatLab or Python is good student project. This allows to learn more about Doppler spread, Doppler shifts, Log-normal fading, Rate conversion and Interpolation.
+> Our suggestion is that implementation of this model in MatLab or Python is good student project. This allows to learn more about Doppler spread, [Doppler shifts](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication), Log-normal fading, Rate conversion and Interpolation.
 
 Interesting research can be obtained in [\[3\]](https://www.db-thueringen.de/receive/dbt_mods_00026568), where both single-state and multi-state models are considered. 
 
@@ -41,8 +41,3 @@ Interesting research can be obtained in [\[3\]](https://www.db-thueringen.de/rec
 \[2\] Fontan, F. P., Mayo, A., Marote, D., Prieto‐Cerdeira, R., Mariño, P., Machado, F., & Riera, N. (2008). Review of generative models for the narrowband land mobile satellite propagation channel. International Journal of Satellite Communications and Networking, 26(4), 291-316.
 
 \[3\] [Arndt, D. (2015). On Channel Modelling for Land Mobile Satellite Reception (Doctoral dissertation).](https://www.db-thueringen.de/receive/dbt_mods_00026568)
-
-## Afterwords
-
-The following Wikipedia articles were contributed based on these materials:
-* [Doppler effect: Satellite communication](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication)

@@ -189,8 +189,3 @@ The interesting research about LDPC-BCH codes is done in \[11\].
 \[10\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
 
 \[11\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
-
-## Afterwords
-
-The following Wikipedia articles were contributed based on these materials:
-* [Minimum Shift Keying](https://en.wikipedia.org/wiki/Minimum-shift_keying)

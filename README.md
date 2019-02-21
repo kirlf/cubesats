@@ -19,7 +19,7 @@ Considered links are contributions to the [teaching materials about MIMO communi
 >[Communications Toolbox](https://www.mathworks.com/help/comm/index.html) (MatLab) objects was used for the modeling.
 
 
-**Files related to *[Optical Inter-satellite Link in Comparison with RF Case in CubeSat System](http://jre.cplire.ru/jre/oct17/6/text.pdf)***
+**Files related to *["Optical Inter-satellite Link in Comparison with RF Case in CubeSat System"](http://jre.cplire.ru/jre/oct17/6/text.pdf)***
 * [Optical Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 
 

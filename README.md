@@ -7,7 +7,7 @@
 
 **Files related to *["Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme"](https://ieeexplore.ieee.org/document/8456940)***:
 * [Testing of the channel model (Rician) for primary BER estimation](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
-* [Alamouti test modeling](https://nbviewer.jupyter.org/gist/kirlf/9587c6859db08e5e813b0650f97c7344)
+* [Alamouti test modeling](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
 * [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)
 
 Considered links are contributions to the [teaching materials about MIMO communications](https://github.com/kirlf/CSP/blob/master/MIMO/README.md).

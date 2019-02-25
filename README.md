@@ -29,7 +29,7 @@ Table 1.1 CubeSat's basic configurations
 | 3U | 30x10x10 | 4 |
 | 6U | 30x20x10 | 12 |
 
-Actually, CubeSats are very interesting topic and if you want to learn more you can visit the official site of [The AIAA/USU Conference on Small Satellites](https://digitalcommons.usu.edu/smallsat/) .
+Actually, CubeSats are very interesting topic and if you want to learn more you can visit the official site of [The AIAA/USU Conference on Small Satellites](https://digitalcommons.usu.edu/smallsat/).
 
 Thank you for your attention and you are welcome!
 

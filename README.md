@@ -5,20 +5,6 @@
 * [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
-**Files related to *["Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme"](https://ieeexplore.ieee.org/document/8456940)***:
-* [Testing of the channel model (Rician) for primary BER estimation](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
-* [Alamouti test modeling](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
-* [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)
-
-Considered links are contributions to the [teaching materials about MIMO communications](https://github.com/kirlf/CSP/blob/master/MIMO/README.md).
-
-> **NOTE**
->
-> The papers mentioned above are just a part of the student projects and therefore all of the numerical results should be reviewed additionally. For example, the mistake may occured in channel modeling (unfortunatelly, the source codes were lost mostly). 
->
->[Communications Toolbox](https://www.mathworks.com/help/comm/index.html) (MatLab) objects was used for the modeling.
-
-
 **Files related to *["Optical Inter-satellite Link in Comparison with RF Case in CubeSat System"](http://jre.cplire.ru/jre/oct17/6/text.pdf)***
 * [Optical Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 

@@ -6,7 +6,7 @@
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
 * [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)
 
-**Files related to *["Optical Inter-satellite Link in Comparison with RF Case in CubeSat System"](http://jre.cplire.ru/jre/oct17/6/text.pdf)***
+**Files related to *["Optical Inter-satellite Link in Comparison with RF Case in CubeSat System"](http://jre.cplire.ru/jre/oct17/6/text.pdf)***:
 * [Optical Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 
 

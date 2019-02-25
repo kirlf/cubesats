@@ -1,7 +1,7 @@
 # Table of contents
 
 **Files related to *["Survey of modulation and coding schemes for application in CubeSat systems"](https://ieeexplore.ieee.org/abstract/document/7997514)***:
-* [Link Budget](https://github.com/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+* [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
 * [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
 * [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)

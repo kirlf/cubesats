@@ -189,3 +189,5 @@ The interesting research about LDPC-BCH codes is done in \[11\].
 \[10\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
 
 \[11\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
+
+\[12\] Hassan, A. E. S., Dessouky, M., Elazm, A. A., & Shokair, M. (2012). Evaluation of complexity versus performance for turbo code and LDPC under different code rates. In Proc. SPACOMM 2012: The fourth international conference on advances in satellite and space communication (pp. 93-98).

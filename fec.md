@@ -107,15 +107,11 @@ However, it should be taken into account that MSK \(GMSK\) is the [partial case 
 
 ### Why M-QAM schemes are not presented above?
 
-M-QAM was replaced by the M-APSK in space communication due to (cited by the [Standard + Customized APSK Schemes For Satellite Transmission By Donald Vanderweit, Agilent Technologies, Inc.](http://www.satmagazine.com/story.php?number=1051727556)):
+M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
-> Like QAM, APSK gives more bits per symbol than QPSK, allowing more data to be sent in the same bandwidth. But unlike QAM, the states are configured in rings, with the intent that symbol points in a given ring will react the same way to compression. This has two positive effects. The first is that compression of the signal tends to have less of an effect on the spacing between states (sometimes referred to as the “Euclidean distance”), and so the states are easier to distinguish from each other during demodulation.
->
-> \[...\]
->
-> The second advantage of APSK is that it lends itself to pre-distortion. By varying the space between rings before transmission, it is possible to pre-distort the signal in a way that counteracts the effects of transmission distortion and thereby gets a better output. In static pre-distortion, the spacing between rings is set and fixed. In dynamic pre-distortion, the signal received from the satellite is monitored and measured, and the results are fed back to the pre-distortion circuitry for adjustment. Because of the presence of Automatic Level Control (ALC) circuitry in the transmitter and the relatively stable operation of the satellite amplifier, static pre-distortion can give good results over long periods of time.
->
-> Peak to Average Power Ratio (PAPR): Another consideration is Peak-to-Average Power Ratio (PAPR). This metric gives the ratio of the highest power the amplifier will be expected to send to the average power. This ratio is important to designers because the amount of data that can be sent is proportional to the average power, but the size of the amplifier needed for a given format depends on the peak power. The ideal PAPR would be 1:1, and this is in fact the ratio for QPSK. All of the points in the constellation are the same distance from the origin, and therefore require the same power to transmit. For more complicated schemes, APSK has an advantage over QAM: the 32-APSK scheme shown above has a PAPR of approx. 1.57, compared to 1.7 for 32-QAM. By adjusting the spacing between rings and other factors, a designer can reach a balance between lower PAPR and better resistance to distortion.
+![apsk](https://raw.githubusercontent.com/kirlf/cubesats/master/assets/APSK%20advantages.PNG)
+
+> *Fig. 3.5. The main advantages of APSK in comparison with QAM (prepared according to [Standard + Customized APSK Schemes For Satellite Transmission By Donald Vanderweit, Agilent Technologies, Inc.](http://www.satmagazine.com/story.php?number=1051727556))*
 
 
 ## 3.3. Channel coding \(FEC\)
@@ -124,7 +120,7 @@ As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solom
 
 ![Codes Used by NASA Missions \[10\]](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2814%29.png)
 
->*Fig. 3.5. Codes Used by NASA Missions \[10\]*
+>*Fig. 3.6. Codes Used by NASA Missions \[10\]*
 
 ### Turbo codes vs. LDPC
 

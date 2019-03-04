@@ -116,51 +116,24 @@ M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
 ## 3.3. Channel coding \(FEC\)
 
-As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates, probably, to the deep-space communication standartd. However, since 2000-s modern error correction schemes are used more widely in space communications.
+As we can see from table 3.1 very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates, probably, to the deep-space communication standartd. However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
 
 ![Codes Used by NASA Missions \[10\]](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2814%29.png)
 
 >*Fig. 3.6. Codes Used by NASA Missions \[10\]*
 
-### Turbo codes vs. LDPC
+ 
+There are a lot of [comparison issues](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) of the Turbo codes and LDPC in the literature \[7, p. 614, 653\]\, [\[10\]](https://ieeexplore.ieee.org/document/4383367/)\), \[11\].
 
-**LDPC disadvanges** \(cited by [\[10\]](https://ieeexplore.ieee.org/document/4383367/)\):
+Briefly, the main tradeoff can be formulated as following:
+* Turbo codes are the mest choice for the lower code rate (e.g. 1/6, 1/3, 1/2);
+* LDPC codes are appropriate solution for the higher code rates (e.g. 3/4, 5/6, 7/8).
 
-> Turbo codes were the first of the modern iteratively decoded codes to become practical. LDPC codes followed and have proven very versatile, but they have not replaced turbo codes, or even the traditional block and convolutional codes. LDPC codes are decoded on a parity check matrix, and this matrix grows larger as the code rate is decreased, making low-rate LDPC decoders more complex. In contrast, turbo codes are decoded on trellises, with one trellis section per information bit, corresponding to several code symbols. Hence turbo codes remain superior to LDPC codes at low rates. Iterative decoding, of either turbo or LDPC codes, remains complex relative to either Viterbi decoding of convolutional codes or to algebraic decoding techniques for Reed–Solomon and other block codes. When decoding complexity is constrained, as it is in highdata- rate applications, the traditional codes remain unbeaten. It is unknown if there are fundamental reasons why these different niches require different coding solutions. It is quite possible that good LDPC codes based on generator matrices will be found, and that low complexity LDPC decoding algorithms will be discovered. If so, perhaps LDPC codes will eventually solve all coding problems.
+Additionally, LDPC does not require interleaving and puncturing procedures.
 
-In other hand,  BER performance of the Turbo codes are influenced by low weight codes  limitation \[7 , p.614\]. This phenomenon indirectly means that for decreasing of the BER in fixed SNR only decreasing of the code rate \(and hence of the net bit rate\) can be used.
+Moreover, LDPC codes concatenated with BCH codes \[12\] are the part of the DVB-S2/S2X standard.
 
-LDPC codes have no limitations of minimum distance \(cited by \[7, p. 653\]\):
 
-> LDPC codes have excellent distance properties. Gallager showed that for random LDPC codes, the minimum distance dmin between codewords increases with N \[code word length\] when column and row weights are held fixed \[ 112, p. 51\], that is, as they become increasingly sparse. Sequences of LDPC codes as N -&gt; inf have been proved to reach channel capacity \[217\].
-
-That indirectly means that LDPC codes may be more efficient on relatively large code rates \(e.g. 3/4, 5/6, 7/8\) than Turbo codes.
-
-In the [following reference](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) comparison formulated as:
-
-> LDPC codes have certain advantages over turbo codes: 
->
-> • They tend to have a better block error performance, and a better performance on bursty channels. 
->
-> • They are more amenable to high rates, and in fact can be designed for almost any rate and blocklength. \(In contrast, the rate of turbo codes is usually adjusted by means of a puncturing scheme, which necessitates an additional design step.\) 
->
-> • Their error floor tends to occur at a lower BER. 
->
-> • The encoder and decoder do not require interleavers. 
->
-> • A single LDPC code can be universally good for a collection of channels. 
->
-> • There exist iterative LDPC decoding algorithms that are easy to implement, have moderate complexity \(which scales linearly with the blocklength\), and are parallelizable in hardware. In particular, LDPC decoding using the belief propagation \(sum-product\) algorithm tends to be less complex than turbo decoding using the BCJR algorithm. 
->
-> • LDPC decoders inherently check if a codeword satisfying the check equations has been found, and otherwise declare a decoding failure. \(In contrast, turbo decoders usually need to perform additional operations to compute a stopping criterion, and even then it is not clear if the decoding result corresponds to a codeword satisfying the check equations.\) 
->
-> LDPC codes also have certain disadvantages relative to turbo codes: 
->
-> • In general, the encoding complexity is higher than for turbo codes. \(However, there are special LDPC code constructions with low encoding complexity.\) 
->
-> • Iterative LDPC decoding typically requires many more iterations than iterative turbo decoding, which may lead to a higher latency. \(The complexity per iteration is much lower, though.\)
-
-The interesting research about LDPC-BCH codes is done in \[11\].
 
 ## References
 
@@ -184,6 +157,6 @@ The interesting research about LDPC-BCH codes is done in \[11\].
 
 \[10\]  Andrews, Kenneth S., et al. "The development of turbo and LDPC codes for deep-space applications." Proceedings of the IEEE 95.11 \(2007\): 2142-2156.
 
-\[11\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
+\[11\] Hassan, A. E. S., Dessouky, M., Elazm, A. A., & Shokair, M. (2012). Evaluation of complexity versus performance for turbo code and LDPC under different code rates. In Proc. SPACOMM 2012: The fourth international conference on advances in satellite and space communication (pp. 93-98).
 
-\[12\] Hassan, A. E. S., Dessouky, M., Elazm, A. A., & Shokair, M. (2012). Evaluation of complexity versus performance for turbo code and LDPC under different code rates. In Proc. SPACOMM 2012: The fourth international conference on advances in satellite and space communication (pp. 93-98).
+\[12\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.

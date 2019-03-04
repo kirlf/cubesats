@@ -123,7 +123,7 @@ As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solom
 >*Fig. 3.6. Codes Used by NASA Missions \[10\]*
 
  
-There are a lot of [comparison issues](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) of the Turbo codes and LDPC in the literature \[7, p. 614, 653\]\, [\[10\]](https://ieeexplore.ieee.org/document/4383367/)\), \[11\].
+There are a lot of [comparison issues](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) of the Turbo codes and LDPC in the literature \[7, p. 614, 653\]\, [\[10\]](https://ieeexplore.ieee.org/document/4383367/), \[11\].
 
 Briefly, the main tradeoff can be formulated as following:
 * Turbo codes are the mest choice for the lower code rate (e.g. 1/6, 1/3, 1/2);

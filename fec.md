@@ -49,7 +49,7 @@ We can make the following summary analyzing the considered matherials:
 
 ## 3.2. Small suggestions about modulation schemes
 
-###  Why M-PSK replaced M-FSK?
+###  Why did M-PSK replace M-FSK?
 
 Higher order frequency modulation schemes are not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
 
@@ -60,11 +60,11 @@ Higher order frequency modulation schemes are not usually used in satellite comm
 | M-PSK | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 |
 | M-FSK | 1 | 1 | 0.75 | 0.5 | 0.3125 | 0.1875 |
 
-### Why BPSK is the one of the popular solutions?
+### Why is BPSK one of the popular solutions?
  
 Although QPSK has two twice as larger throughput \(2 bits per symbol\) and the same BER \(Bit-error ratio\) performance in AWGN \(Additive White Gaussian Noise\) channel, but, practically, BPSK is more robust due to its simplicity.
 
-### Why OQPSK is used more than QPSK?
+### Why is OQPSK used more than QPSK?
 
 QPSK has possible phase jumps (zero crossings). When the signal is low-pass filtered (as is typical in a transmitter), these phase-shifts result in large amplitude fluctuations. One solution to avoid π radians phase jumps, is to use Offset QPSK \(OQPSK\).
 
@@ -86,7 +86,7 @@ Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure
 
 Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[2\]](https://ieeexplore.ieee.org/document/904973/).
 
-### Why GMSK was replaced in modern solutions?
+### Why was GMSK replaced in modern solutions?
 
 GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (fig. 3.4).
 
@@ -105,7 +105,7 @@ Moreover, theoretically, the spectral parameters of the SOQPSK can be optimized 
 
 However, it should be taken into account that MSK \(GMSK\) is the [partial case of the 2-FSK](https://www.quora.com/How-many-bits-per-symbol-are-transmitted-in-MSK). OQPSK is the [quadrature modulation](http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html) scheme and has the same throughput as QPSK or 4-QAM.
 
-### Why M-QAM schemes are not presented above?
+### Why are M-QAM schemes not presented above?
 
 M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
@@ -132,7 +132,6 @@ Briefly, the main tradeoff can be formulated as following:
 Additionally, LDPC does not require interleaving and puncturing procedures.
 
 Moreover, LDPC codes concatenated with BCH codes \[12\] are the part of the DVB-S2/S2X standard.
-
 
 
 ## References

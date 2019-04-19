@@ -160,4 +160,4 @@ Moreover, LDPC codes concatenated with BCH codes \[12\] are the part of the DVB-
 
 \[12\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
 
-** Bonus**: [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)
+**Bonus**: [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)

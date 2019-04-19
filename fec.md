@@ -159,3 +159,5 @@ Moreover, LDPC codes concatenated with BCH codes \[12\] are the part of the DVB-
 \[11\] Hassan, A. E. S., Dessouky, M., Elazm, A. A., & Shokair, M. (2012). Evaluation of complexity versus performance for turbo code and LDPC under different code rates. In Proc. SPACOMM 2012: The fourth international conference on advances in satellite and space communication (pp. 93-98).
 
 \[12\] Chen, P. H., Weng, J. J., Wang, C. H., & Chen, P. N. (2013). BCH code selection and iterative decoding for BCH and LDPC concatenated coding system. IEEE Communications Letters, 17(5), 980-983.
+
+** Bonus**: [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)

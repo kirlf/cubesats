@@ -4,15 +4,13 @@
 * [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
 * [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 * [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
-* [Multiple access (short review)](https://github.com/kirlf/cubesats/blob/master/multiple_access.md)
 
 **Files related to *["Optical Inter-satellite Link in Comparison with RF Case in CubeSat System"](http://jre.cplire.ru/jre/oct17/6/text.pdf)***:
 * [Optical Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 
 **Files related to *["Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme"](https://ieeexplore.ieee.org/document/8456940)***:
 * [Alamouti scheme (MatLab simulation)](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
-* [Overview of concatenated and turbo codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md)
-* [Overview of LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb)
+
 
 
 

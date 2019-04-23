@@ -4,6 +4,8 @@
 2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 3. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
+** Bonus:** [Space-time codes (modeling in MatLab)](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
+
 # Introduction
 
 These matherials relate to my Master Thesis [**"Design of cooperative communication system based on CubeSat satellites"**](http://opac.lbs-ilmenau.gbv.de/DB=1/PPN?PPN=898368146) that were completed in August 2017 and developed more deeply during 2017-2019 (as a hobby).

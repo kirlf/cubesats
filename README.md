@@ -1,18 +1,8 @@
 # Table of contents
 
-**Files related to *["Survey of modulation and coding schemes for application in CubeSat systems"](https://ieeexplore.ieee.org/abstract/document/7997514)***:
-* [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
-* [Statistical channel model](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
-* [Modulation and coding \(FEC\)](https://github.com/kirlf/cubesats/blob/master/fec.md)
-
-**Files related to *["Optical Inter-satellite Link in Comparison with RF Case in CubeSat System"](http://jre.cplire.ru/jre/oct17/6/text.pdf)***:
-* [Optical Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
-
-**Files related to *["Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme"](https://ieeexplore.ieee.org/document/8456940)***:
-* [Alamouti scheme (MatLab simulation)](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
-
-
-
+1. [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
+3. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
 # Introduction
 
@@ -42,3 +32,9 @@ M.Sc. Vladimir Fadeev
 December 2017 - February  2019
 
 Kazan
+
+## List of published papers
+
+1. Gaysin, Artur, Vladimir Fadeev, and Marko Hennhöfer. ["Survey of modulation and coding schemes for application in CubeSat systems."]((https://ieeexplore.ieee.org/abstract/document/7997514)) 2017 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SINKHROINFO). IEEE, 2017.
+2. Gibalina, Zlata, and Vladimir Fadeev. ["Optical Inter-Satellite Link in Comparison with RF case in CubeSat system."]((http://jre.cplire.ru/jre/oct17/6/text.pdf)) Zhurnal Radioelektroniki-Journal of Radio Electronics 10 (2017).
+3. Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). [Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme.](https://ieeexplore.ieee.org/document/8456940) In 2018 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.

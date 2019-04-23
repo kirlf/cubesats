@@ -4,7 +4,7 @@
 2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 3. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
-** Bonus:** [Space-time codes (modeling in MatLab)](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
+**Bonus:** [Space-time codes (modeling in MatLab)](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb)
 
 # Introduction
 

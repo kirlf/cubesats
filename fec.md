@@ -122,7 +122,7 @@ M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
 ## 3.3. Channel coding \(FEC\)
 
-As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates, probably, to the deep-space communication standartd. However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
+As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates to the deep-space communication standartd. However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
 
 ![Codes Used by NASA Missions \[10\]](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2814%29.png)
 

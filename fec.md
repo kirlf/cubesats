@@ -4,7 +4,7 @@
 2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 3. Modulation and coding \(FEC\) survey
 
-# Modulation and coding \(FEC\)
+# Survey of modulation and coding schemes for application in CubeSat systems (afterwords)
 
 ## 3.1. Technical survey
 

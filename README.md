@@ -41,3 +41,8 @@ Kazan
 2. Gibalina, Zlata, and Vladimir Fadeev. ["Optical Inter-Satellite Link in Comparison with RF case in CubeSat system."](http://jre.cplire.ru/jre/oct17/6/text.pdf) Zhurnal Radioelektroniki-Journal of Radio Electronics 10 (2017). (with [additional materials](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)).
  
 3. Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). [Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme.](https://ieeexplore.ieee.org/document/8456940) In 2018 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.
+
+## List of popular science articles
+
+1. [Calculate the energy budget of the radio link for the satellite format CubeSat](https://habr.com/ru/post/447728/) (in Russian)
+2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)

@@ -44,5 +44,5 @@ Kazan
 
 ## List of popular science articles
 
-1. [Calculate the energy budget of the radio link for the satellite format CubeSat](https://habr.com/ru/post/447728/) (in Russian)
+1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
 2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)

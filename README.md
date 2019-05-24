@@ -37,7 +37,8 @@ Kazan
 
 ## List of papers
 
-1. Gaysin, Artur, Vladimir Fadeev, and Marko Hennhöfer. ["Survey of modulation and coding schemes for application in CubeSat systems."](https://ieeexplore.ieee.org/abstract/document/7997514) 2017 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SINKHROINFO). IEEE, 2017.
+1. Gaysin, Artur, Vladimir Fadeev, and Marko Hennhöfer. ["Survey of modulation and coding schemes for application in CubeSat systems."](https://ieeexplore.ieee.org/abstract/document/7997514) 2017 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SINKHROINFO). IEEE, 2017. (my oppinion about this publication is presented by [the following link](https://www.researchgate.net/publication/318801748_Survey_of_modulation_and_coding_schemes_for_application_in_CubeSat_systems/comments)). 
+
 2. Gibalina, Zlata, and Vladimir Fadeev. ["Optical Inter-Satellite Link in Comparison with RF case in CubeSat system."](http://jre.cplire.ru/jre/oct17/6/text.pdf) Zhurnal Radioelektroniki-Journal of Radio Electronics 10 (2017). (with [additional materials](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)).
  
 3. Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). [Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme.](https://ieeexplore.ieee.org/document/8456940) In 2018 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.

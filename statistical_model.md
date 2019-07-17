@@ -42,7 +42,8 @@ Interesting research can be obtained in [\[3\]](https://www.db-thueringen.de/rec
 
 ## 2.2. MIMO (Multiple Input Multiple Output) configuration
 
-
+- [MIMOSA](https://artes.esa.int/projects/mimosa-characterisation-mimo-channel-mobile-satellite-systems)
+- [SATCOM Spatial Geometrical Optimization](https://www.researchgate.net/profile/A_Knopp/publication/4323825_Optimum-capacity_MIMO_satellite_link_for_fixed_and_mobile_services/links/55701f2b08aeab77722897ad.pdf)
 
 ## References
 

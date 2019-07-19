@@ -151,7 +151,7 @@ However, since 2000-s modern error correction schemes such as Turbo codes and [L
 
 > Fig. 3.7. Bit error rate curves for several codes with rates near 1/6: k=1784 and k=8920 turbo codes and the (n=255, k=223) Reed–Solomon code concatenated with a constraint length N=15, rate 1/6 convolutional code. \[10\]
 
-Moreover the LDPC codes are the part of the DVB-S2/S2X standards (fig. 3.8).
+Moreover the LDPC codes are the part of the DVB-S2/S2X standards (fig. 3.8)\[12\].
 
 ![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/dvb_new.PNG)
 
@@ -164,8 +164,6 @@ Briefly, the main tradeoff can be formulated as following:
 * LDPC codes are appropriate solution for the higher code rates (e.g. 3/4, 5/6, 7/8).
 
 Additionally, LDPC does not require interleaving and puncturing procedures.
-
-Moreover, LDPC codes concatenated with BCH codes \[12\] are the part of the DVB-S2/S2X standard.
 
 
 ## References

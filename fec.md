@@ -124,18 +124,26 @@ M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
 Let us start from the table of main stages:
 
-![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20%2814%29.png)
+**Table 3.3. Codes Used by NASA Missions \[10\]**
 
->*Fig. 3.6. Codes Used by NASA Missions \[10\]*
+| **Code** | **Mission(s)** | **Years** | 
+| :--- | :--- | :--- |
+| Uncoded | Explorer, Mariner, many others | 1958-present |
+| (25, 1/2) convolutional| Pioneer, Venus | 1968-1978 | 
+| (32, 6) Reed-Muller| Mariner, Viking | 1969-1975 | 
+| Golay | Voyager | 1977-present | 
+| RS(255, 223)+(7, 1/2) | Voyager, Galileo, many others | 1977-present |
+| RS(255, 223)+(7, 1/3) | Voyager | 1989-2003 | 
+| RS(255, 223)+(14, 1/4) | Galileo | 1958-present | 
+| RS + (15, 1/6)| Cassini, Mars Pathfinder, others | 1996-present |
+| Turbo | Messenger, Stereo, MRO, others | 2004-present | 
+| LDPC | Constellation, MSL | est. 2009 |
 
 As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates to the deep-space communication standartd. However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
 
-
-
-
 ![](https://raw.githubusercontent.com/kirlf/CSP/master/FEC/assets/rsc.png)
 
->Fig. 3.7. Deep-space concatenated coding system. \[1, p. 433\]
+>Fig. 3.6. Deep-space concatenated coding system. \[1, p. 433\]
  
 There are a lot of [comparison issues](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) of the Turbo codes and LDPC in the literature \[7, p. 614, 653\]\, [\[10\]](https://ieeexplore.ieee.org/document/4383367/), \[11\].
 

@@ -139,11 +139,23 @@ Let us start from the table of main stages:
 | Turbo | Messenger, Stereo, MRO, others | 2004-present | 
 | LDPC | Constellation, MSL | est. 2009 |
 
-As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](https://github.com/kirlf/CSP/blob/master/FEC/Conv%20codes%20idea%20extensions.md). This relates to the deep-space communication standartd. However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
+As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes#RS60). This relates to the [deep-space communication standartd](https://ipnpr.jpl.nasa.gov/progress_report/42-63/63H.PDF).
 
 ![](https://raw.githubusercontent.com/kirlf/CSP/master/FEC/assets/rsc.png)
 
->Fig. 3.6. Deep-space concatenated coding system. \[1, p. 433\]
+>Fig. 3.6. Deep-space concatenated coding system. \[8, p. 433\]
+
+However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
+
+<img src="https://raw.githubusercontent.com/kirlf/CSP/master/FEC/assets/turbovsrsBER.png" alt="TurboRSCC" width="700"/>
+
+> Fig. 3.7. Bit error rate curves for several codes with rates near 1/6: k=1784 and k=8920 turbo codes and the (n=255, k=223) Reed–Solomon code concatenated with a constraint length N=15, rate 1/6 convolutional code. \[10\]
+
+Moreover the LDPC codes are the part of the DVB-S2/S2X standards (fig. 3.8).
+
+![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/dvb_new.PNG)
+
+> Fig. 3.7. The block schemes of DVB-S and DVB-S2/SX2.
  
 There are a lot of [comparison issues](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) of the Turbo codes and LDPC in the literature \[7, p. 614, 653\]\, [\[10\]](https://ieeexplore.ieee.org/document/4383367/), \[11\].
 

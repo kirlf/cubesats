@@ -1,6 +1,6 @@
 # Table of contents
 
-1. [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+1. [Link Budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
 2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 3. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 

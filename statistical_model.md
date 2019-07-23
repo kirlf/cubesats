@@ -29,7 +29,7 @@ According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Mate
 
 ### 2.1.1. Generalized block scheme of the model
 
-Corazza-Vatalaro model (the mixture of the Rician fast fading channel and Log-normal slow fading channel) should be considered for more precise considerationc (fig. 2.2).
+Corazza-Vatalaro model (the mixture of the Rician fast fading channel and Log-normal slow fading channel) should be considered for more precise consideration (fig. 2.2).
 
 ![Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping..](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/cvm.png)
 *Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*

@@ -83,6 +83,7 @@ The constant phase increment in Figure 2.2 is given by:
 
 where <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, and <img src="https://tex.s2cms.ru/svg/f_%7BDir%7D" alt="f_{Dir}" /> is the Doppler shift frequency of the direct path.
 
+This part determines **time variability** of the channel.
 
 ### 2.1.4. Slow fading
 
@@ -99,6 +100,8 @@ Where:
 - <img src="https://tex.s2cms.ru/svg/v" alt="v" /> is the velocity of the mobile terminal, and 
 - <img src="https://tex.s2cms.ru/svg/l_%7Bcorr%7D" alt="l_{corr}" /> is the correlation length (3-5 m \[4\]).
 
+This rail determines **slow (large-scaled) fading**.
+
 ### 2.1.5. Markov chains based model 
 
 Interesting research can be obtained in [\[5\]](https://www.db-thueringen.de/receive/dbt_mods_00026568), where both single-state and multi-state models are considered. 
@@ -107,13 +110,15 @@ Interesting research can be obtained in [\[5\]](https://www.db-thueringen.de/rec
 
 *Figure 2.4. Semi-Markov model for two satellites \[5\].*
 
+where <img src="https://tex.s2cms.ru/svg/p_%7Bij%7D" alt="p_{ij}" /> means the probability of the state changing.
+
 ## 2.2. MIMO (Multiple Input Multiple Output) configuration
 
 Moreover, the MIMO channel be considered \[6-9\]. Several frameworks are developed to model this kind of channels:
 - [MIMOSA](https://artes.esa.int/projects/mimosa-characterisation-mimo-channel-mobile-satellite-systems)
 - [SATCOM Spatial Geometrical Optimization](https://www.researchgate.net/profile/A_Knopp/publication/4323825_Optimum-capacity_MIMO_satellite_link_for_fixed_and_mobile_services/links/55701f2b08aeab77722897ad.pdf)
 
-Additionaly, special MIMO techniques such as spatial diversity, spatial multiplexing or multi-user MIMO can be applied. Cooperative schemes should be taken into account (fig. 2.5).
+Additionaly, special MIMO techniques such as spatial diversity, spatial multiplexing or multi-user MIMO can be applied. Cooperative schemes should be also taken into account (fig. 2.5).
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Cooperative_Sat.png" width="600">
 

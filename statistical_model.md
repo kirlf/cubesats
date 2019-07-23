@@ -60,7 +60,7 @@ The main characteristics \[3\]:
 - filter type: passband
 - cut-off frequencies: 30 and 300 Hz
 
-Python example:
+Python implementation:
 
 ```python
 from scipy import signal

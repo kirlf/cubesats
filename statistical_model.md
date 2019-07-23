@@ -12,7 +12,7 @@ According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Mate
 
 <img src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/image%20(6).png" alt="params" width="600" />
 
->*Fig. 2.1. Model parameters, sigma, mu and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]*
+*Fig. 2.1. Model parameters, sigma, mu and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]*
 
  Table 2.1. Statistical characteristics of the LEO channel
 
@@ -69,13 +69,23 @@ b, a = signal.butter(10, [30 , 300], 'bandpass', analog=True)
 w, h = signal.freqs(b, a)
 ```
 
+### 2.1.3. Doppler shift
+
+### 2.1.4. Slow fading
+
+The lower rail of the fig. 2.2 can be reformulated as fig. 2.3.
+
+![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/slow_fad_new.PNG)
+
+*Fig. 2.3. Alternative low-pass filtering method for generating slower varying shadowed signals at the same rate as the multipath rail.*
+
 ### 2.1.n Markov chains based model 
 
 Interesting research can be obtained in [\[4\]](https://www.db-thueringen.de/receive/dbt_mods_00026568), where both single-state and multi-state models are considered. 
 
 <img alt="Markov" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/SatMarkov.png" width="600"/>
 
-> Figure 2.3. Semi-Markov model for two satellites \[4\].
+*Figure 2.4. Semi-Markov model for two satellites \[4\].*
 
 ## 2.2. MIMO (Multiple Input Multiple Output) configuration
 
@@ -83,11 +93,11 @@ Moreover, the MIMO channel be considered \[5-8\]. Several frameworks are develop
 - [MIMOSA](https://artes.esa.int/projects/mimosa-characterisation-mimo-channel-mobile-satellite-systems)
 - [SATCOM Spatial Geometrical Optimization](https://www.researchgate.net/profile/A_Knopp/publication/4323825_Optimum-capacity_MIMO_satellite_link_for_fixed_and_mobile_services/links/55701f2b08aeab77722897ad.pdf)
 
-Additionaly, special MIMO techniques such as spatial diversity, spatial multiplexing or multi-user MIMO can be applied. Cooperative schemes should be taken into account (fig. 2.4).
+Additionaly, special MIMO techniques such as spatial diversity, spatial multiplexing or multi-user MIMO can be applied. Cooperative schemes should be taken into account (fig. 2.5).
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Cooperative_Sat.png" width="600">
 
-*Fig. 2.4. System model for the cooperative MIMO case over satellite communicactions.*
+*Fig. 2.5. System model for the cooperative MIMO case over satellite communicactions.*
 
 ## References
 

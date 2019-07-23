@@ -34,8 +34,6 @@ Corazza-Vatalaro model (the mixture of the Rician fast fading channel and Log-no
 ![Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping..](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/cvm.png)
 *Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
 
-> Our suggestion is that implementation of this model in MatLab or Python is good student project. This allows to learn more about Doppler spread, [Doppler shifts](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication), Log-normal fading, Rate conversion and Interpolation.
-
 The following variables are used in the upper rail:
 
 - <img src="https://tex.s2cms.ru/svg/%20G(0%2C%201)" alt=" G(0, 1)" />  is a random variable with a normal (Gaussian) distribution with zero mean and unit variance

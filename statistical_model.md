@@ -27,12 +27,33 @@ According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Mate
 >
 >Possibly, it makes scense to model [Rician flat fading channel](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870) to estimate BER performance primaraly.
 
+### 2.1.1. Generalized block scheme of the model
+
 Corazza-Vatalaro model (the mixture of the Rician fast fading channel and Log-normal slow fading channel) should be considered for more precise considerationc (fig. 2.2).
 
 ![Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping..](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/cvm.png)
 *Figure 2.2.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
 
 > Our suggestion is that implementation of this model in MatLab or Python is good student project. This allows to learn more about Doppler spread, [Doppler shifts](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication), Log-normal fading, Rate conversion and Interpolation.
+
+The following variables are used in the upper rail:
+
+- <img src="https://tex.s2cms.ru/svg/%20G(0%2C%201)" alt=" G(0, 1)" />  is a random variable with a normal (Gaussian) distribution with zero mean and unit variance
+- <img src="https://tex.s2cms.ru/svg/K" alt="K" />  is the Rician factor: the ratio between the power of the direct path of electromagnetic wave propagation and the total power of the other paths
+-  <img src="https://tex.s2cms.ru/svg/%5Cphi_%7Binitial%7D" alt="\phi_{initial}" />  is the initial phase of the direct signal 
+- <img src="https://tex.s2cms.ru/svg/%5CDelta%5Cphi" alt="\Delta\phi" />  is the Doppler shift of the direct signal
+- <img src="https://tex.s2cms.ru/svg/%5Bn%5D" alt="[n]" /> - sample number
+
+Lower rail belongs to slow fading ("log-normal series").
+Variables:
+- <img src="https://tex.s2cms.ru/svg/M" alt="M" /> - mean of the Gaussian process
+- <img src="https://tex.s2cms.ru/svg/%5CSigma" alt="\Sigma" /> - variance of the Gaussian process
+
+The multiplication of these rails makes complex envelop of the impulse responce of the considered channel.
+
+
+
+### 2.1.n Markov chains based model 
 
 Interesting research can be obtained in [\[3\]](https://www.db-thueringen.de/receive/dbt_mods_00026568), where both single-state and multi-state models are considered. 
 

@@ -79,7 +79,13 @@ The lower rail of the fig. 2.2 can be reformulated as fig. 2.3.
 
 *Fig. 2.3. Alternative low-pass filtering method for generating slower varying shadowed signals at the same rate as the multipath rail. \[2\]*
 
-Where <img src="https://tex.s2cms.ru/svg/b%20%3D%20%5CSigma%5Csqrt%7B1%20-%20c%5E2%7D" alt="b = \Sigma\sqrt{1 - c^2}" />, <img src="https://tex.s2cms.ru/svg/c%20%3D%20%5Cexp%7B%5Cleft(-%5Cfrac%7BvT_s%7D%7Bl_%7Bcorr%7D%7D%5Cright)%7D" alt="c = \exp{\left(-\frac{vT_s}{l_{corr}}\right)}" />, <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, <img src="https://tex.s2cms.ru/svg/v" alt="v" /> is the velocity of the mobile terminal, and <img src="https://tex.s2cms.ru/svg/l_%7Bcorr%7D" alt="l_{corr}" /> is the correlation length (3-5 m \[4\]).
+Where: 
+
+- <img src="https://tex.s2cms.ru/svg/b%20%3D%20%5CSigma%5Csqrt%7B1%20-%20c%5E2%7D" alt="b = \Sigma\sqrt{1 - c^2}" />, 
+- <img src="https://tex.s2cms.ru/svg/c%20%3D%20%5Cexp%7B%5Cleft(-%5Cfrac%7BvT_s%7D%7Bl_%7Bcorr%7D%7D%5Cright)%7D" alt="c = \exp{\left(-\frac{vT_s}{l_{corr}}\right)}" />,
+- <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, 
+- <img src="https://tex.s2cms.ru/svg/v" alt="v" /> is the velocity of the mobile terminal, and 
+- <img src="https://tex.s2cms.ru/svg/l_%7Bcorr%7D" alt="l_{corr}" /> is the correlation length (3-5 m \[4\]).
 
 ### 2.1.n Markov chains based model 
 

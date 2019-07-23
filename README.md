@@ -3,7 +3,6 @@
 1. [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
 2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 3. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
-4. MIMO technology in CubeSat systems (in progress)
 
 
 # Introduction
@@ -31,7 +30,7 @@ Thank you for your attention and you are welcome!
 
 M.Sc. Vladimir Fadeev
 
-December 2017 - May  2019
+December 2017 - July  2019
 
 Kazan
 

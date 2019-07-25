@@ -46,3 +46,8 @@ Kazan
 
 1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
 2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)
+
+## List of related tutorials
+
+1. [Convolutional codes](https://github.com/kirlf/CSP/blob/master/FEC/Convolutional%20codes%20modeling.md)
+2. [Rician flat fading channel](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)

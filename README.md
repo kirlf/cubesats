@@ -49,5 +49,5 @@ Kazan
 
 ## List of related tutorials
 
-1. [Convolutional codes](https://github.com/kirlf/CSP/blob/master/FEC/Convolutional%20codes%20modeling.md)
-2. [Rician flat fading channel](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870)
+1. [Convolutional codes](https://github.com/kirlf/CSP/blob/master/FEC/Convolutional%20codes%20modeling.md) (MatLab)
+2. [Rician flat fading channel](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870) (MatLab)

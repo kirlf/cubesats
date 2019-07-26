@@ -73,7 +73,7 @@ In fact, this part determines **frequency selective fading**.
 
 The Doppler shifts are critical part of the satellite communications.
 
-> See the corresponding [Wikipedia article](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication) contributed by us.
+> See the contributed by us corresponding [Wikipedia article](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication) .
 
 The constant phase increment in Figure 2.2 is given by:
 

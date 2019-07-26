@@ -42,14 +42,14 @@ Kazan
  
 3. Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). [Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme.](http://www5.tu-ilmenau.de/nt/generic/paper_pdfs/08456940.pdf) In 2018 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.
 
-## List of popular science articles
-
-1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
-2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)
-
 ## List of related tutorials
 
 1. [Convolutional codes](https://github.com/kirlf/CSP/blob/master/FEC/Convolutional%20codes%20modeling.md) (MatLab)
 2. [Rician flat fading channel](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870) (MatLab)
 3. [MIMO channel capacity](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/MIMO%20Capacity.ipynb) (Python)
 4. [Alamouti code](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb) (MatLab)
+
+## List of popular science articles
+
+1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
+2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)

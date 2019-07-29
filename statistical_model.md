@@ -67,7 +67,7 @@ b, a = signal.butter(10, [30, 300], 'bandpass', analog=True)
 w, h = signal.freqs(b, a)
 ```
 
-In fact, this part determines **frequency selective fading**.
+In fact, this part determines **time variability** of the channel.
 
 ### 2.1.3. Doppler shift
 
@@ -83,7 +83,6 @@ The constant phase increment in Figure 2.2 is given by:
 
 where <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, and <img src="https://tex.s2cms.ru/svg/f_%7BDir%7D" alt="f_{Dir}" /> is the Doppler shift frequency of the direct path.
 
-This part determines **time variability** of the channel.
 
 ### 2.1.4. Slow fading
 

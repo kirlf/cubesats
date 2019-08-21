@@ -49,7 +49,13 @@ Kazan
 3. [MIMO channel capacity](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/MIMO%20Capacity.ipynb) (Python)
 4. [Alamouti code](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb) (MatLab)
 
-## List of popular science articles
+## List of our popular science articles
 
 1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
 2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)
+
+Little jocke as P.S. :)
+
+<img src="https://imgs.xkcd.com/comics/cubesat_launch.png" width="500" />
+
+*Source: https://xkcd.com/2148/*

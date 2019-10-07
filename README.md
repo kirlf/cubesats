@@ -42,12 +42,13 @@ Kazan
  
 3. Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). [Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme.](http://www5.tu-ilmenau.de/nt/generic/paper_pdfs/08456940.pdf) In 2018 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.
 
-## List of related tutorials
+## List of related MatLab simulations
 
-1. [Convolutional codes](https://github.com/kirlf/CSP/blob/master/FEC/Convolutional%20codes%20modeling.md) (MatLab)
-2. [Rician flat fading channel](https://nbviewer.jupyter.org/gist/kirlf/4328eb389b3ddc9a0c350eaed468f870) (MatLab)
-3. [MIMO channel capacity](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/MIMO%20Capacity.ipynb) (Python)
-4. [Alamouti code](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/MIMO/Alamouti.ipynb) (MatLab)
+1. Vladimir Fadeev (2019). Punctured convolutional codes (https://www.mathworks.com/matlabcentral/fileexchange/70202-punctured-convolutional-codes), MATLAB Central File Exchange. Retrieved October 7, 2019.
+
+2. Vladimir Fadeev (2019). M-PSK and M-QAM over Rician flat fading channel (https://www.mathworks.com/matlabcentral/fileexchange/70559-m-psk-and-m-qam-over-rician-flat-fading-channel), MATLAB Central File Exchange. Retrieved October 7, 2019.
+
+3. Vladimir Fadeev (2019). Alamouti over Rician flat fading channel (https://www.mathworks.com/matlabcentral/fileexchange/70557-alamouti-over-rician-flat-fading-channel), MATLAB Central File Exchange. Retrieved October 7, 2019.
 
 ## List of our popular science articles
 

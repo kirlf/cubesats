@@ -141,7 +141,7 @@ Let us start from the table of main stages:
 
 As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes#RS60). This relates to the [deep-space communication standartd](https://ipnpr.jpl.nasa.gov/progress_report/42-63/63H.PDF).
 
-![](https://raw.githubusercontent.com/kirlf/CSP/master/FEC/assets/rsc.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/DeepSpaceFEC.png/800px-DeepSpaceFEC.png)
 
 >Fig. 3.6. Deep-space concatenated coding system. \[8, p. 433\]
 

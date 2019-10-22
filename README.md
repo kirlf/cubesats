@@ -54,9 +54,3 @@ Kazan
 
 1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
 2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)
-
-Little jocke as P.S. :)
-
-<img src="https://imgs.xkcd.com/comics/cubesat_launch.png" width="500" />
-
-*Source: https://xkcd.com/2148/*

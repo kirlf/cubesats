@@ -115,7 +115,7 @@ However, it should be taken into account that MSK \(GMSK\) is the [partial case 
 
 M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
-![apsk](https://raw.githubusercontent.com/kirlf/cubesats/master/assets/APSK%20advantages.PNG)
+![apsk](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/APSK_advantages.png.PNG)
 
 > *Fig. 3.5. The main advantages of APSK in comparison with QAM (prepared according to ["Standard + Customized APSK Schemes For Satellite Transmission" By Donald Vanderweit, Agilent Technologies, Inc.](http://www.satmagazine.com/story.php?number=1051727556))*
 

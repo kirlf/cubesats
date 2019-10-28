@@ -147,7 +147,7 @@ As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solom
 
 However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
 
-<img src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/turbovsrs%20(1).png" alt="TurboRSCC" width="700"/>
+<img src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/turbovsrs.png" alt="TurboRSCC" width="700"/>
 
 > Fig. 3.7. Bit error rate curves for several codes with rates near 1/6: k=1784 and k=8920 turbo codes and the (n=255, k=223) Reed–Solomon code concatenated with a constraint length N=15, rate 1/6 convolutional code. \[10\]
 

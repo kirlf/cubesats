@@ -1,3 +1,5 @@
+These matherials relate to my Master Thesis [**"Design of cooperative communication system based on CubeSat satellites"**](http://opac.lbs-ilmenau.gbv.de/DB=1/PPN?PPN=898368146) that were completed in August 2017 and developed more deeply during 2017-2019 (as a hobby).
+
 # Table of contents
 
 1. [Link Budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
@@ -6,8 +8,6 @@
 
 
 # Introduction
-
-These matherials relate to my Master Thesis [**"Design of cooperative communication system based on CubeSat satellites"**](http://opac.lbs-ilmenau.gbv.de/DB=1/PPN?PPN=898368146) that were completed in August 2017 and developed more deeply during 2017-2019 (as a hobby).
 
 So, I guess it's also necessary to say couple of words about research object - CubeSat satellites. Briefly, it is the type of miniaturized satellites that used primiraly for education and science in the begining of their history \(the standard was developed in 1999\). Nowadays, CubeSats are used in navigation and other commercial applications more and more. We believe, that communication is also branch for CubeSats and therefore we've tried to increase their radiolink capacity during our research. In short, we can mention that theoretically it is possible and prospective.
 
@@ -34,7 +34,7 @@ December 2017 - July  2019
 
 Kazan
 
-## List of papers
+## List of our papers related to the topic
 
 1. Gaysin, Artur, Vladimir Fadeev, and Marko Hennhöfer. ["Survey of modulation and coding schemes for application in CubeSat systems."](https://www.researchgate.net/publication/318801748_Survey_of_modulation_and_coding_schemes_for_application_in_CubeSat_systems/comments) 2017 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SINKHROINFO). IEEE, 2017.
 
@@ -50,7 +50,7 @@ Kazan
 
 3. Vladimir Fadeev (2019). Alamouti over Rician flat fading channel (https://www.mathworks.com/matlabcentral/fileexchange/70557-alamouti-over-rician-flat-fading-channel), MATLAB Central File Exchange. Retrieved October 7, 2019.
 
-## List of our popular science articles
+## List of my popular science articles
 
 1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
 2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)

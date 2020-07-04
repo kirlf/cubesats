@@ -34,23 +34,10 @@ December 2017 - July  2019
 
 Kazan
 
-## List of our papers related to the topic
+### List of our papers related to the topic
 
 1. Gaysin, Artur, Vladimir Fadeev, and Marko Hennhöfer. ["Survey of modulation and coding schemes for application in CubeSat systems."](https://www.researchgate.net/publication/318801748_Survey_of_modulation_and_coding_schemes_for_application_in_CubeSat_systems/comments) 2017 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SINKHROINFO). IEEE, 2017.
 
 2. Gibalina, Zlata, and Vladimir Fadeev. ["Optical Inter-Satellite Link in Comparison with RF case in CubeSat system."](http://jre.cplire.ru/jre/oct17/6/text.pdf) Zhurnal Radioelektroniki-Journal of Radio Electronics 10 (2017). (with [additional materials](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)).
  
 3. Gibalina, Z. S., Fadeev, V. A., Korsukova, K. A., Hennhöfer, M., & Haardt, M. (2018, July). [Estimation of capabilities of cooperative CubeSat systems based on Alamouti transmission scheme.](http://www5.tu-ilmenau.de/nt/generic/paper_pdfs/08456940.pdf) In 2018 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SYNCHROINFO) (pp. 1-6). IEEE.
-
-## List of related MatLab simulations
-
-1. Vladimir Fadeev (2019). Punctured convolutional codes (https://www.mathworks.com/matlabcentral/fileexchange/70202-punctured-convolutional-codes), MATLAB Central File Exchange. Retrieved October 7, 2019.
-
-2. Vladimir Fadeev (2019). M-PSK and M-QAM over Rician flat fading channel (https://www.mathworks.com/matlabcentral/fileexchange/70559-m-psk-and-m-qam-over-rician-flat-fading-channel), MATLAB Central File Exchange. Retrieved October 7, 2019.
-
-3. Vladimir Fadeev (2019). Alamouti over Rician flat fading channel (https://www.mathworks.com/matlabcentral/fileexchange/70557-alamouti-over-rician-flat-fading-channel), MATLAB Central File Exchange. Retrieved October 7, 2019.
-
-## List of my popular science articles
-
-1. [Energy budget of the radio link](https://habr.com/ru/post/447728/) (in Russian)
-2. [Optical channel maybe? Space, lasers, CubeSat](https://habr.com/ru/post/449146/) (in Russian)

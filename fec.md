@@ -94,12 +94,7 @@ Comparison of the different waveforms in terms of spectral efficiency and BER pe
 
 ### Why was GMSK replaced in modern solutions?
 
-GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (fig. 3.4).
-
-![PSD-MSSK](https://upload.wikimedia.org/wikipedia/commons/b/b2/PSD_MSK_PSK.png)
-![PSD-GMSK](https://upload.wikimedia.org/wikipedia/commons/5/5e/GMSK_PSD.png)
-
-> *Fig. 3.4. Power-spectral densities of the BPSK, QPSK, MSK, GMSK.*
+GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (see [the following figurres](https://en.wikipedia.org/wiki/Minimum-shift_keying#Properties)).
 
 In other hand, MSK waveform can also be designed as OQPSK (i.e. in [I/Q manner](https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures)) with the sinusoidal pulse shaping \[5, 6\].
 

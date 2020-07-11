@@ -38,55 +38,18 @@ The following variables are used in the upper rail:
 
 - <img src="https://tex.s2cms.ru/svg/%20G(0%2C%201)" alt=" G(0, 1)" />  is a random variable with a normal (Gaussian) distribution with zero mean and unit variance
 - <img src="https://tex.s2cms.ru/svg/K" alt="K" />  is the Rician factor: the ratio between the power of the direct path of electromagnetic wave propagation and the total power of the other paths
--  <img src="https://tex.s2cms.ru/svg/%5Cphi_%7Binitial%7D" alt="\phi_{initial}" />  is the initial phase of the direct signal 
-- <img src="https://tex.s2cms.ru/svg/%5CDelta%5Cphi" alt="\Delta\phi" />  is the Doppler shift of the direct signal
+- <img src="https://tex.s2cms.ru/svg/%5Cphi_%7Binitial%7D" alt="\phi_{initial}" />  is the initial phase of the direct signal 
+- <img align="center" src="https://tex.s2cms.ru/svg/%20%0A%5CDelta%20%5Cphi_%7B%7D%20%3D%202%20%5Cpi%20f_%7BDir%7DT_s%0A" alt=" 
+\Delta \phi_{Dir} = 2 \pi f_{Dir}T_s, 
+" />  is the constant phase increment, where <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, and <img src="https://tex.s2cms.ru/svg/f_%7BDir%7D" alt="f_{Dir}" /> is the [Doppler shift](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication) frequency of the direct path
 - <img src="https://tex.s2cms.ru/svg/%5Bn%5D" alt="[n]" /> - sample number (x means multiplication)
 
-Lower rail belongs to slow fading ("log-normal series").
+Lower rail determines **slow (large-scaled) fading** ("log-normal series").
 Variables:
 - <img src="https://tex.s2cms.ru/svg/M" alt="M" /> - mean of the Gaussian process
 - <img src="https://tex.s2cms.ru/svg/%5CSigma" alt="\Sigma" /> - variance of the Gaussian process
 
-The multiplication of these rails makes complex envelop of the impulse responce of the considered channel.
-
-### 2.1.2. Doppler spread
-
-The Butterworth filter based approach is proposed in \[2\] and \[3\] to simulate Doppler shaping.
-
-The main characteristics \[3\]:
-- filter order: 10
-- filter type: passband
-- cut-off frequencies: 30 and 300 Hz
-
-Python implementation:
-
-```python
-from scipy import signal
-
-b, a = signal.butter(10, [30, 300], 'bandpass', analog=True)
-w, h = signal.freqs(b, a)
-```
-
-In fact, this part determines **time variability** of the channel.
-
-### 2.1.3. Doppler shift
-
-The Doppler shifts are critical part of the satellite communications.
-
-> See the contributed by us corresponding [Wikipedia article](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication) .
-
-The constant phase increment in Figure 2.2 is given by:
-
-<p align="center" style="text-align: center;"><img align="center" src="https://tex.s2cms.ru/svg/%20%0A%5CDelta%20%5Cphi_%7BDir%7D%20%3D%202%20%5Cpi%20f_%7BDir%7DT_s%0A" alt=" 
-\Delta \phi_{Dir} = 2 \pi f_{Dir}T_s
-" /></p>
-
-where <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, and <img src="https://tex.s2cms.ru/svg/f_%7BDir%7D" alt="f_{Dir}" /> is the Doppler shift frequency of the direct path.
-
-
-### 2.1.4. Slow fading
-
-The lower rail of the fig. 2.2 can be reformulated as fig. 2.3.
+This rail can be reformulated as fig. 2.3.
 
 ![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/slow_fad_new.PNG)
 
@@ -99,7 +62,8 @@ Where:
 - <img src="https://tex.s2cms.ru/svg/v" alt="v" /> is the velocity of the mobile terminal, and 
 - <img src="https://tex.s2cms.ru/svg/l_%7Bcorr%7D" alt="l_{corr}" /> is the correlation length (3-5 m \[4\]).
 
-This rail determines **slow (large-scaled) fading**.
+The multiplication of these rails makes complex envelop of the impulse responce of the considered channel.
+
 
 ### 2.1.5. Markov chains based model 
 

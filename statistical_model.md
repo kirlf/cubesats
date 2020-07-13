@@ -55,7 +55,7 @@ Two ultimate conditions are proposed in [\[1\]](https://www.csie.ntu.edu.tw/~b92
 
 Moreover, authors mention that shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 2.3\).
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Fading_corraza_vatalaro.png" alt="params" width="600" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Fading_corraza_vatalaro.png" alt="params" width="800" />
 
 *Fig. 2.3. Model parameters, sigma, mu and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]*
 
@@ -68,9 +68,17 @@ Interesting research can be obtained in [\[5\]](https://www.db-thueringen.de/rec
 
 where <img src="https://tex.s2cms.ru/svg/p_%7Bij%7D" alt="p_{ij}" /> means the probability of the state changing.
 
-Moreover, the MIMO channel be considered \[6-9\]. Markov chains based models are also considered in \[5\] for dual-satellite systems.
+Moreover, the MIMO channel be considered \[6-9\]. 
 
-<img alt="Markov" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/SatMarkov.png" width="600"/>
+> **See also**:
+>
+>Two interest frameworks can be considered in case of MIMO channel modeling:
+>- [MIMOSA](https://artes.esa.int/projects/mimosa-characterisation-mimo-channel-mobile-satellite-systems)
+>- [SATCOM Spatial Geometrical Optimization](https://www.researchgate.net/profile/A_Knopp/publication/4323825_Optimum-capacity_MIMO_satellite_link_for_fixed_and_mobile_services/links/55701f2b08aeab77722897ad.pdf)
+
+Markov chains based models for dual-satellite systems are also considered in \[5\].
+
+<img alt="Markov" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/SatMarkov.png" width="800"/>
 
 *Figure 2.6. Semi-Markov model for two satellites \[5\].*
 
@@ -97,10 +105,3 @@ satellite communications". International Journal of Satellite Communications and
 \[8\] Zang, Guo-zhen; Huang Bao-hua; Mu Jing (2010). One scheme of cooperative diversity with two satellites based on the alamouti code. IET 3rd International Conference on Wireless, Mobile and Multimedia Networks (ICWMMN 2010). pp. 151–4. doi:10.1049/cp.2010.0640. ISBN 978-1-84919-240-8.
 
 \[9\] Pérez-Neira, A.I.; Ibars, C.; Serra, J.; Del Coso, A.; Gómez-Vilardebó, J.; Caus, M.; Liolis, K.P. (2011). "MIMO channel modeling and transmission techniques for multi-satellite and hybrid satellite-terrestrial mobile networks". Physical Communication. 4 (2): 127–139. doi:10.1016/j.phycom.2011.04.001
-
-
-## See also
-
-Two interest frameworks can be considered in case of MIMO channel modeling:
-- [MIMOSA](https://artes.esa.int/projects/mimosa-characterisation-mimo-channel-mobile-satellite-systems)
-- [SATCOM Spatial Geometrical Optimization](https://www.researchgate.net/profile/A_Knopp/publication/4323825_Optimum-capacity_MIMO_satellite_link_for_fixed_and_mobile_services/links/55701f2b08aeab77722897ad.pdf)

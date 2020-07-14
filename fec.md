@@ -1,8 +1,12 @@
 ## Table of contents
 
-1. [Link Budget](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
-2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
-3. Modulation and coding \(FEC\) survey
+### Tutorials (Python)
+1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
+
+### Surveys
+1. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
+2. Modulation and coding \(FEC\) survey
 
 # Survey of modulation and coding schemes for application in CubeSat systems (afterwords)
 
@@ -94,12 +98,7 @@ Comparison of the different waveforms in terms of spectral efficiency and BER pe
 
 ### Why was GMSK replaced in modern solutions?
 
-GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (fig. 3.4).
-
-![PSD-MSSK](https://upload.wikimedia.org/wikipedia/commons/b/b2/PSD_MSK_PSK.png)
-![PSD-GMSK](https://upload.wikimedia.org/wikipedia/commons/5/5e/GMSK_PSD.png)
-
-> *Fig. 3.4. Power-spectral densities of the BPSK, QPSK, MSK, GMSK.*
+GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (see [the following figures](https://en.wikipedia.org/wiki/Minimum-shift_keying#Properties)).
 
 In other hand, MSK waveform can also be designed as OQPSK (i.e. in [I/Q manner](https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures)) with the sinusoidal pulse shaping \[5, 6\].
 

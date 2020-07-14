@@ -2,9 +2,13 @@ These matherials relate to my Master Thesis [**"Design of cooperative communicat
 
 # Table of contents
 
-1. [Link Budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
-2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
-3. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
+### Tutorials (Python)
+1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
+
+### Surveys
+1. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
+2. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
 
 # Introduction

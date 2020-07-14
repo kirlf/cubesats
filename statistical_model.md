@@ -5,7 +5,7 @@
 2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 
 ### Surveys
-1. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
+1. Statistical channel model survey
 2. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
 # 2. Statistical channel model

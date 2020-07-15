@@ -14,7 +14,7 @@
 According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the [Rician](https://en.wikipedia.org/wiki/Rician_fading) and [lognormal](https://en.wikipedia.org/wiki/Log-normal_distribution) independent fading processes. This channel model also known as **Corazza-Vatalaro model** or ***C&V*** (fig. 1).
 
 ![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/cvm.png)
-*Figure 1.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
+*Fig. 1.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
 
 The following variables are used in the upper rail:
 
@@ -84,7 +84,7 @@ Markov chains based models for dual-satellite systems are also considered in \[5
 
 <img alt="Markov" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/SatMarkov.png" width="800"/>
 
-*Figure 5. Semi-Markov model for two satellites \[5\].*
+*Fig. 5. Semi-Markov model for two satellites \[5\].*
 
 Actually, this topic is developing by researches now.
 

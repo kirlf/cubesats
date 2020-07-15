@@ -8,13 +8,13 @@
 1. Statistical channel model survey
 2. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
 
-# 2. Statistical channel model
+# Statistical channel model
 
 
-According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the [Rician](https://en.wikipedia.org/wiki/Rician_fading) and [lognormal](https://en.wikipedia.org/wiki/Log-normal_distribution) independent fading processes. This channel model also known as **Corazza-Vatalaro model** or ***C&V*** (fig. 2.1).
+According to [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf) the most appropriate channel model for LEO satellites is the mixture of the [Rician](https://en.wikipedia.org/wiki/Rician_fading) and [lognormal](https://en.wikipedia.org/wiki/Log-normal_distribution) independent fading processes. This channel model also known as **Corazza-Vatalaro model** or ***C&V*** (fig. 1).
 
 ![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/cvm.png)
-*Figure 2.1.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
+*Figure 1.  Circuit implementation of the C&V model with Jakes multipath Doppler shaping.\[2\]*
 
 The following variables are used in the upper rail:
 
@@ -32,11 +32,11 @@ Lower rail determines **slow (large-scaled) fading** ("log-normal series"):
 - <img src="https://tex.s2cms.ru/svg/M" alt="M" /> - mean of the Gaussian process
 - <img src="https://tex.s2cms.ru/svg/%5CSigma" alt="\Sigma" /> - variance of the Gaussian process
 
-This rail can be reformulated as fig. 2.2.
+This rail can be reformulated as fig. 2.
 
 ![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/slow_fad_new.PNG)
 
-*Fig. 2.2. Alternative low-pass filtering method for generating slower varying shadowed signals at the same rate as the multipath rail. \[2\]*
+*Fig. 2. Alternative low-pass filtering method for generating slower varying shadowed signals at the same rate as the multipath rail. \[2\]*
 
 Where: 
 
@@ -47,9 +47,9 @@ Where:
 
 The multiplication of these rails makes complex envelop of the impulse responce of the considered channel.
 
-Two ultimate conditions are proposed in [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf): light shadowing and strong shadowing \(tab.2.1\). 
+Two ultimate conditions are proposed in [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf): light shadowing and strong shadowing \(tab.1\). 
 
- Table 2.1. Statistical characteristics of the LEO channel
+ Table 1. Statistical characteristics of the LEO channel
 
 | Parameter | Light shadowing | Strong shadowing |
 | :--- | :--- | :--- |
@@ -57,18 +57,18 @@ Two ultimate conditions are proposed in [\[1\]](https://www.csie.ntu.edu.tw/~b92
 |  Lognormal mean \(linear scale\) | 0.13 | -1.08 |
 |  Lognormal variance \(linear scale\) | 1.0 | 2.5 |
 
-Moreover, authors mention that shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 2.3\).
+Moreover, authors mention that shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 3\).
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Fading_corraza_vatalaro.png" alt="params" width="800" />
 
-*Fig. 2.3. Model parameters, sigma, mu and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]*
+*Fig. 3. Model parameters, sigma, mu and K as a function of the elevation angle, a, in a mal tree-shadowed environment. \[1\]*
 
 
 Interesting research can be obtained in [\[5\]](https://www.db-thueringen.de/receive/dbt_mods_00026568), where both single-state and multi-state models are considered. 
 
 ![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/semi-markov.PNG)
 
-*Fig. 2.4. Semi-Markov model for single-satellite reception.\[5\]*
+*Fig. 4. Semi-Markov model for single-satellite reception.\[5\]*
 
 where <img src="https://tex.s2cms.ru/svg/p_%7Bij%7D" alt="p_{ij}" /> means the probability of the state changing.
 
@@ -84,7 +84,7 @@ Markov chains based models for dual-satellite systems are also considered in \[5
 
 <img alt="Markov" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/SatMarkov.png" width="800"/>
 
-*Figure 2.6. Semi-Markov model for two satellites \[5\].*
+*Figure 5. Semi-Markov model for two satellites \[5\].*
 
 Actually, this topic is developing by researches now.
 

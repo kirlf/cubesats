@@ -121,34 +121,9 @@ M-QAM was replaced by the M-APSK in space communication (fig. 3.5).
 
 ## 3.3. Channel coding \(FEC\)
 
-Let us start from the table of main stages:
+Very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes#RS60). This relates to the [deep-space communication standartd](https://ipnpr.jpl.nasa.gov/progress_report/42-63/63H.PDF) (see also [Reed–Solomon error correction: Space transmission](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction#Space_transmission)).
 
-**Table 3.3. Codes Used by NASA Missions \[10\]**
-
-| **Code** | **Mission(s)** | **Years** | 
-| :--- | :--- | :--- |
-| Uncoded | Explorer, Mariner, many others | 1958-present |
-| (25, 1/2) convolutional| Pioneer, Venus | 1968-1978 | 
-| (32, 6) Reed-Muller| Mariner, Viking | 1969-1975 | 
-| Golay | Voyager | 1977-present | 
-| RS(255, 223)+(7, 1/2) | Voyager, Galileo, many others | 1977-present |
-| RS(255, 223)+(7, 1/3) | Voyager | 1989-2003 | 
-| RS(255, 223)+(14, 1/4) | Galileo | 1958-present | 
-| RS + (15, 1/6)| Cassini, Mars Pathfinder, others | 1996-present |
-| Turbo | Messenger, Stereo, MRO, others | 2004-present | 
-| LDPC | Constellation, MSL | est. 2009 |
-
-As we can see from fig. 3.6, very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenated codes](http://www.scholarpedia.org/article/Concatenated_codes#RS60). This relates to the [deep-space communication standartd](https://ipnpr.jpl.nasa.gov/progress_report/42-63/63H.PDF).
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/DeepSpaceFEC.png/800px-DeepSpaceFEC.png)
-
->Fig. 3.6. Deep-space concatenated coding system. \[8, p. 433\]
-
-However, since 2000-s modern error correction schemes such as Turbo codes and [LDPC codes](https://nbviewer.jupyter.org/github/kirlf/CSP/blob/master/FEC/LDPC.ipynb) are used more widely in space communications.
-
-<img src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/turbovsrs.png" alt="TurboRSCC" width="700"/>
-
-> Fig. 3.7. Bit error rate curves for several codes with rates near 1/6: k=1784 and k=8920 turbo codes and the (n=255, k=223) Reed–Solomon code concatenated with a constraint length N=15, rate 1/6 convolutional code. \[10\]
+However, since 2000-s modern error correction schemes such as [Turbo codes](http://www.scholarpedia.org/article/Turbo_code) and LDPC codes are used more widely in space communications \[10\].
 
 Moreover the LDPC codes are the part of the DVB-S2/S2X standards (fig. 3.8)\[12\].
 

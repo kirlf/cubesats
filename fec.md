@@ -26,11 +26,11 @@ The main features of existing equipment are shown in table 3.1
 | [CDMA communication system performance for a constellation of CubeSats around the Moon \(IEEE paper\)](https://ieeexplore.ieee.org/document/7500710/) | filtered offset QPSK with phase modulation \(a CCSDS standard\) \(OQPSK/PM\) | LDPC r=0.5 |
 | [CUBESAT S-BAND TRANSMITTER (EnduroSat)](https://www.endurosat.com/products/cubesat-s-band-transmitter/) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | [CUBESAT X-BAND TRANSMITTER (EnduroSat)](https://www.endurosat.com/products/cubesat-x-band-transmitter/#scroll-to ) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
+| [Quasonix nanoTX](https://www.quasonix.com/products/transmitters/nanotx-transmitters/) | PCM/FM (legacy), SOQPSK-TG, [Multi-h CPM](https://www.quasonix.com/files/artm-tier-ii-waveform-itc-paper.pdf) | LDPC |
 | Innoflight SCR-100 | BPSK, QPSK, OQPSK, GMSK, FM/PCM | Conv. and R/S |
 |Tethers Unlimited SWIFT-SLX|BPSK| - |
 | L3 Cadet S-Band Tx (CXS-1000) | BPSK, QPSK, SOQPSK, SGLS M/FSK | - |
 | Nimitz Radio Sband Tx/UHF Rx | Uplink FSK, GFSK; Downlink BPSK | - |
-| Quasonix nanoTX | PCM/FM, SOQPSKTG, Multi-h CPM, BPSK, QPSK, OQPSK, UQPSK | - |
 | MHX-2420 | FSK | - |
 | LASP/GSFC Xband Radio | BPSK/OQPSK |  R/S and Conv.|
 | Syrlinks/X-band Transmitter | BPSK/OQPSK |  R/S and Conv |

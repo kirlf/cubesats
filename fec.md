@@ -18,7 +18,7 @@ The main features of existing equipment are shown in table 3.1
 
 | Title | Modulation | FEC |
 | :--- | :--- | :--- |
-| [ NanoCom SR2000](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-sr2000-230.pdf) | Filtered QPSK \( Square root raised cosine filter, 𝛼 = 0.2\) | Concatenated coding: convolutional code (7, ½\) plus Reed-Solomon \(255, 223\), interleaving depth 𝐿 = 8 |
+| [ NanoCom SR2000](https://gomspace.com/UserFiles/Subsystems/datasheet/gs-ds-nanocom-sr2000-230.pdf) | Filtered QPSK \( Square root raised cosine filter, 𝛼 = 0.2\) | [Concatenated coding](http://www.scholarpedia.org/article/Concatenated_codes#RS60): convolutional code (7, ½\) plus [Reed-Solomon](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction#Space_transmission) \(255, 223\), interleaving depth 𝐿 = 8 |
 | [ISIS TXS High Data Rate S-Band Transmitter](https://www.cubesatshop.com/product/isis-txs-s-band-transmitter/) | OQPSK \( Pulse shaping: Square Root Raised Cosine, Roll-off 0.5, 0.35\) | Concatenated Reed Solomon and Convolutional coding \[C\(7, ½\) and RS \(255, 223\)\] |
 | [ISIS TXS High Data Rate S-Band Transmitter](https://www.cubesatshop.com/product/isis-txs-s-band-transmitter/) | DQPSK | TURBO code, rate =0.489 |
 | [S Band Transceiver for Small Satellites \( IQ wireless GmbH\)](http://www.iq-wireless.com/images/pdf/SLINK-Datasheet.pdf) | BPSK/QPSK/8PSK/QAM16 | Convolutional code, r=0.5 / 0.75 |
@@ -48,14 +48,10 @@ We can make the following summary analyzing the considered matherials:
 
 2. The most popular class of the modulation schemes are **M-PSK** (BPSK, QPSK, OQPSK) for both *S-* and *X-bands*.
 
-3. Only DVB-S2/S2X standard (**{Q,8,16A,32A}PSK**) is presented for the *Ka-band*;
+3. One of the popular options of FEC is RSC \(Reed-Solomon convolutional\) concatenated codes. This relates to the [deep-space communication standartd](https://ipnpr.jpl.nasa.gov/progress_report/42-63/63H.PDF).
 
-4. The following options are used for the Forward Error Correction (mostly): **Reed-Solomon** codes concatenated with **convolutional** codes and **LDPC** (concatenated with **BCH** in DVB-S2/S2X) codes.
+4. Only DVB-S2/S2X standard (**{Q,8,16A,32A}PSK**) is presented for the *Ka-band*;
 
-<img alt="ModStat1" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations.png" width="600"/>
-<img alt="ModStat2" src="https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/Modulations2.png" width="600"/>
-
-> *Fig. 3.1. The diagrams of the modulation schemes usage*.
 
 ## 3.2. Small suggestions about modulation schemes
 

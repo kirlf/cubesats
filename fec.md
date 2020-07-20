@@ -29,7 +29,7 @@ The main features of existing equipment are shown in table 3.1
 | [Quasonix nanoTX](https://www.quasonix.com/products/transmitters/nanotx-transmitters/) | PCM/FM (legacy), SOQPSK-TG, [Multi-h CPM](https://www.quasonix.com/files/artm-tier-ii-waveform-itc-paper.pdf) | LDPC |
 | [Innoflight SCR-100](https://www.innoflight.com/product-overview/scrs/scr-100/) (S-Band) | **Tx**: BPSK, QPSK, OQPSK; **Rx**: FSK/GMSK, FM/PCM | Conv. and R/S |
 | [SWIFT Radios](https://www.tethers.com/swift-radios/)|B/Q/OQ/8-PSK, 16-APSK, PM/CPM, [SGLS-Ternary](https://www.researchgate.net/publication/3816361_Impact_of_baseband_filtering_on_the_SGLS_waveform)| Reed-Solomon + convolutional codes, BCH, LDPC|
-| L3 Cadet S-Band Tx (CXS-1000) | BPSK, QPSK, SOQPSK, SGLS M/FSK | - |
+| [CXS-1000 (S-Band)](https://www2.l3t.com/trf/pdf/datasheets/ML642_CXS1000.pdf) | **Tx**: [LPM (linear-period modulation)](https://yadi.sk/i/8GVJhJAkk_xWMA) 1.024 MHz s/c, [ranging](https://deepspace.jpl.nasa.gov/dsndocs/810-005/203/203C.pdf), BPSK, QPSK, OQPSK, UQPSK, user defined; **Rx**: BPSK, SGLS, [USB/STDN](https://yadi.sk/i/DW9PvZsf2f45MQ), ranging, [TDRSS](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180003065.pdf) | - |
 | Nimitz Radio Sband Tx/UHF Rx | Uplink FSK, GFSK; Downlink BPSK | - |
 | MHX-2420 | FSK | - |
 | LASP/GSFC Xband Radio | BPSK/OQPSK |  R/S and Conv.|

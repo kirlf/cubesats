@@ -30,7 +30,6 @@ The main features of existing equipment are shown in table 3.1
 | [SWIFT Radios](https://www.tethers.com/swift-radios/)|B/Q/OQ/8-PSK, 16-APSK, PM/CPM, [SGLS-Ternary](https://www.researchgate.net/publication/3816361_Impact_of_baseband_filtering_on_the_SGLS_waveform)| Reed-Solomon + convolutional codes, BCH, LDPC|
 | [CXS-1000 (S-Band)](https://www2.l3t.com/trf/pdf/datasheets/ML642_CXS1000.pdf) | **Tx**: [LPM (linear-period modulation)](https://yadi.sk/i/8GVJhJAkk_xWMA) 1.024 MHz s/c, [ranging](https://deepspace.jpl.nasa.gov/dsndocs/810-005/203/203C.pdf), BPSK, QPSK, OQPSK, UQPSK, user defined; **Rx**: BPSK, SGLS, [USB/STDN](https://yadi.sk/i/DW9PvZsf2f45MQ), ranging, [TDRSS](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180003065.pdf) | - |
 | [Syrlinks EWC27 X-band Transmitter](https://www.syrlinks.com/en/space/nano-satellite/x-band-transmitter-ewc27) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| Marshall X-band Tx | BPSK/OQPSK | LDPC 7/8 |
 | Tethers Unlimited SWIFT-XTS | {8,16A,32A}PSK | - |
 | JPL /Iris Transponder | BPSK bit sync | - |
 | Canopus Systems | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
@@ -51,16 +50,6 @@ We can make the following summary analyzing the considered matherials:
 
 ## 3.2. Small suggestions about modulation schemes
 
-###  Why did M-PSK replace M-FSK?
-
-Higher order frequency modulation schemes are not usually used in satellite communications due to their relatively low spectral efficiency and difficulties with coherent detection.
-
-**Tab. 3.2. Spectral efficient values \(bit/s/Hz\) for different modulation orders \[1\].** 
-
-| **Modulation scheme / Modulation order** | 2 | 4 | 8 | 16 | 32 | 64 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| M-PSK | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 |
-| M-FSK | 1 | 1 | 0.75 | 0.5 | 0.3125 | 0.1875 |
 
 ### Why is BPSK one of the popular solutions?
  
@@ -87,20 +76,6 @@ Moreover, [pulse shaping](https://en.wikipedia.org/wiki/Pulse_shaping) procedure
 > Pulse shaping motivation provided in [Root Raised Cosine Filters & Pulse Shaping in Communication Systems.](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120008631.pdf)
 
 Comparison of the different waveforms in terms of spectral efficiency and BER performance is done in [\[2\]](https://ieeexplore.ieee.org/document/904973/).
-
-### Why was GMSK replaced in modern solutions?
-
-GMSK was a good solution for the satellite communications \[3\] for a long time due to its promissing spectral parameters (see [the following figures](https://en.wikipedia.org/wiki/Minimum-shift_keying#Properties)).
-
-In other hand, MSK waveform can also be designed as OQPSK (i.e. in [I/Q manner](https://www.researchgate.net/publication/306035050\_A\_Notebook\_on\_Wireless\_Communication\_Systems/figures)) with the sinusoidal pulse shaping \[5, 6\].
-
-> **NOTE**:
-> * Pulse Shaped OQPSK \(SOQPSK\) can be represented as continuous phase modulation \(CPM\) [\[4\]](https://pdfs.semanticscholar.org/f025/2fa31444fad6a5090527d73f87352137c9b8.pdf).
-> * Minimum shift keying \(MSK\) is the partial case of the Continuous Phase Frequency Shift keying \(CPFSK\) and therefore of the CPM.
-
-Moreover, theoretically, the spectral parameters of the SOQPSK can be optimized as well as in GMSK case with a good selection of the filter for the pulse shaping.  
-
-However, it should be taken into account that MSK \(GMSK\) is the [partial case of the 2-FSK](https://www.quora.com/How-many-bits-per-symbol-are-transmitted-in-MSK). OQPSK is the [quadrature modulation](http://www.rfwireless-world.com/Terminology/QPSK-vs-OQPSK-vs-pi-4QPSK.html) scheme and has the same throughput as QPSK or 4-QAM.
 
 ### Why are M-QAM schemes not presented above?
 

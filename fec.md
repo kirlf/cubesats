@@ -25,13 +25,12 @@ The main features of existing equipment are shown in table 3.1
 | [Full-duplex Low-power S-band Transceiver \(Nano Avionics\)](https://n-avionics.com/cubesat-components/communication-systems/cubesat-s-band-transceiver/) | GMSK modulation \(BT=0.35\) | Configurable Reed-Solomon and convolutional coding forward error correction |
 | [CUBESAT S-BAND TRANSMITTER (EnduroSat)](https://www.endurosat.com/products/cubesat-s-band-transmitter/) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | [CUBESAT X-BAND TRANSMITTER (EnduroSat)](https://www.endurosat.com/products/cubesat-x-band-transmitter/#scroll-to ) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| [Quasonix nanoTX](https://www.quasonix.com/products/transmitters/nanotx-transmitters/) | PCM/FM (legacy), SOQPSK-TG, [Multi-h CPM](https://www.quasonix.com/files/artm-tier-ii-waveform-itc-paper.pdf) | LDPC |
+| [Quasonix nanoTX](https://www.quasonix.com/products/transmitters/nanotx-transmitters/) | [PCM](https://en.wikipedia.org/wiki/Pulse-code_modulation)/[FM](https://en.wikipedia.org/wiki/Frequency_modulation) (legacy), SOQPSK-TG, [Multi-h CPM](https://www.quasonix.com/files/artm-tier-ii-waveform-itc-paper.pdf) | LDPC |
 | [Innoflight SCR-100](https://www.innoflight.com/product-overview/scrs/scr-100/) (S-Band) | **Tx**: BPSK, QPSK, OQPSK; **Rx**: FSK/GMSK, FM/PCM | Conv. and R/S |
 | [SWIFT Radios](https://www.tethers.com/swift-radios/)|B/Q/OQ/8-PSK, 16-APSK, PM/CPM, [SGLS-Ternary](https://www.researchgate.net/publication/3816361_Impact_of_baseband_filtering_on_the_SGLS_waveform)| Reed-Solomon + convolutional codes, BCH, LDPC|
 | [CXS-1000 (S-Band)](https://www2.l3t.com/trf/pdf/datasheets/ML642_CXS1000.pdf) | **Tx**: [LPM (linear-period modulation)](https://yadi.sk/i/8GVJhJAkk_xWMA) 1.024 MHz s/c, [ranging](https://deepspace.jpl.nasa.gov/dsndocs/810-005/203/203C.pdf), BPSK, QPSK, OQPSK, UQPSK, user defined; **Rx**: BPSK, SGLS, [USB/STDN](https://yadi.sk/i/DW9PvZsf2f45MQ), ranging, [TDRSS](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180003065.pdf) | - |
 | [Syrlinks EWC27 X-band Transmitter](https://www.syrlinks.com/en/space/nano-satellite/x-band-transmitter-ewc27) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| Tethers Unlimited SWIFT-XTS | {8,16A,32A}PSK | - |
-| JPL /Iris Transponder | BPSK bit sync | - |
+| [Iris V2.1 CubeSat Deep Space Transponder](https://www.jpl.nasa.gov/cubesat/pdf/Brochure_IrisV2.1_201611-URS_Approved_CL16-5469.pdf) | [PM](https://en.wikipedia.org/wiki/Phase_modulation)/PSK/[NRZ](https://en.wikipedia.org/wiki/Non-return-to-zero) | Convolutional (7, 1/2); [Manchester, Bi-Phase, and bypass (NRZ)](http://ww1.microchip.com/downloads/en/AppNotes/Atmel-9164-Manchester-Coding-Basics_Application-Note.pdf); Reed Solomon (255,223); Turbo (1/2, 1/3, 1/6) block size 8920 bits |
 | Canopus Systems | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | Ames Ka-band Tx | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | Tethers Unlimited | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |

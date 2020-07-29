@@ -1,12 +1,12 @@
 ## Table of contents
 
-### Tutorials (Python)
-1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
-2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
-
 ### Surveys
 1. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
 2. Modulation and coding \(FEC\) survey
+
+### Tutorials (Python)
+1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 
 # Survey of modulation and coding schemes for application in CubeSat systems (afterwords)
 
@@ -31,10 +31,7 @@ The main features of existing equipment are shown in table 3.1
 | [CUBESAT S-BAND TRANSMITTER (EnduroSat)](https://www.endurosat.com/products/cubesat-s-band-transmitter/) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | [CUBESAT X-BAND TRANSMITTER (EnduroSat)](https://www.endurosat.com/products/cubesat-x-band-transmitter/#scroll-to ) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 | [Syrlinks EWC27 X-band Transmitter](https://www.syrlinks.com/en/space/nano-satellite/x-band-transmitter-ewc27) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| Canopus Systems | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| Ames Ka-band Tx | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| Tethers Unlimited | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
-| SWIFT-KTX | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
+| [Canopus Systems, Ames Ka-band Tx, Tethers Unlimited](https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160010584.pdf) | {Q,8,16A,32A}PSK | LDPC Concatenated with BCH |
 
 We can make the following summary analyzing the considered matherials:
 

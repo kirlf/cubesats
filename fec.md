@@ -89,10 +89,6 @@ Very popular option of the FEC is [RSC \(Reed-Solomon convolutional\) concatenat
 However, since 2000-s modern error correction schemes such as [Turbo codes](http://www.scholarpedia.org/article/Turbo_code) and LDPC codes are used more widely in space communications \[10\].
 
 Moreover the LDPC codes are the part of the DVB-S2/S2X standards (fig. 3.8)\[12\].
-
-![](https://raw.githubusercontent.com/kirlf/cubesats/master/.gitbook/assets/dvb_new.PNG)
-
-> Fig. 3.7. The block schemes of DVB-S and DVB-S2/SX2.
  
 There are a lot of [comparison issues](https://www.nt.tuwien.ac.at/wp-content/uploads/2016/10/DC2-16_Ch7_LDPC.pdf) of the Turbo codes and LDPC in the literature \[7, p. 614, 653\]\, [\[10\]](https://ieeexplore.ieee.org/document/4383367/), \[11\].
 

@@ -8,7 +8,11 @@
 1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
 2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
 
-# Survey of modulation and coding schemes for application in CubeSat systems (afterwords)
+# List of CubeSat transceivers
+
+> The presented below table is additional matherial to the following paper:
+>
+> *Gaysin, A., Fadeev, V. and Hennhöfer, M., 2017, July. Survey of modulation and coding schemes for application in CubeSat systems. In 2017 Systems of Signal Synchronization, Generating and Processing in Telecommunications (SINKHROINFO) (pp. 1-7). IEEE.*
 
 **Table 1. Modulation and FEC of real cubesat S-band, X-band and Ka-band transceivers**
 

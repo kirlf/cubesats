@@ -26,7 +26,11 @@ The following variables are used in the upper rail:
 " />  is the constant phase increment, where <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, and <img src="https://tex.s2cms.ru/svg/f_%7BDir%7D" alt="f_{Dir}" /> is the [Doppler shift](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication) frequency of the direct path
 - <img src="https://tex.s2cms.ru/svg/%5Bn%5D" alt="[n]" /> - sample number (x means multiplication)
 
-> I've started small [discussion in Wikipedia](https://en.wikipedia.org/wiki/Talk:Rayleigh_fading#Butterworth_filter_as_the_replacement_of_Jakes_Model) about Butterworth filters as replacement of Jakes model. Welcome! 
+According to [5, p. 97] Doppler spread block can be modeled via the Butterworth filter with the following parameters:
+- maximum ripple of 3 dB up to <img src="https://i.upmath.me/svg/%200.9%20v_%7Bmobile%7D%20%2F%20%5Clambda_c%20" alt=" 0.9 v_{mobile} / \lambda_c " /> (pass band);
+- attenuation of 100 dB at <img src="https://i.upmath.me/svg/%203%20v_%7Bmobile%7D%20%2F%20%5Clambda_c%20" alt=" 3 v_{mobile} / \lambda_c " /> (stop band),
+
+where <img src="https://i.upmath.me/svg/%20v_%7Bmobile%7D" alt=" v_{mobile}" /> is the mobile station velocity, and <img src="https://i.upmath.me/svg/%20%5Clambda_c" alt=" \lambda_c" /> is the wave length of the carrier.  
 
 Lower rail determines **slow (large-scaled) fading** ("log-normal series"):
 - <img src="https://tex.s2cms.ru/svg/M" alt="M" /> - mean of the Gaussian process

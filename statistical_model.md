@@ -1,12 +1,9 @@
 ## Table of contents
 
-### Surveys
-1. Statistical channel model survey
-2. [Modulation and coding \(FEC\) survey](https://github.com/kirlf/cubesats/blob/master/fec.md)
-
-### Tutorials (Python)
 1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
 2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
+3. Statistical channel model survey
+
 
 # Statistical channel model
 
@@ -125,8 +122,7 @@ Markov chains based models for dual-satellite systems are also considered in \[5
 
 *Fig. 5. Semi-Markov model for two satellites \[5\].*
 
-Actually, this topic is developing by researches now.
-
+The library [hmmlearn](https://hmmlearn.readthedocs.io/en/stable/tutorial.html#available-models) can be used, for example, for generating of the series for the switching between states.
 
 ## References
 

@@ -26,7 +26,7 @@ The following variables are used in the upper rail:
 " />  is the constant phase increment, where <img src="https://tex.s2cms.ru/svg/T_s" alt="T_s" /> is the sampling period, and <img src="https://tex.s2cms.ru/svg/f_%7BDir%7D" alt="f_{Dir}" /> is the [Doppler shift](https://en.wikipedia.org/wiki/Doppler_effect#Satellite_communication) frequency of the direct path
 - <img src="https://tex.s2cms.ru/svg/%5Bn%5D" alt="[n]" /> - sample number (x means multiplication)
 
-According to [5, p. 97] Doppler spread block can be modeled via the Butterworth filter with the following parameters:
+According to [5, p. 97] Doppler spread block can be modeled via the Butterworth filter (see an [example here](https://commons.wikimedia.org/wiki/File:Rayleigh_fading.png)) with the following parameters:
 - maximum ripple of 3 dB up to <img src="https://i.upmath.me/svg/%200.9%20v_%7Bmobile%7D%20%2F%20%5Clambda_c%20" alt=" 0.9 v_{mobile} / \lambda_c " /> (pass band);
 - attenuation of 100 dB at <img src="https://i.upmath.me/svg/%203%20v_%7Bmobile%7D%20%2F%20%5Clambda_c%20" alt=" 3 v_{mobile} / \lambda_c " /> (stop band),
 
@@ -49,6 +49,41 @@ Where:
 - <img src="https://tex.s2cms.ru/svg/v" alt="v" /> is the velocity of the mobile terminal, and 
 - <img src="https://tex.s2cms.ru/svg/l_%7Bcorr%7D" alt="l_{corr}" /> is the correlation length (3-5 m \[4\]).
 
+However, special interpolation functions can be also used instead:
+
+```python
+import numpy as np
+from scipy import signal, interpolate
+import matplotlib.pyplot as plt 
+
+
+N_samples = 200 # number of samples
+
+log_mean = -1.08 # lognormal process mean [dB]
+log_sigma = 0.13 # lognormal process variance [dB]
+
+L_corr = 4 # correlation length [m]
+ds = 3e8 / (2.4e9*2) # sampling wavelength (e.g. carrier frequency is 2.4 GHz)
+interp_rate = int(np.round(L_corr / ds)) # intrepolation rate
+L_corr = interp_rate * ds # retain correlation length
+
+""" Gaussian series """
+gauss = np.random.randn(N_samples, 1)
+gauss = [i[0] for i in gauss]
+
+""" The following hints are done according to [2] (project312): """
+d_axis1 = np.array([i for i in range(1, N_samples+1)])*L_corr - L_corr 
+d_axis2 = (np.arange(1, N_samples + 1, 1 / interp_rate) - 1)*L_corr 
+
+
+R_interpolated = interpolate.interp1d(d_axis1, gauss, bounds_error=False) # interpolation function
+R_interpolated = R_interpolated(d_axis2)*log_sigma + log_mean # lognormal series [dB]
+
+plt.plot(10**(R_interpolated / 10))
+plt.show()
+```
+
+
 The multiplication of these rails makes complex envelop of the impulse responce of the considered channel.
 
 Two ultimate conditions are proposed in [\[1\]](https://www.csie.ntu.edu.tw/~b92b02053/printing/summer/Materials/channel%20model/CHN_A%20statistical%20model%20for%20land%20mobile%20satellite%20channels%20and%20itsapplication%20to%20nongeostationary.pdf): light shadowing and strong shadowing \(tab.1\). 
@@ -58,8 +93,8 @@ Two ultimate conditions are proposed in [\[1\]](https://www.csie.ntu.edu.tw/~b92
 | Parameter | Light shadowing | Strong shadowing |
 | :--- | :--- | :--- |
 |  Rician factor \(linear scale\) | 4.0 | 0.6 |
-|  Lognormal mean \(linear scale\) | 0.13 | -1.08 |
-|  Lognormal variance \(linear scale\) | 1.0 | 2.5 |
+|  Lognormal mean \(logarithmic scale\) | 0.13 | -1.08 |
+|  Lognormal variance \(logarithmic scale\) | 1.0 | 2.5 |
 
 Moreover, authors mention that shadowing \(lognormal part\) is negligible on elevation angles larger than 60 degrees \(and smaller than 120 degree\) \(fig. 3\).
 

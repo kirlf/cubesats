@@ -2,9 +2,12 @@ These matherials relate to my Master Thesis [**"Design of cooperative communicat
 
 # Table of contents
 
-1. [Sat-to-Ground (and vice versa) link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
-2. [Intersatellite Link budget calculation (wireless optical)](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb)
-3. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
+1. [Wireless radio link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/LinkBudget/LB.ipynb)
+2. [Statistical channel model survey](https://github.com/kirlf/cubesats/blob/master/statistical_model.md)
+3. [List of CubeSat transceivers](https://github.com/kirlf/cubesats/blob/master/fec.md)
+
++ (additional) [Wireless optical link budget calculation](https://nbviewer.jupyter.org/github/kirlf/cubesats/blob/master/Optical-ISL-LB.ipynb) (does not belong to the Master Thesis scope, however CubeSats are also considered).
+
 
 # Introduction
 

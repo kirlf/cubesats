@@ -46,40 +46,7 @@ Where:
 - <img src="https://tex.s2cms.ru/svg/v" alt="v" /> is the velocity of the mobile terminal, and 
 - <img src="https://tex.s2cms.ru/svg/l_%7Bcorr%7D" alt="l_{corr}" /> is the correlation length (3-5 m \[4\]).
 
-However, special interpolation functions can be also used instead:
-
-```python
-import numpy as np
-from scipy import signal, interpolate
-import matplotlib.pyplot as plt 
-
-
-N_samples = 200 # number of samples
-
-log_mean = -1.08 # lognormal process mean [dB]
-log_sigma = 0.13 # lognormal process variance [dB]
-
-L_corr = 4 # correlation length [m]
-ds = 3e8 / (2.4e9*2) # sampling wavelength (e.g. carrier frequency is 2.4 GHz)
-interp_rate = int(np.round(L_corr / ds)) # intrepolation rate
-L_corr = interp_rate * ds # retain correlation length
-
-""" Gaussian series """
-gauss = np.random.randn(N_samples, 1)
-gauss = [i[0] for i in gauss]
-
-""" The following hints are done according to [2] (project312): """
-d_axis1 = np.array([i for i in range(1, N_samples+1)])*L_corr - L_corr 
-d_axis2 = (np.arange(1, N_samples + 1, 1 / interp_rate) - 1)*L_corr 
-
-
-R_interpolated = interpolate.interp1d(d_axis1, gauss, bounds_error=False) # interpolation function
-R_interpolated = R_interpolated(d_axis2)*log_sigma + log_mean # lognormal series [dB]
-
-plt.plot(10**(R_interpolated / 10))
-plt.show()
-```
-
+However, special interpolation functions can be also used instead (see an [example here](https://commons.wikimedia.org/wiki/File:Slow_fading_Log-distance.png))
 
 The multiplication of these rails makes complex envelop of the impulse responce of the considered channel.
 
